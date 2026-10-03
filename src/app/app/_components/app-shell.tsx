@@ -1,6 +1,5 @@
 "use client";
 
-import HotelSiteNav from "@/components/hotel-site-nav";
 
 import { bindChatViewport } from "@/lib/app/chat-viewport";
 
@@ -58,13 +57,7 @@ const SubscriptionGateModal = dynamic(
 const VideoSubscriptionModal = dynamic(() => import("@/app/ai-video-generator/_components/video-subscription-modal"));
 
 const desktopRailSections = [
-  { label: "Studio", items: [{ label: "Hotel Lobby AI", href: "/hotel-lobby-ai", icon: RailVideoIcon }] },
-  { label: "Discover", items: [
-    { label: "Video examples", href: "/examples", icon: Video },
-    { label: "Prompt library", href: "/prompts", icon: Sparkles },
-    { label: "Studio guides", href: "/guides", icon: FileText },
-    { label: "Plans & credits", href: "/pricing", icon: CreditCard }
-  ] }
+  { label: "Studio", items: [{ label: "Hotel Lobby AI", href: "/hotel-lobby-ai", icon: RailVideoIcon }] }
 ];
 
 const VIDEO_TOOL_SLUGS = new Set([
@@ -2331,7 +2324,6 @@ export function AppShell({
           </div>
         </header>
         <div className={styles.appScrollRegion}>
-          <HotelSiteNav workspace />
           {children}
         </div>
       </section>
