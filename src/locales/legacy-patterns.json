@@ -1,0 +1,571 @@
+{
+  "rules": [
+    {
+      "key": "workbench.legacy_01",
+      "regex": "^(\\d[\\d,]*) remaining$",
+      "params": [
+        "n"
+      ],
+      "numeric": [
+        "n"
+      ]
+    },
+    {
+      "key": "workbench.legacy_02",
+      "regex": "^(\\d[\\d,]*) \\/ (\\d[\\d,]*) used$",
+      "params": [
+        "used",
+        "total"
+      ],
+      "numeric": [
+        "used",
+        "total"
+      ]
+    },
+    {
+      "key": "workbench.legacy_03",
+      "regex": "^(.+) [Pp]lan$",
+      "params": [
+        "name"
+      ],
+      "numeric": []
+    },
+    {
+      "key": "workbench.legacy_04",
+      "regex": "^Show (.+) plan$",
+      "params": [
+        "name"
+      ],
+      "numeric": []
+    },
+    {
+      "key": "workbench.legacy_05",
+      "regex": "^Email (.+) \\(copies the address\\)$",
+      "params": [
+        "email"
+      ],
+      "numeric": []
+    },
+    {
+      "key": "workbench.legacy_06",
+      "regex": "^ · Expires (.+)$",
+      "params": [
+        "date"
+      ],
+      "numeric": []
+    },
+    {
+      "key": "workbench.legacy_07",
+      "regex": "^· Expires (.+)$",
+      "params": [
+        "date"
+      ],
+      "numeric": []
+    },
+    {
+      "key": "workbench.legacy_08",
+      "regex": "^· (.+) remaining$",
+      "params": [
+        "quantity"
+      ],
+      "numeric": []
+    },
+    {
+      "key": "workbench.legacy_09",
+      "regex": "^· Next expiry (.+)$",
+      "params": [
+        "date"
+      ],
+      "numeric": []
+    },
+    {
+      "key": "workbench.legacy_10",
+      "regex": "^You can upload up to (\\d+) images?\\.$",
+      "params": [
+        "n"
+      ],
+      "numeric": []
+    },
+    {
+      "key": "workbench.legacy_11",
+      "regex": "^Only (\\d+) of (\\d+) images were added \\(maximum (\\d+)\\)\\.$",
+      "params": [
+        "n",
+        "total",
+        "limit"
+      ],
+      "numeric": []
+    },
+    {
+      "key": "workbench.legacy_12",
+      "regex": "^Replace ([^.!?]{1,80})$",
+      "params": [
+        "label"
+      ],
+      "numeric": []
+    },
+    {
+      "key": "workbench.legacy_13",
+      "regex": "^(.+): (.+), fixed$",
+      "params": [
+        "label",
+        "value"
+      ],
+      "numeric": []
+    },
+    {
+      "key": "workbench.legacy_14",
+      "regex": "^You have (.+) left\\. This video needs (.+) to generate\\. Subscribe to keep generating videos\\.$",
+      "params": [
+        "left",
+        "needed"
+      ],
+      "numeric": []
+    },
+    {
+      "key": "workbench.legacy_15",
+      "regex": "^You have (.+) left\\. Subscribe to keep generating videos\\.$",
+      "params": [
+        "left"
+      ],
+      "numeric": []
+    },
+    {
+      "key": "workbench.legacy_16",
+      "regex": "^Generated image (\\d+)$",
+      "params": [
+        "n"
+      ],
+      "numeric": []
+    },
+    {
+      "key": "workbench.legacy_17",
+      "regex": "^Uploaded image (\\d+)$",
+      "params": [
+        "n"
+      ],
+      "numeric": []
+    },
+    {
+      "key": "workbench.legacy_18",
+      "regex": "^Preview ([^.!?]{1,80})$",
+      "params": [
+        "name"
+      ],
+      "numeric": []
+    },
+    {
+      "key": "workbench.legacy_19",
+      "regex": "^Add credits without changing your current plan\\. Purchased credits are valid for (.+)\\.$",
+      "params": [
+        "duration"
+      ],
+      "numeric": []
+    },
+    {
+      "key": "workbench.legacy_20",
+      "regex": "^Image (\\d+)$",
+      "params": [
+        "n"
+      ],
+      "numeric": []
+    },
+    {
+      "key": "workbench.legacy_21",
+      "regex": "^PDF · (\\d+) pages$",
+      "params": [
+        "n"
+      ],
+      "numeric": []
+    },
+    {
+      "key": "workbench.legacy_22",
+      "regex": "^Cover (\\d+)$",
+      "params": [
+        "n"
+      ],
+      "numeric": []
+    },
+    {
+      "key": "workbench.legacy_23",
+      "regex": "^(\\d+) shown$",
+      "params": [
+        "n"
+      ],
+      "numeric": []
+    },
+    {
+      "key": "workbench.legacy_24",
+      "regex": "^Play (.+)$",
+      "params": [
+        "name"
+      ],
+      "numeric": []
+    },
+    {
+      "key": "workbench.legacy_25",
+      "regex": "^(\\d+)% off$",
+      "params": [
+        "n"
+      ],
+      "numeric": []
+    },
+    {
+      "key": "workbench.legacy_26",
+      "regex": "^(\\d+) images?$",
+      "params": [
+        "n"
+      ],
+      "numeric": []
+    },
+    {
+      "key": "workbench.legacy_27",
+      "regex": "^Get ([^.!?]{1,80})$",
+      "params": [
+        "name"
+      ],
+      "numeric": []
+    },
+    {
+      "key": "workbench.auth.guest.getCreditsTitle",
+      "regex": "^Get (\\d[\\d,]*) free credits to keep creating$",
+      "params": [
+        "credits"
+      ],
+      "numeric": [
+        "credits"
+      ]
+    },
+    {
+      "key": "workbench.legacy_28",
+      "regex": "^(.+) one-time payment · Credits valid for 90 days$",
+      "params": [
+        "price"
+      ],
+      "numeric": []
+    },
+    {
+      "key": "workbench.legacy_29",
+      "regex": "^Selected: (.+) · Secure checkout · No subscription$",
+      "params": [
+        "name"
+      ],
+      "numeric": []
+    },
+    {
+      "key": "workbench.legacy_30",
+      "regex": "^Selected: (.+) · Secure checkout · Cancel anytime$",
+      "params": [
+        "name"
+      ],
+      "numeric": []
+    },
+    {
+      "key": "workbench.legacy_31",
+      "regex": "^Today: (.+) · One-time payment · No subscription$",
+      "params": [
+        "price"
+      ],
+      "numeric": []
+    },
+    {
+      "key": "workbench.legacy_32",
+      "regex": "^Today: (.+) · Renews (.+) · Cancel anytime$",
+      "params": [
+        "price",
+        "renewal"
+      ],
+      "numeric": []
+    },
+    {
+      "key": "workbench.legacy_33",
+      "regex": "^(\\d[\\d,]*) credits\\/month,$",
+      "params": [
+        "n"
+      ],
+      "numeric": [
+        "n"
+      ]
+    },
+    {
+      "key": "workbench.legacy_34",
+      "regex": "^Up to ([~\\d,]+) HD images\\/month(.*)$",
+      "params": [
+        "n",
+        "extra"
+      ],
+      "numeric": [
+        "n"
+      ],
+      "approximateParam": "n",
+      "stripApproximate": true,
+      "translateExtra": true
+    },
+    {
+      "key": "workbench.legacy_35",
+      "regex": "^Up to (\\d[\\d,]*) (HD|1K) images or (\\d[\\d,]*) videos\\/month$",
+      "params": [
+        "images",
+        "type",
+        "videos"
+      ],
+      "numeric": [
+        "images",
+        "videos"
+      ]
+    },
+    {
+      "key": "workbench.legacy_36",
+      "regex": "^one-time · (.+)$",
+      "params": [
+        "price"
+      ],
+      "numeric": []
+    },
+    {
+      "key": "workbench.legacy_37",
+      "regex": "^(.+), enough for (.+)$",
+      "params": [
+        "quantity",
+        "capacity"
+      ],
+      "numeric": []
+    },
+    {
+      "key": "workbench.legacy_38",
+      "regex": "^Buy (.+) once to download the HD original image and get (.+)\\. No monthly plan\\.$",
+      "params": [
+        "name",
+        "credits"
+      ],
+      "numeric": []
+    },
+    {
+      "key": "workbench.legacy_39",
+      "regex": "^Buy (.+) once to unlock this HD original image and get (.+)\\. No subscription\\.$",
+      "params": [
+        "name",
+        "credits"
+      ],
+      "numeric": []
+    },
+    {
+      "key": "workbench.legacy_40",
+      "regex": "^You're viewing a watermarked preview\\. Buy (.+) once to unlock the HD original image and get (.+)\\.$",
+      "params": [
+        "name",
+        "credits"
+      ],
+      "numeric": []
+    },
+    {
+      "key": "workbench.legacy_41",
+      "regex": "^You're viewing an ultra-low-res clean preview\\. Upgrade to (.+) to download the HD original image and get the benefits below\\.$",
+      "params": [
+        "name"
+      ],
+      "numeric": []
+    },
+    {
+      "key": "workbench.legacy_42",
+      "regex": "^You’re out of free credits, so this result is shown as a locked preview\\. Upgrade to (.+) to unlock the HD, watermark-free version and all (.+) benefits below\\.$",
+      "params": [
+        "name",
+        "benefits"
+      ],
+      "numeric": []
+    },
+    {
+      "key": "workbench.legacy_43",
+      "regex": "^This is a watermarked preview\\. Upgrade to (.+) for the HD, watermark-free image and all (.+) benefits below\\.$",
+      "params": [
+        "name",
+        "benefits"
+      ],
+      "numeric": []
+    },
+    {
+      "key": "workbench.legacy_44",
+      "regex": "^Get (.+) and unlock this image$",
+      "params": [
+        "name"
+      ],
+      "numeric": []
+    },
+    {
+      "key": "workbench.legacy_45",
+      "regex": "^Start (.+) and unlock this image$",
+      "params": [
+        "name"
+      ],
+      "numeric": []
+    },
+    {
+      "key": "workbench.legacy_46",
+      "regex": "^Preview image (\\d+) of (\\d+)$",
+      "params": [
+        "index",
+        "total"
+      ],
+      "numeric": []
+    },
+    {
+      "key": "workbench.legacy_47",
+      "regex": "^Unlock this image only for (.+)$",
+      "params": [
+        "price"
+      ],
+      "numeric": []
+    },
+    {
+      "key": "workbench.legacy_48",
+      "regex": "^No subscription — Get 10 images for (.+)$",
+      "params": [
+        "price"
+      ],
+      "numeric": []
+    },
+    {
+      "key": "workbench.legacy_49",
+      "regex": "^(.+) watermarked preview downloaded\\.$",
+      "params": [
+        "name"
+      ],
+      "numeric": []
+    },
+    {
+      "key": "workbench.legacy_50",
+      "regex": "^(.+) to unlock the HD original \\((.+)\\)\\.$",
+      "params": [
+        "action",
+        "size"
+      ],
+      "numeric": []
+    },
+    {
+      "key": "workbench.legacy_51",
+      "regex": "^(.+) to unlock the HD original\\.$",
+      "params": [
+        "action"
+      ],
+      "numeric": []
+    },
+    {
+      "key": "workbench.legacy_52",
+      "regex": "^This workspace is linked to (.+)\\. Sign in with (.+) to continue\\.$",
+      "params": [
+        "account",
+        "provider"
+      ],
+      "numeric": []
+    },
+    {
+      "key": "workbench.legacy_53",
+      "regex": "^(.+) billed yearly$",
+      "params": [
+        "price"
+      ],
+      "numeric": []
+    },
+    {
+      "key": "workbench.auth.guest.outOfCreditsNotice",
+      "regex": "^You're out of free credits\\. Create a free account to get (\\d[\\d,]*) free credits and keep generating this project\\. No credit card required\\.$",
+      "params": [
+        "credits"
+      ],
+      "numeric": [
+        "credits"
+      ]
+    },
+    {
+      "key": "workbench.auth.guest.saveImageTitle",
+      "regex": "^Save this image and get (\\d[\\d,]*) free credits$",
+      "params": [
+        "credits"
+      ],
+      "numeric": [
+        "credits"
+      ]
+    },
+    {
+      "key": "workbench.auth.guest.saveImageCopy",
+      "regex": "^Create a free account to save it to your workspace and get (\\d[\\d,]*) credits—enough for up to (\\d[\\d,]*) more generations\\.$",
+      "params": [
+        "credits",
+        "generations"
+      ],
+      "numeric": [
+        "credits",
+        "generations"
+      ]
+    },
+    {
+      "key": "workbench.auth.guest.keepCreatingTitle",
+      "regex": "^Keep creating with (\\d[\\d,]*) free credits$",
+      "params": [
+        "credits"
+      ],
+      "numeric": [
+        "credits"
+      ]
+    },
+    {
+      "key": "workbench.auth.guest.benefits",
+      "regex": "^(\\d[\\d,]*) free credits • Save your creations • Access them anytime$",
+      "params": [
+        "credits"
+      ],
+      "numeric": [
+        "credits"
+      ]
+    },
+    {
+      "key": "workbench.upgradeCredits",
+      "regex": "^(\\d[\\d,]*) credits,$",
+      "params": [
+        "n"
+      ],
+      "numeric": [
+        "n"
+      ]
+    },
+    {
+      "key": "workbench.upgradeCapacity",
+      "regex": "^Up to (\\d[\\d,]*) (HD|1K) images or (\\d[\\d,]*) videos$",
+      "params": [
+        "images",
+        "type",
+        "videos"
+      ],
+      "numeric": [
+        "images",
+        "videos"
+      ]
+    },
+    {
+      "key": "workbench.upgradeApproxCapacity",
+      "regex": "^Up to ~(\\d[\\d,]*) (HD|1K) images or ~(\\d[\\d,]*) videos$",
+      "params": [
+        "images",
+        "type",
+        "videos"
+      ],
+      "numeric": [
+        "images",
+        "videos"
+      ]
+    }
+  ],
+  "tokens": {
+    "one year": "workbench.tokens.oneYear",
+    "90 days": "workbench.tokens.ninetyDays",
+    "Google account": "workbench.tokens.googleAccount",
+    "Apple account": "workbench.tokens.appleAccount",
+    "email account": "workbench.tokens.emailAccount",
+    "an existing account": "workbench.tokens.existingAccount",
+    "Subscribe": "workbench.tokens.subscribe",
+    "Upgrade": "workbench.tokens.upgrade",
+    "monthly": "workbench.plans.monthly",
+    "yearly": "workbench.plans.annual"
+  }
+}

@@ -1,0 +1,21 @@
+.loader {
+  display: block;
+  overflow: hidden;
+  color: #ffffff;
+  contain: paint;
+  filter:
+    drop-shadow(0 0 8px rgba(113, 183, 255, 0.34))
+    drop-shadow(0 0 16px rgba(136, 107, 255, 0.24));
+}
+
+.motionGroup {
+  transform-origin: 50% 50%;
+}
+
+.path {
+  opacity: 0.34;
+}
+
+.particles {
+  filter: drop-shadow(0 0 3px rgba(255, 255, 255, 0.55));
+}

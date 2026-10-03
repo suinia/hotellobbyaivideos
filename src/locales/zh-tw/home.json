@@ -1,0 +1,153 @@
+{
+  "seo": {
+    "title": "AI 圖片與影片產生器——透過對話創作",
+    "description": "透過與 Vismuse 對話來建立及編輯圖片與影片。使用 AI 創意助理製作傳單、專輯封面、宣傳影片、廣告等內容。",
+    "keywords": [
+      "AI 傳單製作工具",
+      "AI 傳單產生器",
+      "AI 專輯封面製作工具",
+      "AI 專輯封面產生器",
+      "AI 宣傳影片製作工具",
+      "宣傳影片產生器",
+      "AI 圖片與影片產生器"
+    ],
+    "socialImageAlt": "使用 Vismuse 製作的傳單、專輯封面與宣傳影片"
+  },
+  "nav": {
+    "aiVideo": "AI 影片",
+    "aiImage": "AI 圖片",
+    "tools": "工具",
+    "templates": "範本",
+    "resources": "資源",
+    "pricing": "價格方案",
+    "signIn": "登入",
+    "create": "開始創作"
+  },
+  "hero": {
+    "taglineLead": "像專業人士一樣創作。",
+    "taglineEmphasis": "只要告訴 Vismuse。",
+    "title": "只要透過對話，就能用 AI 建立圖片與影片",
+    "description": "Vismuse 是一款對話式 AI 創意助理，可產生及編輯圖片與影片。只要輸入提示或加入參考圖片，就能製作傳單、專輯封面、宣傳影片、廣告等內容。"
+  },
+  "composer": {
+    "image": "圖片",
+    "video": "影片",
+    "agent": "AI 助理",
+    "chooseAgent": "選擇 AI 助理",
+    "placeholder": "描述你想建立的圖片或影片。",
+    "submit": "免費開始"
+  },
+  "proofTitle": "為創作者、行銷人員、音樂人與團隊打造",
+  "audiences": [
+    "創作者",
+    "活動團隊",
+    "音樂人",
+    "在地商家",
+    "工作室"
+  ],
+  "proofItems": [
+    {
+      "value": "AI 圖片",
+      "label": "專輯封面、傳單等內容"
+    },
+    {
+      "value": "AI 影片",
+      "label": "宣傳影片、Spotify Canvas 等內容"
+    }
+  ],
+  "howTitle": "運作方式",
+  "howItems": [
+    {
+      "title": "從想法或圖片開始創作",
+      "description": "告訴 Vismuse 你的需求，或加入參考素材。AI 助理會將對話轉化為圖片與影片，從傳單、專輯封面到宣傳影片與廣告都能製作。",
+      "action": "免費開始",
+      "mediaLabel": "使用 Vismuse 將想法化為作品"
+    },
+    {
+      "title": "將想法化為視覺作品。",
+      "description": "Vismuse 會理解你的需求、選擇合適的工作流程，並製作精緻的圖片或影片，無須操作傳統編輯工具。",
+      "action": "免費開始",
+      "mediaLabel": "使用 Vismuse 將想法製作成極限運動宣傳影片"
+    },
+    {
+      "title": "用文字微調每個細節。",
+      "description": "描述需要調整的構圖、文案、色彩、動態或氛圍。無論使用電腦或行動裝置，都能透過對話請 Vismuse 編輯成果。",
+      "action": "探索 AI 專輯封面產生器",
+      "mediaLabel": "使用 Vismuse 製作的專輯封面"
+    }
+  ],
+  "editPrompt": "讓標題低調一點，光線再溫暖一些",
+  "creatorTitle": "滿足各種創作目標",
+  "creatorDescription": "為影片、活動、宣傳與音樂發行製作可直接用於行銷活動的視覺內容。",
+  "creatorItems": [
+    {
+      "title": "專輯封面製作工具",
+      "description": "為單曲、專輯、EP 與播放清單製作可直接發行的封面作品。"
+    },
+    {
+      "title": "傳單製作工具",
+      "description": "為活動、宣傳、商家與公告設計精緻的傳單。"
+    },
+    {
+      "title": "宣傳影片製作工具",
+      "description": "將產品、優惠與新品上市內容製作成適合社群平台的短篇宣傳影片。"
+    },
+    {
+      "title": "AI 影片產生器",
+      "description": "使用 AI，從提示或參考圖片建立原創影片。"
+    }
+  ],
+  "tryNow": "立即試用",
+  "templatesTitle": "視覺創作範本",
+  "templatesDescription": "探索適用於各種圖片或影片專案的風格、格式與創意靈感。",
+  "browseTemplates": "瀏覽範本",
+  "faqTitle": "常見問題",
+  "faqs": [
+    {
+      "question": "可以免費試用 Vismuse 嗎？",
+      "answer": "可以。Vismuse 提供有限度的免費試用。若你想保留創作成果，可以單次購買來解鎖符合資格的成果，或選擇月繳或年繳方案以持續使用。"
+    },
+    {
+      "question": "下載的圖片會有浮水印嗎？",
+      "answer": "免費下載的圖片會包含 Vismuse 浮水印。訂閱有效期間內，所有圖片皆可下載無浮水印的 HD 版本；單次購買則可解鎖目前圖片的無浮水印 HD 版本。"
+    },
+    {
+      "question": "我可以將創作成果用於商業用途嗎？",
+      "answer": "符合資格的付費方案與購買項目皆包含商業使用權，但仍須遵守我們的服務條款。你有責任確保擁有輸入內容的相關權利，並在發布或散布前審查產生的內容。"
+    },
+    {
+      "question": "可以匯出哪些圖片與影片格式？",
+      "answer": "產生的圖片可匯出為 PNG 或 JPEG，產生的影片則會下載為 MP4。可用的解析度選項會依所選工作流程與方案而異。"
+    },
+    {
+      "question": "點數和單次解鎖如何運作？",
+      "answer": "Vismuse 會在建立內容前顯示所需點數。月繳與年繳方案包含定期發放的點數；符合資格的單次購買則可讓你解鎖個別成果，無須訂閱。"
+    },
+    {
+      "question": "我可以隨時取消訂閱嗎？",
+      "answer": "可以，你可以隨時取消。付費使用權會持續到目前帳單週期結束，且下一期不會再向你收費。"
+    }
+  ],
+  "footer": {
+    "tagline": "透過對話建立及編輯圖片與影片的 AI 助理。",
+    "imageTools": "圖片工具",
+    "videoTools": "影片工具",
+    "resources": "資源",
+    "company": "公司資訊",
+    "aiImageMaker": "AI 圖片製作工具",
+    "aiFlyerMaker": "AI 傳單製作工具",
+    "albumCoverMaker": "專輯封面製作工具",
+    "promoVideoMaker": "宣傳影片製作工具",
+    "aiVideoGenerator": "AI 影片產生器",
+    "templates": "範本",
+    "pricing": "價格方案",
+    "docs": "文件",
+    "about": "關於 Vismuse",
+    "privacy": "隱私權",
+    "terms": "服務條款",
+    "rights": "保留所有權利。",
+    "helpCenter": "說明中心",
+    "contactSupport": "聯絡客服",
+    "refundPolicy": "退款政策"
+  }
+}

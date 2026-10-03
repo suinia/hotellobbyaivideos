@@ -1,0 +1,153 @@
+{
+  "seo": {
+    "title": "KI-Bild- und Videogenerator – Erstellen per Chat",
+    "description": "Erstelle und bearbeite Bilder und Videos im Chat mit Vismuse. Gestalte Flyer, Albumcover, Werbevideos, Anzeigen und mehr mit einem kreativen KI-Agenten.",
+    "keywords": [
+      "KI-Flyer-Designer",
+      "KI-Flyer-Generator",
+      "KI-Albumcover-Designer",
+      "KI-Albumcover-Generator",
+      "KI-Werbevideo-Designer",
+      "Werbevideo-Generator",
+      "KI-Bild- und Videogenerator"
+    ],
+    "socialImageAlt": "Mit Vismuse erstellte Flyer, Albumcover und Werbevideos"
+  },
+  "nav": {
+    "aiVideo": "KI-Video",
+    "aiImage": "KI-Bild",
+    "tools": "Tools",
+    "templates": "Vorlagen",
+    "resources": "Ressourcen",
+    "pricing": "Preise",
+    "signIn": "Anmelden",
+    "create": "Erstellen"
+  },
+  "hero": {
+    "taglineLead": "Erstelle wie ein Profi.",
+    "taglineEmphasis": "Frag einfach Vismuse.",
+    "title": "Bilder und Videos mit KI erstellen – einfach im Chat",
+    "description": "Vismuse ist ein kreativer KI-Agent, mit dem du Bilder und Videos im Dialog erstellst und bearbeitest. Gestalte Flyer, Albumcover, Werbevideos, Anzeigen und mehr aus einem Prompt oder Referenzbild."
+  },
+  "composer": {
+    "image": "Bild",
+    "video": "Video",
+    "agent": "Agent",
+    "chooseAgent": "Agent auswählen",
+    "placeholder": "Beschreibe das Bild oder Video, das du erstellen möchtest.",
+    "submit": "Kostenlos starten"
+  },
+  "proofTitle": "Für Kreative, Marketingteams, Musiker und Unternehmen",
+  "audiences": [
+    "Kreative",
+    "Eventteams",
+    "Musiker",
+    "Lokale Unternehmen",
+    "Studios"
+  ],
+  "proofItems": [
+    {
+      "value": "KI-Bild",
+      "label": "Albumcover, Flyer und mehr"
+    },
+    {
+      "value": "KI-Video",
+      "label": "Werbevideo, Spotify Canvas und mehr"
+    }
+  ],
+  "howTitle": "So funktioniert es",
+  "howItems": [
+    {
+      "title": "Mit einer Idee oder einem Bild starten",
+      "description": "Beschreibe Vismuse, was du brauchst, oder füge eine Referenz hinzu. Der KI-Agent verwandelt das Gespräch in Bilder und Videos – von Flyern und Albumcovern bis zu Werbevideos und Anzeigen.",
+      "action": "Kostenlos starten",
+      "mediaLabel": "Mit Vismuse aus einer Idee etwas erstellen"
+    },
+    {
+      "title": "Ideen in Visuals verwandeln",
+      "description": "Vismuse versteht dein Briefing, wählt den passenden Ablauf und erstellt ein hochwertiges Bild oder Video, ohne dass du einen klassischen Editor bedienen musst.",
+      "action": "Kostenlos starten",
+      "mediaLabel": "Mit Vismuse aus einer Idee ein Extremsport-Werbevideo erstellen"
+    },
+    {
+      "title": "Jedes Detail mit Worten verfeinern",
+      "description": "Beschreibe, was sich ändern soll – Komposition, Text, Farbe, Bewegung oder Stimmung. Vismuse bearbeitet das Ergebnis im Dialog auf Desktop und Mobilgeräten.",
+      "action": "KI-Albumcover-Generator entdecken",
+      "mediaLabel": "Mit Vismuse erstelltes Albumcover"
+    }
+  ],
+  "editPrompt": "Mach den Titel dezenter und das Licht wärmer",
+  "creatorTitle": "Für jedes kreative Ziel",
+  "creatorDescription": "Erstelle kampagnenfertige Visuals für Videos, Events, Promotions und Musikveröffentlichungen.",
+  "creatorItems": [
+    {
+      "title": "Albumcover erstellen",
+      "description": "Gestalte veröffentlichungsfertige Cover für Singles, Alben, EPs und Playlists."
+    },
+    {
+      "title": "Flyer erstellen",
+      "description": "Gestalte professionelle Flyer für Events, Aktionen, Unternehmen und Ankündigungen."
+    },
+    {
+      "title": "Werbevideos erstellen",
+      "description": "Verwandle Produkte, Angebote und Launches in kurze Werbevideos für Social Media."
+    },
+    {
+      "title": "KI-Videogenerator",
+      "description": "Erstelle mit KI eigene Videos aus einem Prompt oder Referenzbild."
+    }
+  ],
+  "tryNow": "Jetzt ausprobieren",
+  "templatesTitle": "Vorlagen für deine Visuals",
+  "templatesDescription": "Entdecke Stile, Formate und kreative Ideen für jedes Bild- oder Videoprojekt.",
+  "browseTemplates": "Vorlagen ansehen",
+  "faqTitle": "Häufig gestellte Fragen",
+  "faqs": [
+    {
+      "question": "Kann ich Vismuse kostenlos testen?",
+      "answer": "Ja. Vismuse bietet einen begrenzten kostenlosen Test. Ein geeignetes Ergebnis kannst du anschließend einmalig freischalten oder für die regelmäßige Nutzung einen Monats- oder Jahresplan wählen."
+    },
+    {
+      "question": "Enthalten meine Bilddownloads ein Wasserzeichen?",
+      "answer": "Kostenlose Bilddownloads enthalten ein Vismuse-Wasserzeichen. Mit einem aktiven Abonnement kannst du alle Bilder ohne Wasserzeichen in HD herunterladen. Ein Einzelkauf schaltet das aktuelle Bild ohne Wasserzeichen in HD frei."
+    },
+    {
+      "question": "Darf ich meine Kreationen kommerziell nutzen?",
+      "answer": "Die kommerzielle Nutzung ist bei geeigneten kostenpflichtigen Plänen und Käufen gemäß unseren Nutzungsbedingungen enthalten. Du bist dafür verantwortlich, die Rechte an deinen Eingaben zu besitzen und generierte Inhalte vor der Veröffentlichung zu prüfen."
+    },
+    {
+      "question": "Welche Bild- und Videoformate kann ich exportieren?",
+      "answer": "Generierte Bilder können als PNG oder JPEG exportiert werden, generierte Videos als MP4. Die verfügbaren Auflösungen hängen vom gewählten Ablauf und Tarif ab."
+    },
+    {
+      "question": "Wie funktionieren Credits und einzelne Freischaltungen?",
+      "answer": "Vismuse zeigt die benötigten Credits vor der Erstellung an. Monats- und Jahrespläne enthalten wiederkehrende Credits. Geeignete Ergebnisse kannst du auch einzeln freischalten, ohne ein Abonnement abzuschließen."
+    },
+    {
+      "question": "Kann ich mein Abonnement jederzeit kündigen?",
+      "answer": "Ja. Du kannst jederzeit kündigen. Dein bezahlter Zugang bleibt bis zum Ende des aktuellen Abrechnungszeitraums aktiv; für den nächsten Zeitraum wird nichts berechnet."
+    }
+  ],
+  "footer": {
+    "tagline": "Ein kreativer KI-Agent zum Erstellen und Bearbeiten von Bildern und Videos im Dialog.",
+    "imageTools": "Bild-Tools",
+    "videoTools": "Video-Tools",
+    "resources": "Ressourcen",
+    "company": "Unternehmen",
+    "aiImageMaker": "KI-Bilder erstellen",
+    "aiFlyerMaker": "KI-Flyer erstellen",
+    "albumCoverMaker": "Albumcover erstellen",
+    "promoVideoMaker": "Werbevideos erstellen",
+    "aiVideoGenerator": "KI-Videogenerator",
+    "templates": "Vorlagen",
+    "pricing": "Preise",
+    "docs": "Dokumentation",
+    "about": "Über Vismuse",
+    "privacy": "Datenschutz",
+    "terms": "Nutzungsbedingungen",
+    "rights": "Alle Rechte vorbehalten.",
+    "helpCenter": "Hilfezentrum",
+    "contactSupport": "Support kontaktieren",
+    "refundPolicy": "Rückerstattungsrichtlinie"
+  }
+}

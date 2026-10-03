@@ -1,0 +1,3119 @@
+.pricingModalBackdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 520;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: rgba(7, 7, 10, 0.46);
+  color: rgb(10, 10, 8);
+  backdrop-filter: blur(14px);
+  overflow-y: auto;
+}
+
+.appSubscriptionModalBackdrop {
+  color: rgb(10, 10, 8);
+}
+
+.pricingModal {
+  position: relative;
+  width: min(1040px, 100%);
+  height: auto;
+  max-height: min(760px, calc(100dvh - 48px));
+  border: 1px solid rgba(10, 10, 8, 0.08);
+  border-radius: 24px;
+  background: #ffffff;
+  color: rgb(10, 10, 8);
+  box-shadow:
+    0 2px 8px rgba(16, 16, 20, 0.06),
+    0 28px 90px rgba(20, 18, 52, 0.22);
+  overflow: auto;
+}
+
+.pricingModalNav {
+  position: sticky;
+  top: 0;
+  z-index: 4;
+  width: 100%;
+  min-height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 18px 8px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(255, 255, 255, 0.82));
+  backdrop-filter: blur(12px);
+}
+
+.pricingModalBack,
+.pricingModalClose {
+  min-width: 40px;
+  height: 40px;
+  border: 1px solid rgba(10, 10, 8, 0.08);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.86);
+  color: rgb(93, 93, 106);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  cursor: pointer;
+  box-shadow: 0 8px 24px rgba(20, 18, 52, 0.08);
+  transition: background-color 0.16s ease, color 0.16s ease;
+}
+
+.pricingModalBack {
+  padding: 0 10px 0 8px;
+}
+
+.pricingModalBack img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
+.pricingModalBack:hover,
+.pricingModalClose:hover {
+  background: rgb(245, 245, 246);
+  color: rgb(10, 10, 8);
+}
+
+.pricingModalBody {
+  width: 100%;
+  margin: 0 auto;
+  padding: 18px 34px 32px;
+  background:
+    radial-gradient(circle at 50% -10%, rgba(247, 247, 248, 0.96), transparent 36%),
+    #ffffff;
+}
+
+.pricingModalHead {
+  margin: 0 auto 22px;
+  text-align: center;
+}
+
+.pricingModalHead h2 {
+  margin: 0;
+  color: rgb(10, 10, 8);
+  font-size: 34px;
+  line-height: 1.12;
+  font-weight: 520;
+  letter-spacing: 0;
+}
+
+.pricingModalHead p {
+  width: min(680px, 100%);
+  margin: 12px auto 0;
+  color: rgb(93, 93, 106);
+  font-size: 14px;
+  line-height: 1.42;
+  font-weight: 400;
+}
+
+.pricingModalError {
+  width: min(620px, 100%);
+  margin: -6px auto 18px;
+  border: 1px solid rgba(220, 38, 38, 0.18);
+  border-radius: 14px;
+  background: rgba(254, 242, 242, 0.96);
+  color: rgb(153, 27, 27);
+  padding: 10px 14px;
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.pricingBillingRow,
+.subscriptionBillingRow {
+  width: min(100%, 680px);
+  max-width: 100%;
+  margin: 0 auto 18px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.subscriptionBillingRow {
+  width: min(620px, 100%);
+  margin: 22px auto 0;
+}
+
+.billingSwitchButton {
+  border: 0;
+  background: transparent;
+  color: rgb(52, 52, 62);
+  padding: 0;
+  font: inherit;
+  font-size: 12px;
+  line-height: 1;
+  font-weight: normal;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.billingSwitchText {
+  color: rgb(52, 52, 62);
+  font-size: 11px;
+}
+
+.billingSwitchSave {
+  color: #6e50ff;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.billingSwitchOffer {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  white-space: nowrap;
+}
+
+.billingSwitchLimitedTime {
+  color: rgb(80, 70, 190);
+  font-size: 9px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.billingSwitchTrack {
+  width: 44px;
+  height: 26px;
+  padding: 3px;
+  border: 1px solid rgba(10, 10, 8, 0.12);
+  border-radius: 999px;
+  background: rgb(232, 232, 236);
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  transition: background-color 0.16s ease, border-color 0.16s ease, box-shadow 0.16s ease;
+}
+
+.billingSwitchTrackOn {
+  border-color: rgb(10, 10, 8);
+  background: rgb(10, 10, 8);
+  box-shadow: 0 0 0 3px rgba(10, 10, 8, 0.08);
+}
+
+.billingSwitchThumb {
+  width: 18px;
+  height: 18px;
+  border-radius: 999px;
+  background: #ffffff;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.16);
+  transform: translateX(0);
+  transition: transform 0.16s ease;
+}
+
+.billingSwitchTrackOn .billingSwitchThumb {
+  transform: translateX(18px);
+}
+
+.billingSegmentedControl {
+  width: fit-content;
+  max-width: 100%;
+  min-height: 28px;
+  border: 1px solid rgba(10, 10, 8, 0.08);
+  border-radius: 999px;
+  background: rgb(244, 244, 246);
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  padding: 3px;
+}
+
+.billingSegmentedOption {
+  min-width: 0;
+  min-height: 22px;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: rgb(93, 93, 106);
+  font: inherit;
+  font-size: 11px;
+  line-height: 1;
+  font-weight: 850;
+  white-space: nowrap;
+  cursor: pointer;
+  padding: 0 10px;
+}
+
+.billingSegmentedOptionSelected {
+  background: #ffffff;
+  color: rgb(10, 10, 8);
+  box-shadow: 0 8px 20px rgba(20, 18, 52, 0.1);
+}
+
+.billingSegmentedSave {
+  color: rgb(80, 70, 190);
+}
+
+.pricingModalDesktopPlans {
+  display: block;
+}
+
+.pricingModalMobilePlans {
+  display: none;
+}
+
+.pricingModalV18 .pricingModalDesktopPlans {
+  display: none;
+}
+
+.pricingModalV18 .pricingModalMobilePlans {
+  width: min(620px, 100%);
+  margin: 0 auto;
+  display: block;
+}
+
+.videoPricingModalBenefits {
+  width: min(620px, 100%);
+  margin: 24px auto 0;
+}
+
+.pricingModalV18 .videoPricingModalBenefits + .subscriptionBillingRow {
+  margin-top: 18px;
+}
+
+.videoPricingPlanSelector .subscriptionPlanOption {
+  min-height: 64px;
+  grid-template-columns: 28px minmax(0, 1fr) minmax(132px, auto);
+  grid-template-areas: none;
+  align-items: center;
+  gap: 14px;
+  padding: 8px 14px;
+}
+
+.videoPricingPlanSelector {
+  gap: 10px;
+}
+
+.videoPricingPlanSelector .subscriptionPlanOptionRadio {
+  position: static;
+}
+
+.videoPricingPlanSelector .subscriptionPlanOptionCopy {
+  grid-area: auto;
+  align-self: center;
+}
+
+.videoPricingPlanSelector .subscriptionPlanOptionCopyTopline {
+  display: grid;
+  justify-items: start;
+  gap: 6px;
+}
+
+.videoPricingPlanSelector .subscriptionPlanOptionPriceBlock {
+  grid-area: auto;
+  align-self: center;
+  justify-items: end;
+  padding-top: 0;
+}
+
+.videoPricingPlanSelector .subscriptionPlanOptionPrice {
+  justify-content: flex-end;
+}
+
+.pricingModalV18 .subscriptionBillingRow {
+  width: min(620px, 100%);
+  margin: 26px auto 0;
+  justify-content: flex-end;
+}
+
+.pricingModalV18 .subscriptionPlanSelector {
+  width: min(620px, 100%);
+  margin: 16px auto 0;
+  gap: 16px;
+}
+
+.pricingModalV18 .pricingModalPlansV18.subscriptionModalFrameV18 {
+  position: static;
+  width: min(620px, 100%);
+  min-height: 0;
+  max-height: none;
+  overflow: visible;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: inherit;
+  display: block;
+  grid-template-columns: none;
+  grid-template-rows: none;
+  box-shadow: none;
+  transition: none;
+}
+
+.pricingModalPlansV18 {
+  display: block;
+}
+
+.pricingModalGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 14px;
+}
+
+.pricingPlanCard {
+  min-height: 390px;
+  border: 1px solid rgba(10, 10, 8, 0.08);
+  border-radius: 20px;
+  background: rgb(250, 250, 251);
+  color: rgb(10, 10, 8);
+  padding: 24px 22px 24px;
+  box-shadow: 0 14px 42px rgba(20, 18, 52, 0.08);
+}
+
+.pricingPlanFeatured {
+  border-color: rgba(132, 118, 255, 0.34);
+  background: #ffffff;
+  box-shadow:
+    0 0 0 2px rgba(132, 118, 255, 0.12),
+    0 18px 52px rgba(20, 18, 52, 0.14);
+}
+
+.pricingPlanIcon {
+  color: rgb(80, 70, 190);
+}
+
+.pricingPlanCard h3 {
+  margin: 12px 0 0;
+  color: rgb(10, 10, 8);
+  font-size: 24px;
+  line-height: 1.05;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.pricingPlanSub {
+  min-height: 34px;
+  margin: 12px 0 0;
+  color: rgb(93, 93, 106);
+  font-size: 13px;
+  line-height: 1.35;
+  font-weight: 560;
+}
+
+.pricingPlanPrice {
+  margin: 22px 0 0;
+  color: #6e50ff;
+  font-size: 34px;
+  line-height: 1;
+  font-weight: 760;
+  letter-spacing: 0;
+}
+
+.pricingPlanPrice del {
+  margin: 0 8px;
+  color: rgb(158, 158, 168);
+  font-size: 20px;
+  font-weight: 400;
+  text-decoration-thickness: 1px;
+}
+
+.pricingPlanPrice span {
+  color: rgb(93, 93, 106);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.pricingPlanAnnualTotal {
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-start;
+  gap: 5px;
+  margin: 8px 0 0;
+  color: rgb(93, 93, 106);
+  font-size: 12px;
+  line-height: 1.3;
+  white-space: nowrap;
+}
+
+.subscriptionPlanOptionPriceBlock .pricingPlanAnnualTotal {
+  justify-content: flex-end;
+  margin: 0;
+}
+
+.pricingPlanDiscountBadge,
+.pricingPlanBadge {
+  width: fit-content;
+  min-height: 24px;
+  margin-top: 12px;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 9px;
+  font-size: 11px;
+  line-height: 1.25;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.pricingPlanDiscountBadge {
+  background: rgb(10, 10, 8);
+  color: #ffffff;
+}
+
+.pricingPlanBadge {
+  background: rgba(132, 118, 255, 0.12);
+  color: rgb(80, 70, 190);
+}
+
+.pricingPlanTitle {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.pricingPlanTitle .pricingPlanBadge {
+  margin-top: 0;
+}
+
+.pricingPlanButton {
+  width: 100%;
+  min-height: 42px;
+  border: 0;
+  border-radius: 999px;
+  background: rgb(10, 10, 8);
+  color: #ffffff;
+  margin-top: 20px;
+  padding: 0 18px;
+  font-size: 13px;
+  font-weight: 760;
+  cursor: pointer;
+  box-shadow: 0 16px 34px rgba(10, 10, 8, 0.16);
+}
+
+.pricingPlanButtonHighlight {
+  background: rgb(10, 10, 8);
+  color: #ffffff;
+}
+
+.pricingPlanButton:disabled {
+  opacity: 0.54;
+  cursor: not-allowed;
+}
+
+.pricingPlanPaymentExplanation {
+  margin: 6px 0 18px;
+  color: rgb(93, 93, 106);
+  font-size: 11px;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.pricingPlanNote {
+  margin: 10px 0 18px;
+  color: rgb(93, 93, 106);
+  font-size: 11px;
+  line-height: 1.35;
+  text-align: center;
+}
+
+.pricingPlanNoteWithPaymentExplanation {
+  margin-bottom: 0;
+}
+
+.pricingPlanCard ul,
+.pricingModalBenefits {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 11px;
+}
+
+.pricingPlanCard li,
+.pricingModalBenefits li {
+  display: flex;
+  align-items: flex-start;
+  gap: 11px;
+  color: rgb(93, 93, 106);
+  font-size: 12px;
+  line-height: 1.35;
+}
+
+.pricingPlanCard li strong,
+.pricingModalBenefits strong {
+  color: rgb(10, 10, 8);
+  font-weight: 850;
+}
+
+.pricingPlanCard li svg,
+.pricingModalBenefits li svg {
+  width: 15px;
+  height: 15px;
+  flex: 0 0 15px;
+  margin-top: 2px;
+  color: rgb(80, 70, 190);
+}
+
+.pricingMobilePlanSubtitle {
+  margin-bottom: 12px;
+  color: rgb(93, 93, 106);
+  font-size: 13px;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.pricingMobilePlanList {
+  display: grid;
+  gap: 14px;
+}
+
+.pricingModalPrimaryButton {
+  width: 100%;
+  min-height: 46px;
+  border: 0;
+  border-radius: 999px;
+  background: rgb(10, 10, 8);
+  color: #ffffff;
+  margin-top: 16px;
+  padding: 0 18px;
+  font-size: 14px;
+  font-weight: 760;
+  cursor: pointer;
+  box-shadow: 0 16px 34px rgba(10, 10, 8, 0.16);
+}
+
+.pricingModalPrimaryButton:disabled {
+  opacity: 0.54;
+  cursor: not-allowed;
+}
+
+.pricingCheckoutFootnote {
+  margin: 14px 0 12px;
+  color: rgb(93, 93, 106);
+  font-size: 11px;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.pricingCheckoutTrustLine {
+  display: none;
+}
+
+.pricingAddCreditsButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: min(360px, 100%);
+  min-height: 44px;
+  margin: 4px auto 0;
+  border: 1px solid rgba(17, 24, 39, 0.16);
+  border-radius: 999px;
+  color: #111827;
+  background: #ffffff;
+  font: inherit;
+  font-size: 13px;
+  font-weight: 750;
+  cursor: pointer;
+  transition: border-color 160ms ease, background-color 160ms ease, transform 160ms ease;
+}
+
+.pricingAddCreditsEntry {
+  margin: 4px auto 18px;
+  text-align: center;
+}
+
+.pricingAddCreditsEntry p {
+  margin: 7px 0 0;
+  color: rgb(93, 93, 106);
+  font-size: 11px;
+  line-height: 1.4;
+}
+
+.pricingAddCreditsButton:hover:not(:disabled) {
+  border-color: rgba(91, 33, 182, 0.46);
+  background: #faf8ff;
+  transform: translateY(-1px);
+}
+
+.pricingAddCreditsButton:disabled {
+  cursor: wait;
+  opacity: 0.55;
+}
+
+.pricingMerchantFootnote {
+  display: block;
+}
+
+.pricingFaq {
+  width: min(860px, 100%);
+  margin: 34px auto 0;
+}
+
+.pricingFaq h3 {
+  margin: 0 0 14px;
+  color: rgb(10, 10, 8);
+  text-align: center;
+  font-size: 22px;
+  line-height: 1.08;
+  font-weight: 760;
+  letter-spacing: 0;
+}
+
+.pricingFaqList {
+  border-top: 1px solid rgba(10, 10, 8, 0.08);
+}
+
+.pricingFaqItem {
+  border-bottom: 1px solid rgba(10, 10, 8, 0.08);
+}
+
+.pricingFaqQuestion {
+  width: 100%;
+  min-height: 54px;
+  border: 0;
+  background: transparent;
+  color: rgb(10, 10, 8);
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  text-align: left;
+  font-size: 14px;
+  line-height: 1.3;
+  font-weight: 680;
+  cursor: pointer;
+}
+
+.pricingFaqQuestion svg {
+  flex: 0 0 auto;
+  color: rgb(128, 128, 140);
+  transition: transform 0.16s ease;
+}
+
+.pricingFaqChevronOpen {
+  transform: rotate(90deg);
+}
+
+.pricingFaqAnswer {
+  margin: -4px 0 18px;
+  width: min(720px, 100%);
+  color: rgb(93, 93, 106);
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.subscriptionModalBackdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 520;
+  display: flex;
+  align-items: stretch;
+  justify-content: stretch;
+  padding: 0;
+  background: rgb(235, 242, 249);
+  color: rgb(10, 10, 8);
+  overflow: auto;
+}
+
+.subscriptionModalBackdropV24 {
+  --subscription-modal-pricing-variant: 2.4;
+}
+
+.subscriptionModal {
+  position: relative;
+  width: 100dvw;
+  height: 100dvh;
+  max-height: none;
+  box-sizing: border-box;
+  overflow: auto;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: rgb(10, 10, 8);
+  display: grid;
+  place-items: center;
+  padding: 52px 16px 16px;
+}
+
+.subscriptionModalNav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 4;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: max(10px, env(safe-area-inset-top)) max(24px, env(safe-area-inset-right)) 10px max(24px, env(safe-area-inset-left));
+  box-sizing: border-box;
+  pointer-events: none;
+}
+
+.subscriptionModalBack,
+.subscriptionModalClose {
+  border: 1px solid rgba(17, 24, 39, 0.08);
+  background: rgba(255, 255, 255, 0.94);
+  color: rgb(17, 24, 39);
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  pointer-events: auto;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 12px 34px rgba(44, 62, 80, 0.14);
+  transition: color 0.16s ease, background-color 0.16s ease, border-color 0.16s ease;
+}
+
+.subscriptionModalBack {
+  min-width: 68px;
+  min-height: 32px;
+  gap: 3px;
+  border-radius: 999px;
+  padding: 0 10px 0 8px;
+}
+
+.subscriptionModalBack img {
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+
+.subscriptionModalClose {
+  width: 32px;
+  height: 32px;
+  border-radius: 999px;
+  justify-content: center;
+}
+
+.subscriptionModalBack:hover,
+.subscriptionModalClose:hover {
+  border-color: rgba(17, 24, 39, 0.14);
+  background: #ffffff;
+  color: rgb(10, 10, 8);
+}
+
+.subscriptionModalFrame {
+  position: relative;
+  width: min(980px, 94vw);
+  max-height: calc(100dvh - 72px);
+  overflow: auto;
+  border: 1px solid rgba(17, 24, 39, 0.09);
+  border-radius: 22px;
+  background: #ffffff;
+  color: rgb(10, 10, 8);
+  display: grid;
+  grid-template-columns: minmax(330px, 0.9fr) minmax(400px, 1fr);
+  box-shadow: 0 30px 90px rgba(65, 87, 110, 0.22);
+  transition: grid-template-columns 0.24s ease, grid-template-rows 0.24s ease;
+}
+
+.subscriptionPreviewColumn {
+  min-width: 0;
+  height: auto;
+  align-self: stretch;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.subscriptionPreviewColumnWithChoices {
+  height: auto;
+  align-self: stretch;
+}
+
+.subscriptionPreviewPane {
+  position: relative;
+  min-width: 0;
+  min-height: 0;
+  height: auto;
+  flex: 1 1 auto;
+  background: rgb(242, 244, 248);
+  overflow: hidden;
+  transition: min-height 0.24s ease, height 0.24s ease, opacity 0.18s ease, visibility 0.18s ease;
+}
+
+.subscriptionPreviewPane img,
+.subscriptionPreviewPane video {
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  object-fit: contain;
+  object-position: center;
+  display: block;
+  transition: opacity 0.22s ease;
+}
+
+.modalPreviewImageHidden {
+  opacity: 0;
+}
+
+.modalPreviewImageLoaded {
+  opacity: 1;
+}
+
+.modalPreviewImageButton {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  background: transparent;
+  color: inherit;
+  display: block;
+  overflow: hidden;
+  cursor: zoom-in;
+  opacity: 1;
+}
+
+.modalPreviewImageButton:disabled {
+  cursor: default;
+}
+
+.modalPreviewImageButton:focus-visible {
+  outline: 2px solid rgba(110, 80, 255, 0.72);
+  outline-offset: -4px;
+}
+
+.modalPreviewImageLoading,
+.modalPreviewImageError {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  background: rgb(244, 246, 249);
+}
+
+.modalPreviewImageLoading::after {
+  content: "";
+  width: 54px;
+  height: 54px;
+  border-radius: 999px;
+  border: 4px solid rgba(110, 80, 255, 0.16);
+  border-top-color: rgb(110, 80, 255);
+  animation: subscriptionSpin 0.9s linear infinite;
+}
+
+.modalPreviewImageError {
+  color: rgb(93, 93, 106);
+  align-content: center;
+  gap: 10px;
+  padding: 18px;
+  font-size: 13px;
+  font-weight: 750;
+  text-align: center;
+}
+
+.modalPreviewRetry {
+  min-height: 34px;
+  border: 1px solid rgba(17, 24, 39, 0.12);
+  border-radius: 10px;
+  background: #ffffff;
+  color: rgb(52, 52, 62);
+  padding: 7px 12px;
+  font: inherit;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(44, 62, 80, 0.1);
+}
+
+.modalPreviewRetry:hover {
+  color: rgb(10, 10, 8);
+  box-shadow: 0 10px 24px rgba(44, 62, 80, 0.14);
+}
+
+.modalPreviewRetry:focus-visible {
+  outline: 2px solid rgba(110, 80, 255, 0.72);
+  outline-offset: 2px;
+}
+
+.subscriptionPlanBadge {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  z-index: 3;
+  max-width: calc(100% - 32px);
+  border: 1px solid rgba(17, 24, 39, 0.08);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.9);
+  color: rgb(31, 41, 55);
+  box-shadow: 0 12px 28px rgba(44, 62, 80, 0.14);
+  padding: 7px 11px;
+  font-size: 11px;
+  line-height: 1;
+  font-weight: 820;
+  backdrop-filter: blur(14px);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.modalPreviewSoundButton {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  z-index: 4;
+  width: 44px;
+  height: 44px;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  cursor: pointer;
+  transition: background-color 0.16s ease;
+}
+
+.modalPreviewSoundButton svg {
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.95)) drop-shadow(0 0 2px rgba(0, 0, 0, 0.8));
+}
+
+.modalPreviewSoundButton:hover {
+  background: rgba(0, 0, 0, 0.16);
+}
+
+.modalPreviewSoundButton:focus-visible {
+  outline: 3px solid rgba(110, 80, 255, 0.24);
+  outline-offset: 2px;
+}
+
+@keyframes subscriptionSpin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.subscriptionPreviewGallery {
+  flex: 0 0 88px;
+  min-width: 0;
+  border-top: 1px solid rgba(17, 24, 39, 0.08);
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+}
+
+.subscriptionPreviewStrip {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 12px 16px;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  scroll-padding-inline: 16px;
+  scroll-snap-type: x proximity;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(110, 80, 255, 0.3) transparent;
+}
+
+.subscriptionPreviewThumb {
+  position: relative;
+  flex: 0 0 auto;
+  width: auto;
+  min-width: 46px;
+  max-width: 92px;
+  height: 60px;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  background: rgb(242, 244, 248);
+  padding: 0;
+  overflow: hidden;
+  cursor: pointer;
+  color: rgb(17, 24, 39);
+  scroll-snap-align: start;
+  opacity: 0.68;
+  filter: brightness(0.82) saturate(0.78);
+  transition: border-color 0.16s ease, box-shadow 0.16s ease, transform 0.16s ease, opacity 0.16s ease, filter 0.16s ease;
+}
+
+.subscriptionPreviewThumb:hover {
+  transform: translateY(-1px) scale(1.02);
+  border-color: rgba(110, 80, 255, 0.58);
+  opacity: 0.9;
+  filter: brightness(0.94) saturate(0.92);
+}
+
+.subscriptionPreviewThumb:focus-visible {
+  outline: 3px solid rgba(110, 80, 255, 0.24);
+  outline-offset: 2px;
+}
+
+.subscriptionPreviewThumbSelected {
+  border-width: 3px;
+  border-color: rgb(110, 80, 255);
+  opacity: 1;
+  filter: none;
+  transform: scale(1.04);
+  box-shadow:
+    0 0 0 2px rgba(110, 80, 255, 0.14),
+    0 8px 18px rgba(67, 50, 160, 0.2);
+}
+
+.subscriptionPreviewThumbSelected:hover {
+  transform: translateY(-1px) scale(1.04);
+  opacity: 1;
+  filter: none;
+}
+
+.subscriptionPreviewThumb img {
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  object-fit: cover;
+  display: block;
+}
+
+.subscriptionPreviewThumbCheck {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  width: 18px;
+  height: 18px;
+  border-radius: 999px;
+  background: rgb(110, 80, 255);
+  color: #ffffff;
+  display: grid;
+  place-items: center;
+  box-shadow: 0 2px 8px rgba(42, 24, 122, 0.35);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .subscriptionPreviewThumb {
+    transition: none;
+  }
+}
+
+.subscriptionCopyPane {
+  min-width: 0;
+  min-height: 560px;
+  overflow: visible;
+  padding: 10px 40px 28px;
+  display: flex;
+  flex-direction: column;
+  transition: padding 0.24s ease;
+}
+
+.subscriptionPurchaseTabs {
+  min-width: 0;
+  min-height: 42px;
+  margin: -10px -40px 4px;
+  border-bottom: 1px solid rgba(17, 24, 39, 0.12);
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.subscriptionPurchaseTab {
+  position: relative;
+  min-width: 0;
+  min-height: 36px;
+  border: 0;
+  background: transparent;
+  color: rgb(93, 93, 106);
+  padding: 0 12px;
+  font: inherit;
+  font-size: 14px;
+  line-height: 1;
+  font-weight: 560;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: color 0.16s ease, background-color 0.16s ease;
+}
+
+.subscriptionPurchaseTab::after {
+  content: "";
+  position: absolute;
+  left: 24%;
+  right: 24%;
+  bottom: -1px;
+  height: 3px;
+  border-radius: 999px 999px 0 0;
+  background: rgb(110, 80, 255);
+  opacity: 0;
+  transform: scaleX(0.72);
+  transition: opacity 0.16s ease, transform 0.16s ease;
+}
+
+.subscriptionPurchaseTab:hover {
+  color: rgb(17, 24, 39);
+  /* background: rgba(110, 80, 255, 0.035); */
+}
+
+.subscriptionPurchaseTab:focus-visible {
+  z-index: 1;
+  outline: none;
+  /* background: rgba(110, 80, 255, 0.07); */
+}
+
+.subscriptionPurchaseTab:disabled {
+  opacity: 0.62;
+  cursor: not-allowed;
+}
+
+.subscriptionPurchaseTabActive {
+  color: rgb(17, 24, 39);
+  font-weight: 760;
+}
+
+.subscriptionPurchaseTabActive::after {
+  opacity: 1;
+  transform: scaleX(1);
+}
+
+.subscriptionPurchasePanel {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.subscriptionCopyDetails {
+  min-width: 0;
+}
+
+.subscriptionTitleRow {
+  max-width: 440px;
+  display: flex;
+  align-items: flex-start;
+  gap: 7px;
+}
+
+.subscriptionTitleRow h2 {
+  min-width: 0;
+  flex: 1 1 auto;
+  white-space: nowrap;
+}
+
+.subscriptionHistoryUnlockTip {
+  position: relative;
+  margin-top: 10px;
+  display: inline-flex;
+  align-items: center;
+  flex: 0 0 auto;
+}
+
+.subscriptionHistoryUnlockTipButton {
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: rgb(107, 114, 128);
+  display: inline-grid;
+  place-items: center;
+  cursor: pointer;
+  transition: color 0.16s ease, background 0.16s ease;
+}
+
+.subscriptionHistoryUnlockTipButton:hover,
+.subscriptionHistoryUnlockTipButton[aria-expanded="true"] {
+  background: rgb(243, 244, 246);
+  color: rgb(76, 55, 214);
+}
+
+.subscriptionHistoryUnlockTipButton:focus-visible {
+  outline: 2px solid rgb(110, 80, 255);
+  outline-offset: 2px;
+}
+
+.subscriptionHistoryUnlockTipPopover {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: -8px;
+  z-index: 9;
+  width: max-content;
+  max-width: min(240px, calc(100vw - 48px));
+  padding: 9px 11px;
+  border-radius: 9px;
+  background: rgb(24, 24, 29);
+  color: rgb(243, 244, 246);
+  box-shadow: 0 10px 28px rgba(5, 7, 12, 0.24);
+  font-size: 12px;
+  line-height: 1.35;
+  font-weight: 500;
+  white-space: normal;
+}
+
+.subscriptionCopyPane h2 {
+  margin: 10px 0 0;
+  max-width: 440px;
+  color: rgb(5, 7, 12);
+  font-size: clamp(16px, 3.4vw, 20px);
+  line-height: 1.06;
+  font-weight: 600;
+  letter-spacing: 0;
+  overflow-wrap: normal;
+}
+
+.subscriptionCopyPane h2 span {
+  color: rgb(110, 80, 255);
+}
+
+.subscriptionCopyDetails > h2 {
+  max-width: none;
+  font-size: 16px;
+  white-space: nowrap;
+}
+
+.subscriptionPriceLine {
+  margin: 12px 0 0;
+  color: rgb(17, 24, 39);
+  font-size: 16px;
+  line-height: 1;
+  font-weight: 600;
+  letter-spacing: 0;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.subscriptionCreditUsageTip {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  flex: 0 0 auto;
+}
+
+.subscriptionCreditUsageTipButton {
+  width: 18px;
+  height: 18px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: rgb(107, 114, 128);
+  display: inline-grid;
+  place-items: center;
+  cursor: pointer;
+  transition: color 0.16s ease, background 0.16s ease;
+}
+
+.subscriptionCreditUsageTipButton:hover,
+.subscriptionCreditUsageTipButton[aria-expanded="true"] {
+  background: rgb(243, 244, 246);
+  color: rgb(76, 55, 214);
+}
+
+.subscriptionCreditUsageTipButton:focus-visible {
+  outline: 2px solid rgb(110, 80, 255);
+  outline-offset: 2px;
+}
+
+.subscriptionCreditUsageTipPopover {
+  position: absolute;
+  right: -9px;
+  top: calc(100% + 9px);
+  z-index: 8;
+  width: 235px;
+  padding: 10px 12px;
+  border: 1px solid rgb(45, 45, 54);
+  border-radius: 10px;
+  background: rgb(24, 24, 29);
+  color: rgb(229, 231, 235);
+  box-shadow: 0 10px 28px rgba(5, 7, 12, 0.24);
+  display: grid;
+  gap: 8px;
+  font-size: 12px;
+  line-height: 1.2;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.subscriptionCreditUsageTipPopover::after {
+  content: "";
+  position: absolute;
+  right: 12px;
+  top: -5px;
+  width: 9px;
+  height: 9px;
+  border-top: 1px solid rgb(45, 45, 54);
+  border-left: 1px solid rgb(45, 45, 54);
+  background: rgb(24, 24, 29);
+  transform: rotate(45deg);
+}
+
+.subscriptionCreditUsageTipTitle {
+  padding-bottom: 7px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+  font-size: 11px;
+  letter-spacing: 0.01em;
+}
+
+.subscriptionCreditUsageTipPopover > span {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.subscriptionCreditUsageTipPopover strong {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.subscriptionSubcopy {
+  margin: 10px 0 0;
+  max-width: 410px;
+  color: rgb(93, 93, 106);
+  font-size: 14px;
+  line-height: 1.48;
+}
+
+.subscriptionFeatureList {
+  margin: 12px 0 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 8px;
+}
+
+.subscriptionFeatureList li {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  color: rgb(93, 93, 106);
+  font-size: 13px;
+  line-height: 1.38;
+}
+
+.subscriptionFeatureList li svg {
+  flex: 0 0 auto;
+  margin-top: 1px;
+  color: rgb(110, 80, 255);
+}
+
+.subscriptionFeatureList strong {
+  color: rgb(17, 24, 39);
+  font-weight: 800;
+}
+
+.subscriptionBenefitsToggle {
+  width: 100%;
+  min-height: 36px;
+  margin-top: 12px;
+  border: 1px solid rgba(17, 24, 39, 0.12);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.7);
+  color: rgb(17, 24, 39);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 11px;
+  font: inherit;
+  font-size: 12px;
+  font-weight: 740;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.subscriptionBenefitsToggleIcon,
+.subscriptionBenefitsToggleIconOpen {
+  flex: 0 0 auto;
+  color: rgb(93, 93, 106);
+  transition: transform 0.16s ease;
+}
+
+.subscriptionBenefitsToggleIconOpen {
+  transform: rotate(90deg);
+}
+
+.subscriptionFeatureListCollapsible {
+  display: none;
+}
+
+.subscriptionFeatureListOpen {
+  display: grid;
+}
+
+.subscriptionPlanSelector {
+  margin-top: 16px;
+  display: grid;
+  gap: 12px;
+}
+
+.subscriptionPlanOption {
+  position: relative;
+  width: 100%;
+  min-height: 60px;
+  border: 1px solid rgba(17, 24, 39, 0.12);
+  border-radius: 12px;
+  background: #ffffff;
+  color: rgb(17, 24, 39);
+  display: grid;
+  grid-template-columns: 28px minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 14px;
+  padding: 8px 14px;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+  box-shadow: 0 10px 30px rgba(65, 87, 110, 0.08);
+  transition: border-color 0.16s ease, box-shadow 0.16s ease, background-color 0.16s ease;
+}
+
+.subscriptionPlanOption:hover {
+  border-color: rgba(110, 80, 255, 0.4);
+  background: rgb(252, 252, 255);
+}
+
+.subscriptionPlanOption:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.subscriptionPlanOptionCompact {
+  min-height: 60px;
+}
+
+.subscriptionPlanOptionSelected {
+  border-color: rgb(110, 80, 255);
+  background: linear-gradient(135deg, rgb(255, 255, 255), rgb(249, 247, 255));
+  box-shadow:
+    0 0 0 1px rgba(110, 80, 255, 0.22),
+    0 14px 34px rgba(110, 80, 255, 0.16);
+}
+
+.subscriptionPlanOptionRadio {
+  width: 24px;
+  height: 24px;
+  border: 2px solid rgba(17, 24, 39, 0.14);
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  color: #ffffff;
+}
+
+.subscriptionPlanOptionSelected .subscriptionPlanOptionRadio {
+  border-color: rgba(110, 80, 255, 0.95);
+  background: linear-gradient(135deg, rgb(110, 80, 255), rgb(143, 80, 255));
+  box-shadow: 0 0 0 4px rgba(110, 80, 255, 0.12);
+}
+
+.subscriptionPlanOptionValueTag {
+  position: absolute;
+  top: -10px;
+  left: 52px;
+  border: 1px solid rgba(110, 80, 255, 0.22);
+  border-radius: 999px;
+  background: rgb(110, 80, 255);
+  color: #ffffff;
+  box-shadow: 0 8px 18px rgba(110, 80, 255, 0.22);
+  padding: 4px 8px;
+  font-size: 10px;
+  line-height: 1;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.subscriptionPlanOptionCopy {
+  min-width: 0;
+  display: grid;
+  gap: 5px;
+}
+
+.pricingModalPlanOptionBenefits {
+  grid-column: 1 / -1;
+  display: grid;
+  gap: 7px;
+  margin-top: 4px;
+  padding-top: 10px;
+  border-top: 1px solid rgba(17, 24, 39, 0.1);
+}
+
+.pricingModalPlanOptionBenefits > span {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  color: rgb(93, 93, 106);
+  font-size: 12px;
+  line-height: 1.35;
+}
+
+.pricingModalPlanOptionBenefits svg {
+  flex: 0 0 14px;
+  margin-top: 1px;
+  color: rgb(110, 80, 255);
+}
+
+.pricingModalPlanOptionBenefits strong {
+  color: rgb(17, 24, 39);
+  font-weight: 600;
+}
+
+.subscriptionPlanOptionCopyTopline {
+  min-width: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.subscriptionModalBackdropV24 .subscriptionPlanOptionCopyToplineV24 {
+  display: grid;
+  grid-template-columns: 60px minmax(0, 1fr);
+  justify-items: start;
+}
+
+.subscriptionPlanOptionCopyToplineAligned {
+  display: grid;
+  grid-template-columns: 48px minmax(0, 1fr);
+  justify-items: start;
+}
+
+.subscriptionModalBackdropV24 .subscriptionPlanOptionCopyToplineV24,
+.subscriptionPlanOptionCopyToplineAligned {
+  grid-template-columns: fit-content(55%) minmax(0, 1fr);
+  column-gap: 10px;
+}
+
+.subscriptionModalBackdropV24 .subscriptionPlanOptionCopyToplineV24 .subscriptionPlanOptionName,
+.subscriptionPlanOptionCopyToplineAligned .subscriptionPlanOptionName,
+.subscriptionModalBackdropV24 .subscriptionPlanOptionCopyToplineV24 .subscriptionPlanOptionMeta,
+.subscriptionPlanOptionCopyToplineAligned .subscriptionPlanOptionMeta {
+  min-width: 0;
+  max-width: 100%;
+}
+
+@media (max-width: 300px) {
+  .subscriptionPlanOptionCopyToplineAligned {
+    grid-template-columns: 34px minmax(0, 1fr);
+    column-gap: 0;
+    margin-left: -12px;
+  }
+
+  .imageUnlockModalFrame .subscriptionPlanOption {
+    padding-right: 8px;
+  }
+}
+
+.subscriptionPlanOptionName {
+  min-width: 0;
+  flex: 0 1 auto;
+  color: rgb(5, 7, 12);
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 650;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.subscriptionPlanOptionSubline {
+  color: rgb(93, 93, 106);
+  font-size: 11px;
+  line-height: 1;
+  font-weight: 680;
+  white-space: nowrap;
+}
+
+.subscriptionPlanOptionImageAllowance,
+.subscriptionPlanOptionBenefits {
+  display: none;
+}
+
+.subscriptionPlanOptionMeta {
+  flex: 0 0 auto;
+  width: fit-content;
+  max-width: 100%;
+  border: 0;
+  border-radius: 6px;
+  background: rgba(110, 80, 255, 0.12);
+  color: rgb(110, 80, 255);
+  padding: 5px 9px;
+  font-size: 12px;
+  line-height: 1.1;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.subscriptionPlanOptionPriceBlock {
+  min-width: 0;
+  display: grid;
+  justify-items: end;
+  gap: 7px;
+}
+
+.subscriptionPlanOptionPrice {
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-end;
+  gap: 8px;
+  color: rgb(5, 7, 12);
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.subscriptionPlanOptionPrice strong {
+  color: rgb(5, 7, 12);
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.pricingModalMobilePlans .subscriptionPlanOptionPrice strong {
+  color: #6e50ff;
+}
+
+.subscriptionPlanOptionPrice small {
+  color: rgb(93, 93, 106);
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.subscriptionPlanOptionPrice del {
+  color: rgb(158, 158, 168);
+  font-size: 15px;
+  font-weight: 400;
+  text-decoration-thickness: 1px;
+}
+
+.subscriptionPlanOptionSavings {
+  color: rgb(93, 93, 106);
+  font-size: 11px;
+  line-height: 1;
+  font-weight: 760;
+  white-space: nowrap;
+}
+
+.subscriptionPlanOptionDealRow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+  white-space: nowrap;
+}
+
+.subscriptionPlanOptionDealRow:empty {
+  display: none;
+}
+
+.subscriptionPlanOptionDiscountBadge {
+  width: fit-content;
+  max-width: 100%;
+  border-radius: 7px;
+  background: rgba(110, 80, 255, 0.12);
+  color: rgb(110, 80, 255);
+  padding: 6px 10px;
+  font-size: 13px;
+  line-height: 1;
+  font-weight: 900;
+  white-space: nowrap;
+}
+
+.subscriptionModalError {
+  margin: 18px 0 0;
+  border: 1px solid rgba(220, 38, 38, 0.18);
+  border-radius: 12px;
+  background: rgba(254, 242, 242, 0.96);
+  color: rgb(153, 27, 27);
+  padding: 10px 12px;
+  font-size: 13px;
+  line-height: 1.42;
+}
+
+.subscriptionPrimaryButton {
+  width: 100%;
+  min-height: 56px;
+  margin-top: 24px;
+  border: 0;
+  border-radius: 14px;
+  background: linear-gradient(100deg, #254cff 0%, #6c4dff 48%, #f054c8 100%);
+  color: #ffffff;
+  font: inherit;
+  font-size: 16px;
+  font-weight: 650;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  white-space: nowrap;
+  box-shadow: 0 18px 36px rgba(110, 80, 255, 0.26);
+}
+
+.subscriptionPrimaryButton svg,
+.creditPackPrimaryButton svg {
+  flex: 0 0 auto;
+}
+
+.subscriptionPrimaryButton:disabled {
+  opacity: 0.62;
+  cursor: not-allowed;
+}
+
+.subscriptionInlineStarterButton {
+  width: fit-content;
+  max-width: 100%;
+  min-height: 32px;
+  margin: 12px auto 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: rgb(31, 41, 55);
+  font: inherit;
+  font-size: 15px;
+  line-height: 1.28;
+  font-weight: 650;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: underline;
+  text-decoration-color: rgba(31, 41, 55, 0.42);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 5px;
+  white-space: nowrap;
+  transition: color 0.16s ease, text-decoration-color 0.16s ease;
+}
+
+.subscriptionInlineStarterButton:hover {
+  color: rgb(5, 7, 12);
+  text-decoration-color: rgba(5, 7, 12, 0.68);
+}
+
+.subscriptionInlineStarterButton:disabled {
+  opacity: 0.62;
+  cursor: not-allowed;
+}
+
+.subscriptionModalBackdropV24 .subscriptionInlineStarterButton {
+  display: block;
+}
+
+.subscriptionInlineStarterMain,
+.subscriptionInlineStarterSub {
+  display: block;
+}
+
+.subscriptionTertiaryButton {
+  width: fit-content;
+  min-height: 34px;
+  margin: 12px auto 0;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: rgb(93, 93, 106);
+  font: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.subscriptionModalBackdropV24 .subscriptionTertiaryButton {
+  display: flex;
+}
+
+.subscriptionTertiaryButton svg {
+  flex: 0 0 auto;
+}
+
+.subscriptionTertiaryLabel {
+  text-decoration: underline;
+  text-decoration-color: rgba(93, 93, 106, 0.42);
+  text-underline-offset: 4px;
+  text-decoration-thickness: 1px;
+}
+
+.subscriptionTertiaryButton:hover {
+  color: rgb(17, 24, 39);
+  background: rgba(17, 24, 39, 0.04);
+}
+
+.subscriptionTertiaryButton:disabled {
+  opacity: 0.62;
+  cursor: not-allowed;
+}
+
+.watermarkedDownloadSuccess {
+  position: fixed;
+  z-index: 8;
+  left: 0;
+  bottom: 0;
+  width: 100dvw;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 46px minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid rgba(17, 24, 39, 0.12);
+  border-radius: 0;
+  background: #ffffff;
+  padding: 10px;
+  box-shadow: 0 -10px 24px rgba(17, 24, 39, 0.1);
+  text-align: left;
+}
+
+.watermarkedDownloadSuccessThumbnail {
+  width: 46px;
+  height: 46px;
+  overflow: hidden;
+  border-radius: 10px;
+  background: rgb(244, 244, 246);
+}
+
+.watermarkedDownloadSuccessClose {
+  position: absolute;
+  top: -11px;
+  right: 0;
+  z-index: 1;
+  width: 22px;
+  height: 22px;
+  border: 0;
+  border-radius: 999px;
+  background: rgba(17, 24, 39, 0.06);
+  color: rgb(93, 93, 106);
+  display: grid;
+  place-items: center;
+  padding: 0;
+  cursor: pointer;
+}
+
+.watermarkedDownloadSuccessClose:hover {
+  background: rgba(17, 24, 39, 0.12);
+  color: rgb(17, 24, 39);
+}
+
+.watermarkedDownloadSuccessThumbnail img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.watermarkedDownloadSuccessCopy {
+  min-width: 0;
+}
+
+.watermarkedDownloadSuccessTitle {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: rgb(17, 24, 39);
+  font-size: 13px;
+  font-weight: 760;
+}
+
+.watermarkedDownloadSuccessTitle svg {
+  flex: 0 0 auto;
+  color: rgb(22, 163, 74);
+}
+
+.watermarkedDownloadSuccessCopy p {
+  margin: 3px 0 0;
+  color: rgb(93, 93, 106);
+  font-size: 11px;
+  line-height: 1.35;
+}
+
+.watermarkedDownloadSuccessCopy p span {
+  display: block;
+}
+
+.watermarkedDownloadSuccessCta {
+  min-height: 36px;
+  border: 0;
+  border-radius: 10px;
+  background: rgb(10, 10, 8);
+  color: #ffffff;
+  padding: 8px 11px;
+  font: inherit;
+  font-size: 12px;
+  font-weight: 760;
+  white-space: nowrap;
+  margin-right: 0;
+  cursor: pointer;
+  transition: background-color 0.16s ease, opacity 0.16s ease;
+}
+
+.watermarkedDownloadSuccessCta:hover {
+  background: rgb(40, 40, 42);
+}
+
+.watermarkedDownloadSuccessCta:disabled {
+  opacity: 0.62;
+  cursor: not-allowed;
+}
+
+.subscriptionFootnote {
+  margin: 14px 0 0;
+  padding-top: 14px;
+  color: rgb(93, 93, 106);
+  font-size: 12px;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.creditPackInlineBack {
+  width: fit-content;
+  min-height: 28px;
+  /* margin: 0 0 10px; */
+  border: 0;
+  background: transparent;
+  color: rgb(93, 68, 214);
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 0;
+  font: inherit;
+  font-size: 13px;
+  line-height: 18px;
+  white-space: nowrap;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.creditPackInlineBack:disabled {
+  opacity: 0.62;
+  cursor: not-allowed;
+}
+
+.creditPackGrid {
+  margin-top: 16px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+.creditPackOption {
+  position: relative;
+  min-height: 62px;
+  border: 1px solid rgba(17, 24, 39, 0.12);
+  border-radius: 14px;
+  background: #ffffff;
+  color: rgb(5, 7, 12);
+  padding: 10px 14px;
+  display: grid;
+  grid-template-columns: 28px minmax(0, 1fr) 86px;
+  align-items: center;
+  gap: 14px;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+  box-shadow: 0 10px 24px rgba(65, 87, 110, 0.07);
+  transition: border-color 0.16s ease, box-shadow 0.16s ease, background-color 0.16s ease;
+}
+
+.creditPackOption:hover {
+  border-color: rgba(110, 80, 255, 0.42);
+  background: rgb(252, 252, 255);
+}
+
+.creditPackOption:disabled {
+  opacity: 0.68;
+  cursor: not-allowed;
+}
+
+.creditPackOptionSelected {
+  border-color: rgba(110, 80, 255, 0.72);
+}
+
+.creditPackOptionSelected {
+  background: linear-gradient(135deg, #ffffff, rgb(249, 247, 255));
+  box-shadow:
+    0 0 0 1px rgba(110, 80, 255, 0.2),
+    0 14px 30px rgba(110, 80, 255, 0.13);
+}
+
+.creditPackBadge {
+  flex: 0 0 auto;
+  max-width: 130px;
+  border-radius: 7px;
+  background: rgba(110, 80, 255, 0.12);
+  color: rgb(93, 68, 214);
+  padding: 6px 9px;
+  font-size: 12px;
+  line-height: 1;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.creditPackOptionCopy {
+  min-width: 0;
+  display: grid;
+}
+
+.creditPackOptionCopy > small {
+  margin-top: 4px;
+  color: rgb(93, 93, 106);
+  font-size: 11px;
+  line-height: 1.25;
+  font-weight: 500;
+}
+
+.creditPackOptionTop {
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.creditPackOptionTop strong {
+  min-width: 0;
+  color: rgb(5, 7, 12);
+  font-size: 18px;
+  line-height: 1.25;
+  font-weight: 650;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.creditPackOptionTopWithBadge strong {
+  flex: 0 0 136px;
+}
+
+.creditPackRadio {
+  flex: 0 0 auto;
+  width: 24px;
+  height: 24px;
+  border: 2px solid rgba(17, 24, 39, 0.14);
+  border-radius: 999px;
+  color: #ffffff;
+  display: grid;
+  place-items: center;
+}
+
+.creditPackOptionSelected .creditPackRadio {
+  border-color: rgb(110, 80, 255);
+  background: linear-gradient(135deg, rgb(110, 80, 255), rgb(143, 80, 255));
+  box-shadow: 0 0 0 4px rgba(110, 80, 255, 0.12);
+}
+
+.creditPackPrice {
+  color: rgb(5, 7, 12);
+  font-size: 20px;
+  line-height: 1.05;
+  font-weight: 700;
+  justify-self: end;
+  display: grid;
+  justify-items: end;
+  gap: 4px;
+  white-space: nowrap;
+}
+
+.creditPackPrice small {
+  color: rgb(93, 93, 106);
+  font-size: 12px;
+  line-height: 1;
+  font-weight: 400;
+}
+
+.creditPackContactOption {
+  text-decoration: none;
+  grid-template-columns: 28px minmax(0, 1fr);
+}
+
+.creditPackContactIcon {
+  border-color: rgba(110, 80, 255, 0.28);
+  background: rgba(110, 80, 255, 0.1);
+  color: rgb(93, 68, 214);
+}
+
+.creditPackContactCta {
+  color: rgb(93, 68, 214);
+  grid-column: 2;
+  justify-self: start;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+  line-height: 1.2;
+  font-weight: 750;
+  white-space: nowrap;
+}
+
+.creditPackPrimaryButton {
+  width: 100%;
+  min-height: 50px;
+  margin-top: 16px;
+  border: 0;
+  border-radius: 14px;
+  background: linear-gradient(100deg, #254cff 0%, #6c4dff 48%, #f054c8 100%);
+  color: #ffffff;
+  font: inherit;
+  font-size: 15px;
+  line-height: 1;
+  font-weight: 860;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  white-space: nowrap;
+  cursor: pointer;
+  box-shadow: 0 16px 32px rgba(110, 80, 255, 0.24);
+}
+
+.creditPackPrimaryButton:disabled {
+  opacity: 0.62;
+  cursor: not-allowed;
+}
+
+.creditPackFootnote {
+  margin: 10px 0 0;
+  color: rgb(93, 93, 106);
+  font-size: 11px;
+  line-height: 1.35;
+  text-align: center;
+}
+
+.creditPackSubscriptionPrompt {
+  width: fit-content;
+  max-width: 100%;
+  min-height: 32px;
+  margin: 14px auto 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: rgb(31, 41, 55);
+  padding: 0;
+  font: inherit;
+  font-size: 12px;
+  line-height: 1.28;
+  font-weight: 700;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  text-decoration: underline;
+  text-decoration-color: rgba(31, 41, 55, 0.42);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 5px;
+  white-space: nowrap;
+  transition: color 0.16s ease, text-decoration-color 0.16s ease;
+}
+
+.creditPackSubscriptionPrompt:hover {
+  color: rgb(5, 7, 12);
+  text-decoration-color: rgba(5, 7, 12, 0.68);
+}
+
+.creditPackSubscriptionPrompt:disabled {
+  opacity: 0.62;
+  cursor: not-allowed;
+}
+
+.imagePreviewOverlay {
+  position: fixed;
+  inset: 0;
+  z-index: 620;
+  display: flex;
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0.88);
+  color: #ffffff;
+}
+
+.imagePreviewToolbar {
+  position: absolute;
+  top: 16px;
+  right: 18px;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  color: rgba(255, 255, 255, 0.76);
+  font-size: 14px;
+}
+
+.imagePreviewToolbar button {
+  width: 36px;
+  height: 36px;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: inherit;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  transition: background-color 0.16s ease, color 0.16s ease, opacity 0.16s ease;
+}
+
+.imagePreviewToolbar button:hover:not(:disabled) {
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+}
+
+.imagePreviewToolbar span {
+  min-width: 48px;
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+}
+
+.imagePreviewStage {
+  min-height: 0;
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: auto;
+  padding: 80px 40px;
+}
+
+.imagePreviewStage img {
+  max-width: calc(100vw - 80px);
+  max-height: calc(100vh - 160px);
+  object-fit: contain;
+  transform-origin: center;
+  user-select: none;
+}
+
+@media (max-width: 960px) {
+  .subscriptionModal .billingSwitchText,
+  .subscriptionModal .billingSwitchSave {
+    font-size: 12px;
+  }
+
+  .subscriptionModal .billingSwitchButton {
+    gap: 10px;
+  }
+
+  .subscriptionModal .billingSwitchTrack {
+    width: 40px;
+    height: 24px;
+  }
+
+  .subscriptionModal .billingSwitchThumb {
+    width: 16px;
+    height: 16px;
+  }
+
+  .subscriptionModal .billingSwitchTrackOn .billingSwitchThumb {
+    transform: translateX(16px);
+  }
+}
+
+@media (max-width: 760px) {
+  .pricingModalBackdrop {
+    align-items: stretch;
+    padding: 0;
+  }
+
+  .pricingModal {
+    width: 100dvw;
+    min-height: 100dvh;
+    max-height: none;
+    border: 0;
+    border-radius: 0;
+  }
+
+  .pricingModalNav {
+    min-height: 56px;
+    padding: max(10px, env(safe-area-inset-top)) 16px 8px;
+  }
+
+  .pricingModalBody {
+    padding: 12px 16px max(18px, env(safe-area-inset-bottom));
+  }
+
+  .pricingModalHead h2 {
+    font-size: 28px;
+  }
+
+  .pricingModalDesktopPlans {
+    display: none;
+  }
+
+  .pricingModalMobilePlans {
+    display: block;
+  }
+
+  .pricingModalMobilePlans + .pricingBillingRow {
+    margin-top: 8px;
+  }
+
+  .pricingPlanCard,
+  .subscriptionPlanOption {
+    min-height: 0;
+    box-shadow: none;
+  }
+
+  .subscriptionPlanOption {
+    grid-template-columns: minmax(0, 1fr);
+    padding: 16px;
+  }
+
+  .subscriptionPlanOptionPriceBlock {
+    justify-items: start;
+    padding-right: 0;
+  }
+
+  .imagePreviewToolbar {
+    top: 12px;
+    right: 12px;
+    gap: 8px;
+  }
+
+  .imagePreviewStage {
+    padding: 72px 18px;
+  }
+
+  .imagePreviewStage img {
+    max-width: calc(100vw - 36px);
+    max-height: calc(100vh - 144px);
+  }
+}
+
+@media (max-width: 960px) {
+  .subscriptionModal {
+    width: 100dvw;
+    height: 100dvh;
+    max-height: none;
+    display: grid;
+    place-items: stretch;
+    padding: 0;
+    overflow: auto;
+  }
+
+  .subscriptionModalNav {
+    height: 64px;
+    padding: max(10px, env(safe-area-inset-top)) max(14px, env(safe-area-inset-right)) 10px max(14px, env(safe-area-inset-left));
+  }
+
+  .billingSwitchTrack {
+    width: 36px;
+    height: 20px;
+    padding: 3px;
+  }
+
+  .billingSwitchThumb {
+    width: 15px;
+    height: 15px;
+  }
+
+  .billingSwitchTrackOn .billingSwitchThumb {
+    transform: translateX(14px);
+  }
+
+  .subscriptionBillingRow {
+    margin: 10px auto 0;
+  }
+
+  .subscriptionModalFrame {
+    width: 100dvw;
+    min-height: 100dvh;
+    max-height: none;
+    overflow: auto;
+    border: 0;
+    border-radius: 0;
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax(180px, 30dvh) auto minmax(0, 1fr);
+    box-shadow: none;
+  }
+
+  .subscriptionModalFrame.imageUnlockModalFrame {
+    grid-template-rows: minmax(max(180px, 30dvh), 1fr) auto;
+  }
+
+  .subscriptionPreviewColumn,
+  .subscriptionPreviewColumnWithChoices {
+    width: 100%;
+  }
+
+  .subscriptionPreviewColumn {
+    height: 100%;
+    min-height: 180px;
+    max-height: none;
+  }
+
+  .subscriptionPreviewColumnWithChoices {
+    height: 100%;
+    min-height: 0;
+    max-height: none;
+  }
+
+  .imageUnlockModalFrame .subscriptionCopyPane {
+    overflow: visible;
+  }
+
+  .subscriptionModalClose {
+    width: 32px;
+    height: 32px;
+  }
+
+  .subscriptionPreviewPane {
+    min-height: 180px;
+    height: auto;
+    max-width: none;
+    max-height: none;
+    aspect-ratio: auto;
+  }
+
+  .subscriptionPreviewColumnWithChoices .subscriptionPreviewPane {
+    min-height: 160px;
+    height: auto;
+    max-height: none;
+  }
+
+  .subscriptionPreviewPane img,
+  .subscriptionPreviewPane video {
+    min-height: 0;
+  }
+
+  .subscriptionPlanBadge {
+    top: 12px;
+    left: 12px;
+    max-width: calc(100% - 24px);
+    padding: 6px 9px;
+    font-size: 10px;
+  }
+
+  .subscriptionPreviewGallery {
+    flex-basis: 72px;
+  }
+
+  .subscriptionPreviewStrip {
+    gap: 8px;
+    padding: 9px 14px;
+    scroll-padding-inline: 14px;
+  }
+
+  .subscriptionPreviewThumb {
+    flex-basis: 72px;
+    width: 72px;
+    min-width: 72px;
+    max-width: 72px;
+    height: 52px;
+    aspect-ratio: auto !important;
+    border-radius: 8px;
+  }
+
+  .subscriptionPreviewThumb img {
+    object-fit: contain;
+  }
+
+  .subscriptionPreviewThumbCheck {
+    top: 2px;
+    right: 2px;
+    width: 16px;
+    height: 16px;
+  }
+
+  .subscriptionCopyPane {
+    min-height: auto;
+    overflow: auto;
+    padding: 14px 16px max(18px, env(safe-area-inset-bottom));
+    justify-content: flex-start;
+  }
+
+  .subscriptionPurchaseTabs {
+    margin: 0px -16px 4px;
+  }
+  .subscriptionModalBackdropV24 {
+    .subscriptionCopyPane {
+      padding-top: 0;
+    }
+    .subscriptionBillingRow {
+      margin-top: 6px;
+    }
+    .subscriptionPlanOption {
+      min-height: 48px;
+    }
+    .subscriptionPlanOptionPrice {
+      min-height: 36px;
+    }
+    .subscriptionPlanOptionPriceBlock {
+      gap: 0
+    }
+    .subscriptionPlanSelector {
+      gap: 10px;
+    }
+  }
+
+  .subscriptionCopyPane h2 {
+    margin-top: 10px;
+    font-size: 18px;
+    line-height: 1.08;
+  }
+
+  .subscriptionCopyDetails > h2 {
+    font-size: clamp(10px, 3.2vw, 18px);
+  }
+
+  .subscriptionPriceLine {
+    margin-top: 12px;
+    font-size: 13px;
+    white-space: nowrap;
+  }
+
+  .subscriptionSubcopy,
+  .subscriptionFeatureList li {
+    font-size: 11px;
+  }
+
+  .subscriptionFeatureList {
+    margin-top: 14px;
+    gap: 8px;
+  }
+
+  .subscriptionBenefitsToggle {
+    min-height: 34px;
+    margin-top: 12px;
+    padding: 0 10px;
+    font-size: 11px;
+  }
+  .pricingModalBackdrop {
+    .subscriptionBenefitsToggle {
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+  }
+
+  .subscriptionFeatureListOpen {
+    gap: 10px;
+  }
+
+  .subscriptionPlanSelector {
+    margin-top: 12px;
+    gap: 15px;
+  }
+
+  .subscriptionPlanOption {
+    min-height: 42px;
+    grid-template-columns: 24px minmax(0, 1fr) auto;
+    gap: 12px;
+    border-radius: 12px;
+    padding: 8px 12px;
+    box-shadow: none;
+  }
+
+  .subscriptionPlanOptionRadio {
+    width: 22px;
+    height: 22px;
+  }
+
+  .subscriptionPlanOptionRadio svg {
+    width: 12px;
+    height: 12px;
+  }
+
+  .subscriptionPlanOptionValueTag {
+    top: -9px;
+    left: 44px;
+    padding: 3px 7px;
+    font-size: 9px;
+  }
+
+  .subscriptionPlanOptionName {
+    font-size: 16px;
+  }
+
+  .subscriptionPlanOptionMeta {
+    max-width: 132px;
+    padding: 4px 8px;
+    font-size: 11px;
+  }
+
+  .subscriptionPlanOptionPriceBlock {
+    justify-items: end;
+    gap: 6px;
+  }
+
+  .subscriptionPlanOptionPrice {
+    position: relative;
+    min-height: 36px;
+    align-items: center;
+    gap: 7px;
+  }
+
+  .subscriptionPlanOptionPrice strong {
+    font-size: 16px;
+  }
+
+  .subscriptionPlanOptionPrice small {
+    font-size: 10px;
+  }
+
+  .subscriptionPlanOptionPrice del {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-size: 13px;
+  }
+
+  .subscriptionPlanOptionDiscountBadge {
+    padding: 5px 8px;
+    font-size: 11px;
+  }
+
+  .subscriptionPlanOptionSavings {
+    font-size: 10px;
+  }
+
+  .subscriptionPlanOptionDealRow {
+    gap: 6px;
+  }
+
+  .subscriptionPrimaryButton {
+    margin-top: 16px;
+    min-height: 44px;
+    border-radius: 14px;
+    font-size: 14px;
+  }
+
+  .subscriptionInlineStarterButton {
+    margin-top: 10px;
+    font-size: 13px;
+  }
+
+  .subscriptionTertiaryButton {
+    margin-top: 4px;
+    font-size: 12px;
+  }
+
+  .watermarkedDownloadSuccess {
+    grid-template-columns: 40px minmax(0, 1fr) auto;
+    gap: 8px;
+    bottom: 0;
+    border-radius: 0;
+    padding: 8px;
+  }
+
+  .watermarkedDownloadSuccessThumbnail {
+    width: 40px;
+    height: 40px;
+    border-radius: 9px;
+  }
+
+  .watermarkedDownloadSuccessTitle {
+    font-size: 12px;
+  }
+
+  .watermarkedDownloadSuccessCopy p {
+    font-size: 10px;
+  }
+
+  .watermarkedDownloadSuccessCta {
+    min-height: 34px;
+    padding: 7px 9px;
+    font-size: 11px;
+    margin-right: 0;
+  }
+
+  .subscriptionFootnote {
+    margin-top: 4px;
+    padding-top: 0px;
+    font-size: 11px;
+  }
+
+  .creditPackGrid {
+    gap: 8px;
+  }
+
+  .creditPackOption {
+    min-height: 56px;
+    grid-template-columns: 24px minmax(0, 1fr) 76px;
+    gap: 12px;
+    border-radius: 13px;
+    padding: 9px 12px;
+    box-shadow: none;
+  }
+
+  .creditPackContactOption {
+    grid-template-columns: 24px minmax(0, 1fr);
+    gap: 8px;
+  }
+
+  .creditPackBadge {
+    padding: 4px 5px;
+    font-size: 10px;
+    max-width: 96px;
+  }
+
+  .creditPackOptionTop {
+    gap: 7px;
+  }
+
+  .creditPackOptionTop strong {
+    font-size: 13px;
+    line-height: 1.25;
+  }
+
+  .creditPackOptionTopWithBadge strong {
+    flex-basis: 100px;
+  }
+
+  .creditPackRadio {
+    width: 22px;
+    height: 22px;
+  }
+
+  .creditPackPrice {
+    font-size: 18px;
+  }
+
+  .creditPackPrice small {
+    font-size: 10px;
+  }
+
+  .creditPackPrimaryButton {
+    min-height: 46px;
+    margin-top: 14px;
+    font-size: clamp(10px, 3.1vw, 15px);
+  }
+
+  .creditPackFootnote {
+    font-size: 10px;
+  }
+
+}
+
+
+@media (max-width: 320px) {
+  .subscriptionCopyPane {
+    padding: 8px 10px max(12px, env(safe-area-inset-bottom));
+  }
+  .billingSwitchText,
+  .billingSwitchSave {
+    font-size: 10px;
+  }
+  .billingSwitchTrack {
+    width: 32px;
+    height: 20px;
+  }
+  .subscriptionPlanSelector {
+    gap: 10px;
+    margin-top: 8px;
+  }
+  .subscriptionPlanOption {
+    gap: 8px;
+  }
+  .subscriptionPlanOptionName {
+    font-size: 13px;
+  }
+  .subscriptionPlanOptionRadio {
+    width: 16px;
+    height: 16px;
+  }
+  .subscriptionPlanOptionMeta {
+    font-size: 9px;
+    padding: 2px;
+  }
+  .subscriptionPlanOptionPrice strong {
+    font-size: 14px;
+  }
+  .creditPackOptionTop {
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+  .creditPackOptionTopWithBadge strong {
+    flex-basis: 100%;
+  }
+  .subscriptionPrimaryButton {
+    font-size: 12px;
+    min-height: 36px;
+  }
+  .subscriptionFootnote {
+    font-size: 9px;
+  }
+  .subscriptionCopyPane h2 {
+    margin-top: 0px;
+    font-size: 16px;
+  }
+  .subscriptionTertiaryButton {
+    font-size: 10px;
+  }
+  .watermarkedDownloadSuccess {
+    grid-template-columns: 34px minmax(0, 1fr);
+  }
+  .watermarkedDownloadSuccessThumbnail {
+    width: 34px;
+    height: 34px;
+  }
+  .watermarkedDownloadSuccessCta {
+    grid-column: 1 / -1;
+    width: 100%;
+    margin-right: 0;
+  }
+  .billingSwitchTrackOn .billingSwitchThumb {
+    transform: translateX(8px);
+  }
+}
+
+@media (max-width: 275px) {
+  .subscriptionPlanOptionCopyToplineAligned .subscriptionPlanOptionMeta {
+    box-sizing: border-box;
+    min-width: 0;
+    width: 100%;
+  }
+}
+
+@media (max-width: 420px) {
+  .subscriptionCopyPane h2 {
+    font-size: clamp(13px, 4.2vw, 16px);
+  }
+
+  .subscriptionCopyDetails > h2 {
+    font-size: clamp(10px, 3.2vw, 16px);
+  }
+
+  .subscriptionPurchaseTab {
+    font-size: clamp(10px, 3.4vw, 14px);
+  }
+
+  .subscriptionPrimaryButton,
+  .creditPackPrimaryButton {
+    gap: 6px;
+    font-size: clamp(10px, 3.45vw, 14px);
+  }
+
+  .creditPackPrimaryButton {
+    gap: 4px;
+    font-size: clamp(10px, 3.1vw, 14px);
+  }
+
+  .subscriptionPrimaryButton svg,
+  .creditPackPrimaryButton svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .creditPackPrimaryButton svg {
+    width: 14px;
+    height: 14px;
+  }
+
+  .subscriptionInlineStarterButton {
+    font-size: clamp(10px, 3.4vw, 13px);
+  }
+
+  .creditPackSubscriptionPrompt {
+    font-size: clamp(10px, 3vw, 12px);
+  }
+
+  .creditPackContactCta {
+    font-size: clamp(9px, 3vw, 12px);
+  }
+}
+
+@media (min-width: 961px) and (max-width: 1100px) {
+  .subscriptionCopyPane h2 {
+    font-size: 17.5px;
+  }
+
+  .subscriptionCopyDetails > h2 {
+    font-size: 15px;
+  }
+
+  .subscriptionPrimaryButton {
+    font-size: 15px;
+  }
+
+  .creditPackPrimaryButton {
+    font-size: 13.75px;
+  }
+}
+
+@media (max-width: 300px) {
+  .subscriptionPrimaryButton {
+    padding: 6px 8px;
+    line-height: 1.2;
+    white-space: normal;
+  }
+}
+
+.subscriptionPlanOptionPrice.subscriptionPlanOptionAnnualPrice {
+  min-height: 0;
+  align-items: baseline;
+}
+
+.subscriptionPlanOptionAnnualPrice del {
+  position: static;
+}
+
+@media (max-width: 760px) {
+  .appSubscriptionModal .billingSwitchText,
+  .appSubscriptionModal .billingSwitchSave {
+    font-size: 12px;
+  }
+
+  .appSubscriptionModal .billingSwitchButton {
+    gap: 10px;
+  }
+
+  .appSubscriptionModal .billingSwitchTrack {
+    width: 40px;
+    height: 24px;
+  }
+
+  .appSubscriptionModal .billingSwitchThumb {
+    width: 16px;
+    height: 16px;
+  }
+
+  .appSubscriptionModal .billingSwitchTrackOn .billingSwitchThumb {
+    transform: translateX(16px);
+  }
+}
+
+.subscriptionPlanOptionBillingCaption {
+  color: rgb(93, 93, 106);
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 1.3;
+  white-space: nowrap;
+}
+
+.accountUpgradePlans .subscriptionPlanOption {
+  grid-template-columns: 24px minmax(0, 1fr);
+  column-gap: 12px;
+  row-gap: 8px;
+  align-items: start;
+}
+
+.accountUpgradePlans .subscriptionPlanOptionCopy {
+  grid-column: 2;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  container-type: inline-size;
+}
+
+.accountUpgradePlans .subscriptionPlanOptionName {
+  flex: 0 0 auto;
+  font-size: clamp(0.75rem, 10cqi, 1.125rem);
+}
+
+.accountUpgradePlans .subscriptionPlanOptionPriceBlock {
+  grid-column: 2;
+  justify-items: start;
+  gap: 8px;
+}
+
+.accountUpgradePlans .subscriptionPlanOptionPrice {
+  position: static;
+  min-height: 0;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+
+.accountUpgradePlans .subscriptionPlanOptionPrice strong {
+  font-size: 20px;
+}
+
+.accountUpgradePlans .subscriptionPlanOptionPrice small,
+.accountUpgradePlans .subscriptionPlanOptionPrice del {
+  font-size: 12px;
+}
+
+.accountUpgradePlans .subscriptionPlanOptionPrice del {
+  position: static;
+}
+
+.accountUpgradePlans .subscriptionPlanOption[data-pricing-modal-plan-interval="month"] {
+  grid-template-columns: 24px minmax(0, 1fr) auto;
+  align-items: center;
+}
+
+.accountUpgradePlans .subscriptionPlanOption[data-pricing-modal-plan-interval="month"] .subscriptionPlanOptionPriceBlock {
+  grid-column: 3;
+  grid-row: 1;
+  justify-items: end;
+  gap: 0;
+}
+
+.accountUpgradePlans .subscriptionPlanOption[data-pricing-modal-plan-interval="month"] .subscriptionPlanOptionPrice {
+  justify-content: flex-end;
+}
+
+@media (max-width: 760px) {
+  .accountUpgradePlans .subscriptionPlanOption[data-pricing-modal-plan-interval="year"] {
+    grid-template-columns: 24px minmax(0, 1fr) auto;
+    align-items: center;
+  }
+
+  .accountUpgradePlans .subscriptionPlanOption[data-pricing-modal-plan-interval="year"] .subscriptionPlanOptionCopy {
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .accountUpgradePlans .subscriptionPlanOption[data-pricing-modal-plan-interval="year"] .subscriptionPlanOptionPriceBlock {
+    display: contents;
+  }
+
+  .accountUpgradePlans .subscriptionPlanOption[data-pricing-modal-plan-interval="year"] .subscriptionPlanOptionPrice {
+    grid-column: 3;
+    grid-row: 1;
+    justify-content: flex-end;
+  }
+
+  .accountUpgradePlans .subscriptionPlanOption[data-pricing-modal-plan-interval="year"] .pricingPlanAnnualTotal {
+    grid-column: 2 / -1;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    font-size: 11px;
+  }
+
+  .accountUpgradePlans .subscriptionPlanOption[data-pricing-modal-plan-interval="year"] .pricingPlanAnnualTotal strong {
+    color: inherit;
+    font-size: inherit;
+  }
+
+  /* The annual total already shows the original price and resulting saving. */
+  .accountUpgradePlans .subscriptionPlanOption[data-pricing-modal-plan-interval="year"] .subscriptionPlanOptionPrice del,
+  .accountUpgradePlans .subscriptionPlanOption[data-pricing-modal-plan-interval="year"] .subscriptionPlanOptionDealRow,
+  .accountUpgradePlans .subscriptionPlanOption[data-pricing-modal-plan-interval="year"] .subscriptionPlanOptionMeta ~ .subscriptionPlanOptionMeta {
+    display: none;
+  }
+}
+
+.accountUpgradePlans .pricingPlanAnnualTotal {
+  justify-content: flex-start;
+  margin: 0;
+}
+
+.accountUpgradePlans .pricingPlanAnnualTotal strong {
+  color: #6e50ff;
+  font-size: 17px;
+}
+
+.accountUpgradePlans .pricingPlanAnnualTotal del {
+  color: rgb(158, 158, 168);
+  font-size: 12px;
+}
+
+.pricingPlanAnnualTotalLabel {
+  text-transform: capitalize;
+}
+
+.accountUpgradePlans .pricingModalPlanOptionBenefits {
+  margin-top: 8px;
+  padding-top: 16px;
+}
+
+.accountUpgradePlans .subscriptionPlanOption:not(.subscriptionPlanOptionSelected) .pricingModalPlanOptionBenefits {
+  display: none;
+}
+
+.pricingModalDesktopPlans :is([data-pricing-modal-plan-card="pro"], [data-pricing-modal-plan-card="max"]) li:nth-child(-n+2),
+.accountUpgradePlans :is([data-pricing-modal-plan-card="pro"], [data-pricing-modal-plan-card="max"]) .pricingModalPlanOptionBenefits > span:nth-child(-n+2) {
+  color: rgb(17, 24, 39);
+  font-weight: 700;
+}
+
+.pricingModalDesktopPlans :is([data-pricing-modal-plan-card="pro"], [data-pricing-modal-plan-card="max"]) li:nth-child(-n+2) strong,
+.accountUpgradePlans :is([data-pricing-modal-plan-card="pro"], [data-pricing-modal-plan-card="max"]) .pricingModalPlanOptionBenefits > span:nth-child(-n+2) strong {
+  color: inherit;
+  font-weight: 700;
+}
+
+.pricingModalDesktopPlans :is([data-pricing-modal-plan-card="pro"], [data-pricing-modal-plan-card="max"]) li strong,
+.accountUpgradePlans :is([data-pricing-modal-plan-card="pro"], [data-pricing-modal-plan-card="max"]) .pricingModalPlanOptionBenefits > span strong {
+  font-weight: 400;
+}

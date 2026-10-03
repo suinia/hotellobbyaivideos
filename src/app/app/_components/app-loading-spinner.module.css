@@ -1,0 +1,25 @@
+.spinner {
+  display: block;
+  flex: 0 0 auto;
+  animation: appLoadingSpinnerRotate 0.9s linear infinite;
+}
+
+.ring {
+  box-sizing: border-box;
+  border: 2px solid rgba(17, 17, 22, 0.18);
+  border-top-color: #111116;
+  border-radius: 50%;
+  animation-duration: 0.8s;
+}
+
+@keyframes appLoadingSpinnerRotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .spinner {
+    animation: none;
+  }
+}

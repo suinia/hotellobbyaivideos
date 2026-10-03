@@ -1,0 +1,501 @@
+
+
+.assetsSection {
+  padding-top: 36px;
+}
+
+.assetGrid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.assetCard {
+  position: relative;
+  min-width: 0;
+  aspect-ratio: 4 / 5;
+  border: 0;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.78);
+  color: #9b9ba3;
+  display: block;
+  overflow: hidden;
+  padding: 0;
+  box-shadow: 0 18px 42px rgba(46, 43, 80, 0.07);
+  cursor: pointer;
+  font: inherit;
+  text-decoration: none;
+  transition: transform 160ms ease, filter 160ms ease, box-shadow 160ms ease;
+}
+
+.assetCard:hover,
+.assetCard:focus-visible {
+  transform: translateY(-2px);
+  filter: brightness(1.03);
+  box-shadow: 0 22px 52px rgba(46, 43, 80, 0.1);
+}
+
+.assetCard:focus-visible {
+  outline: 2px solid rgba(79, 70, 229, 0.72);
+  outline-offset: 3px;
+}
+
+.assetCard img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.assetEmptyPreview {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  background: #eeeeef;
+  color: #c8c8cc;
+  display: grid;
+  place-items: center;
+}
+
+.assetSkeletonCard {
+  background:
+    linear-gradient(90deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.72), rgba(255, 255, 255, 0)) 0 0 / 220px 100% no-repeat,
+    #eeeeef;
+  animation: listSkeletonSweep 1.35s ease-in-out infinite;
+  pointer-events: none;
+}
+
+.exploreView {
+  padding-bottom: 56px;
+}
+
+.exploreSearch {
+  width: min(420px, 100%);
+  height: 48px;
+  border: 1px solid rgba(18, 18, 24, 0.08);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.86);
+  color: #7f7f87;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 14px;
+  box-shadow: 0 18px 44px rgba(46, 43, 80, 0.07);
+}
+
+.exploreSearch input {
+  width: 100%;
+  min-width: 0;
+  border: 0;
+  outline: none;
+  background: transparent;
+  color: #15151a;
+  font: inherit;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.exploreSearch input::placeholder {
+  color: #9b9ba3;
+  font-weight: 500;
+}
+
+.exploreCategoryTabs {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 28px 0 24px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.exploreCategoryTabs::-webkit-scrollbar {
+  display: none;
+}
+
+.exploreCategoryTabs button {
+  flex: 0 0 auto;
+  min-height: 38px;
+  border: 1px solid rgba(18, 18, 24, 0.08);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.72);
+  color: #696973;
+  padding: 0 15px;
+  font: inherit;
+  font-size: 13px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: background 160ms ease, border-color 160ms ease, color 160ms ease, transform 160ms ease;
+}
+
+.exploreCategoryTabs button:hover,
+.exploreCategoryTabs button:focus-visible {
+  background: #ffffff;
+  border-color: rgba(47, 45, 245, 0.18);
+  color: #2f2df5;
+  outline: none;
+}
+
+.exploreCategoryTabs button:active {
+  transform: translateY(1px) scale(0.98);
+}
+
+.exploreCategoryTabs .exploreCategoryTabActive {
+  background: #111116;
+  border-color: #111116;
+  color: #ffffff;
+}
+
+.exploreGallery {
+  margin-top: 8px;
+}
+
+.exploreResultMeta {
+  color: #898991;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.exploreTemplateGrid {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.exploreTemplateCard {
+  position: relative;
+  min-width: 0;
+  aspect-ratio: 4 / 5;
+  border: 0;
+  border-radius: 16px;
+  padding: 0;
+  background: #eeeeef;
+  color: #ffffff;
+  font: inherit;
+  display: block;
+  overflow: hidden;
+  text-decoration: none;
+  text-align: left;
+  cursor: zoom-in;
+  box-shadow: 0 18px 42px rgba(46, 43, 80, 0.08);
+  transition: transform 160ms ease, box-shadow 160ms ease, filter 160ms ease;
+}
+
+.exploreTemplateCard:hover,
+.exploreTemplateCard:focus-visible {
+  transform: translateY(-2px);
+  filter: brightness(1.03);
+  box-shadow: 0 24px 58px rgba(46, 43, 80, 0.12);
+  outline: none;
+}
+
+.exploreTemplateCard img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.exploreTemplateCard::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(0, 0, 0, 0.16), transparent 34%),
+    linear-gradient(180deg, transparent 42%, rgba(0, 0, 0, 0.72));
+}
+
+.exploreTemplateTool {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 1;
+  max-width: calc(100% - 20px);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.86);
+  color: #111116;
+  padding: 5px 8px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 11px;
+  font-weight: 850;
+}
+
+.exploreTemplateCopy {
+  position: absolute;
+  left: 12px;
+  right: 12px;
+  bottom: 12px;
+  z-index: 1;
+  display: grid;
+  gap: 7px;
+}
+
+.exploreTemplateCopy strong {
+  display: -webkit-box;
+  margin: 0;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  font-size: 15px;
+  font-weight: 900;
+  line-height: 1.12;
+}
+
+.exploreTemplateCopy span {
+  width: max-content;
+  max-width: 100%;
+  border-radius: 999px;
+  background: #ffffff;
+  color: #111116;
+  padding: 6px 10px;
+  font-size: 12px;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.exploreToolCard {
+  min-width: 0;
+  min-height: 90px;
+  border: 1px solid rgba(18, 18, 24, 0.07);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.88);
+  color: #111116;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 12px;
+  padding: 14px;
+  text-decoration: none;
+  box-shadow: 0 18px 44px rgba(46, 43, 80, 0.07);
+  transition: transform 160ms ease, border-color 160ms ease, box-shadow 160ms ease, background 160ms ease;
+}
+
+.exploreToolCard:hover,
+.exploreToolCard:focus-visible {
+  border-color: rgba(47, 45, 245, 0.16);
+  background: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 24px 58px rgba(46, 43, 80, 0.11);
+  outline: none;
+}
+
+.exploreToolIcon {
+  width: 52px;
+  height: 52px;
+  border-radius: 16px;
+  background: var(--explore-tool-icon-background, #3432ed);
+  color: #ffffff;
+  display: grid;
+  place-items: center;
+  flex: 0 0 auto;
+  overflow: hidden;
+}
+
+.exploreToolIcon svg {
+  display: block;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  vector-effect: non-scaling-stroke;
+}
+
+.exploreToolCopy {
+  min-width: 0;
+  display: grid;
+  gap: 5px;
+}
+
+.exploreToolCopy strong,
+.exploreToolCopy small {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.exploreToolCopy strong {
+  color: #111116;
+  white-space: nowrap;
+  font-size: 15px;
+  font-weight: 850;
+  line-height: 1.1;
+}
+
+.exploreToolCopy small {
+  color: #73737c;
+  white-space: nowrap;
+  font-size: 12px;
+  font-weight: 650;
+  line-height: 1.28;
+}
+
+.exploreToolTitleMobile {
+  display: none;
+}
+
+.exploreToolCard > svg {
+  color: #9b9ba3;
+  transition: color 160ms ease, transform 160ms ease;
+}
+
+.exploreToolCard:hover > svg,
+.exploreToolCard:focus-visible > svg {
+  color: #2f2df5;
+  transform: translateX(2px);
+}
+
+@media (max-width: 1180px) {
+
+  .exploreTemplateGrid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 760px) {
+
+  .assetsSection {
+    padding-top: 16px;
+  }
+
+  .exploreView {
+    padding-bottom: calc(24px + env(safe-area-inset-bottom));
+  }
+
+  .exploreSearch {
+    width: auto;
+    min-width: 0;
+    justify-self: stretch;
+    box-sizing: border-box;
+    height: 58px;
+    border-color: rgba(127, 77, 255, 0.18);
+    border-radius: 20px;
+    gap: 13px;
+    padding: 0 18px;
+    background: rgba(255, 255, 255, 0.96);
+    box-shadow:
+      0 22px 48px rgba(126, 88, 255, 0.14),
+      0 1px 0 rgba(255, 255, 255, 0.85) inset;
+  }
+
+  .exploreSearch svg {
+    width: 23px;
+    height: 23px;
+    color: #0f0f13;
+    stroke-width: 2.25;
+  }
+
+  .exploreSearch input {
+    font-size: 17px;
+    font-weight: 500;
+  }
+
+  .exploreSearch input::placeholder {
+    color: #777781;
+    font-weight: 500;
+  }
+
+  .exploreCategoryTabs {
+    margin: 24px -16px 16px;
+    padding: 0 16px;
+  }
+
+  .exploreCategoryTabs button {
+    min-height: 36px;
+    padding: 0 13px;
+    font-size: 12px;
+  }
+
+  .assetGrid,
+  .exploreTemplateGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+  }
+
+  .exploreTemplateCard {
+    border-radius: 15px;
+  }
+
+  .exploreToolCard {
+    min-height: 116px;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: auto auto;
+    justify-items: center;
+    align-items: start;
+    gap: 11px;
+    padding: 0;
+    text-align: center;
+    box-shadow: none;
+    transition: transform 160ms ease, filter 160ms ease;
+  }
+
+  .exploreToolCard:hover,
+  .exploreToolCard:focus-visible {
+    background: transparent;
+    box-shadow: none;
+    transform: translateY(-1px);
+  }
+
+  .exploreToolIcon {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    grid-column: 1;
+    grid-row: 1;
+    overflow: hidden;
+  }
+
+  .exploreToolIcon svg {
+    width: 32px;
+    height: 32px;
+  }
+
+  .exploreToolCard > svg {
+    display: none;
+  }
+
+  .exploreToolCopy {
+    grid-column: 1;
+    grid-row: 2;
+    display: block;
+    width: 100%;
+  }
+
+  .exploreToolCopy strong {
+    display: block;
+    color: #595961;
+    white-space: normal;
+    font-size: 11px;
+    font-weight: 800;
+    line-height: 1.25;
+  }
+
+  .exploreToolCopy small {
+    display: none;
+  }
+
+  .exploreToolTitleDesktop {
+    display: none;
+  }
+
+  .exploreToolTitleMobile {
+    display: block;
+  }
+}
+
+@keyframes listSkeletonSweep {
+  from {
+    background-position: -240px 0, 0 0;
+  }
+
+  to {
+    background-position: calc(100% + 240px) 0, 0 0;
+  }
+}

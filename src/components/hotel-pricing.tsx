@@ -1,0 +1,7 @@
+"use client";
+import { useState } from "react";
+import Link from "next/link";
+import VideoSubscriptionModal from "@/app/ai-video-generator/_components/video-subscription-modal";
+import { useAppAccountStore } from "@/app/app/_components/app-account-store";
+import styles from "./hotel-lobby-content.module.css";
+export default function HotelPricing() { const [open, setOpen] = useState(false); const account = useAppAccountStore(s => s.account); const ready = useAppAccountStore(s => s.isReady); return <div className={styles.article}><h1>Credits for your next performance</h1><p>Hotel Lobby AI uses your Vismuse account and credits. Available plans, video options, and checkout prices come directly from the shared platform.</p><p>Review your balance and the generation settings before starting a video. A new generation or revision can require additional credits.</p><button type="button" disabled={!ready} onClick={() => setOpen(true)} style={{ background: "#30372c", color: "white", padding: "14px 24px", borderRadius: 10, border: 0, cursor: "pointer" }}>{ready ? "View plans and credits" : "Loading account…"}</button><p><Link href="/">Back to the Hotel Lobby studio →</Link></p><VideoSubscriptionModal open={open} onClose={() => setOpen(false)} presentation="app" pricingVariant={account.pricingVariant} initialAccountPlan={account.plan} initialCreditBalance={account.credits} initialBillingMarket={account.billingMarket}/></div>; }

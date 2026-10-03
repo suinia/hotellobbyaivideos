@@ -1,0 +1,153 @@
+{
+  "seo": {
+    "title": "Generador de imágenes y vídeos IA por chat",
+    "description": "Crea y edita imágenes y vídeos conversando con Vismuse. Diseña flyers, portadas de álbumes, vídeos promocionales, anuncios y mucho más con un agente creativo de IA.",
+    "keywords": [
+      "creador de flyers con IA",
+      "generador de flyers con IA",
+      "creador de portadas de álbumes con IA",
+      "generador de portadas de álbumes con IA",
+      "creador de vídeos promocionales con IA",
+      "generador de vídeos promocionales",
+      "generador de imágenes y vídeos con IA"
+    ],
+    "socialImageAlt": "Flyers, portadas de álbumes y vídeos promocionales creados con Vismuse"
+  },
+  "nav": {
+    "aiVideo": "Vídeo con IA",
+    "aiImage": "Imagen con IA",
+    "tools": "Herramientas",
+    "templates": "Plantillas",
+    "resources": "Recursos",
+    "pricing": "Precios",
+    "signIn": "Iniciar sesión",
+    "create": "Crear"
+  },
+  "hero": {
+    "taglineLead": "Crea como un profesional.",
+    "taglineEmphasis": "Solo tienes que pedírselo a Vismuse.",
+    "title": "Crea imágenes y vídeos con IA con solo conversar",
+    "description": "Vismuse es un agente creativo de IA conversacional que genera y edita imágenes y vídeos. Crea flyers, portadas de álbumes, vídeos promocionales, anuncios y mucho más a partir de una descripción o una imagen de referencia."
+  },
+  "composer": {
+    "image": "Imagen",
+    "video": "Vídeo",
+    "agent": "Agente",
+    "chooseAgent": "Elige un agente",
+    "placeholder": "Describe la imagen o el vídeo que quieres crear.",
+    "submit": "Empieza gratis"
+  },
+  "proofTitle": "Pensado para creadores, especialistas en marketing, músicos y equipos",
+  "audiences": [
+    "Creadores",
+    "Equipos de eventos",
+    "Músicos",
+    "Negocios locales",
+    "Estudios"
+  ],
+  "proofItems": [
+    {
+      "value": "Imagen con IA",
+      "label": "Portadas de álbumes, flyers y mucho más"
+    },
+    {
+      "value": "Vídeo con IA",
+      "label": "Vídeos promocionales, Spotify Canvas y mucho más"
+    }
+  ],
+  "howTitle": "Cómo funciona",
+  "howItems": [
+    {
+      "title": "Empieza con una idea o una imagen",
+      "description": "Cuéntale a Vismuse qué necesitas o añade una referencia. Su agente de IA convierte la conversación en imágenes y vídeos: desde flyers y portadas de álbumes hasta vídeos promocionales y anuncios.",
+      "action": "Empieza gratis",
+      "mediaLabel": "Crea a partir de una idea con Vismuse"
+    },
+    {
+      "title": "Convierte tus ideas en contenido visual.",
+      "description": "Vismuse entiende tu briefing, elige el flujo de trabajo adecuado y crea una imagen o un vídeo con acabado profesional, sin obligarte a usar un editor tradicional.",
+      "action": "Empieza gratis",
+      "mediaLabel": "Convierte una idea en un vídeo promocional de deportes extremos con Vismuse"
+    },
+    {
+      "title": "Perfecciona cada detalle con palabras.",
+      "description": "Indica qué quieres cambiar: la composición, el texto, el color, el movimiento o el ambiente. Vismuse edita el resultado mediante una conversación, tanto en ordenador como en móvil.",
+      "action": "Descubre el generador de portadas de álbumes con IA",
+      "mediaLabel": "Portada de álbum creada con Vismuse"
+    }
+  ],
+  "editPrompt": "Haz que el título sea más discreto y la iluminación más cálida",
+  "creatorTitle": "Para cualquier objetivo creativo",
+  "creatorDescription": "Crea piezas visuales listas para campañas de vídeo, eventos, promociones y lanzamientos musicales.",
+  "creatorItems": [
+    {
+      "title": "Creador de portadas de álbumes",
+      "description": "Crea diseños listos para publicar en singles, álbumes, EP y playlists."
+    },
+    {
+      "title": "Creador de flyers",
+      "description": "Diseña flyers profesionales para eventos, promociones, negocios y anuncios."
+    },
+    {
+      "title": "Creador de vídeos promocionales",
+      "description": "Convierte productos, ofertas y lanzamientos en vídeos promocionales breves y listos para redes sociales."
+    },
+    {
+      "title": "Generador de vídeos con IA",
+      "description": "Crea vídeos originales con IA a partir de una descripción o una imagen de referencia."
+    }
+  ],
+  "tryNow": "Pruébalo ahora",
+  "templatesTitle": "Plantillas para tus creaciones",
+  "templatesDescription": "Explora estilos, formatos e ideas creativas para cualquier proyecto de imagen o vídeo.",
+  "browseTemplates": "Ver plantillas",
+  "faqTitle": "Preguntas frecuentes",
+  "faqs": [
+    {
+      "question": "¿Puedo probar Vismuse gratis?",
+      "answer": "Sí. Vismuse ofrece una prueba gratuita limitada. Si creas algo que quieres conservar, puedes desbloquear ese resultado si cumple los requisitos mediante un pago único o elegir un plan mensual o anual para seguir creando."
+    },
+    {
+      "question": "¿Mis imágenes descargadas incluirán una marca de agua?",
+      "answer": "Las imágenes descargadas con la modalidad gratuita incluyen una marca de agua de Vismuse. Una suscripción activa permite descargar todas tus imágenes en HD sin marca de agua; un pago único desbloquea la imagen actual en HD y sin marca de agua."
+    },
+    {
+      "question": "¿Puedo usar mis creaciones con fines comerciales?",
+      "answer": "Los planes y las compras de pago que cumplan los requisitos incluyen el uso comercial, sujeto a nuestras Condiciones. Es tu responsabilidad contar con los derechos sobre los materiales que aportes y revisar el contenido generado antes de publicarlo o distribuirlo."
+    },
+    {
+      "question": "¿En qué formatos puedo exportar imágenes y vídeos?",
+      "answer": "Las imágenes generadas pueden exportarse en PNG o JPEG, y los vídeos se descargan en MP4. Las resoluciones disponibles dependen del flujo de trabajo y del plan elegidos."
+    },
+    {
+      "question": "¿Cómo funcionan los créditos y los desbloqueos mediante pago único?",
+      "answer": "Vismuse muestra el coste en créditos antes de crear. Los planes mensuales y anuales incluyen créditos recurrentes; las compras únicas que cumplan los requisitos permiten desbloquear un resultado concreto sin suscribirse."
+    },
+    {
+      "question": "¿Puedo cancelar mi suscripción cuando quiera?",
+      "answer": "Sí. Puedes cancelarla en cualquier momento. Mantendrás el acceso de pago hasta que termine el periodo de facturación actual y no se te cobrará el siguiente."
+    }
+  ],
+  "footer": {
+    "tagline": "Un agente de IA conversacional para crear y editar imágenes y vídeos.",
+    "imageTools": "Herramientas de imagen",
+    "videoTools": "Herramientas de vídeo",
+    "resources": "Recursos",
+    "company": "Empresa",
+    "aiImageMaker": "Creador de imágenes con IA",
+    "aiFlyerMaker": "Creador de flyers con IA",
+    "albumCoverMaker": "Creador de portadas de álbumes",
+    "promoVideoMaker": "Creador de vídeos promocionales",
+    "aiVideoGenerator": "Generador de vídeos con IA",
+    "templates": "Plantillas",
+    "pricing": "Precios",
+    "docs": "Documentación",
+    "about": "Acerca de Vismuse",
+    "privacy": "Privacidad",
+    "terms": "Condiciones",
+    "rights": "Todos los derechos reservados.",
+    "helpCenter": "Centro de ayuda",
+    "contactSupport": "Contactar con soporte",
+    "refundPolicy": "Política de reembolsos"
+  }
+}

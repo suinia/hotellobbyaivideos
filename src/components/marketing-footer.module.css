@@ -1,0 +1,513 @@
+.footer {
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  margin-top: 24px;
+}
+
+.defaultInner {
+  width: min(1200px, 92vw);
+  margin: 0 auto;
+  padding: 22px 0 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.defaultBrand {
+  color: #7a808c;
+  font-size: 14px;
+}
+
+.links {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+
+.links a {
+  color: #5d6470;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.languageLinks {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px 14px;
+}
+
+.languageLinks a {
+  color: #737a86;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.languageLinks a:hover,
+.languageLinks a[aria-current="page"] {
+  color: #20232a;
+}
+
+.languageLinks a[aria-current="page"] {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.homeFooter {
+  background:
+    radial-gradient(circle at 20% 0%, rgba(100, 111, 255, 0.1), transparent 28%),
+    radial-gradient(circle at 80% 0%, rgba(255, 91, 189, 0.1), transparent 30%),
+    #f7f8fb;
+  border-top: 1px solid rgba(18, 22, 35, 0.08);
+  margin-top: 0;
+  color: #20232a;
+}
+
+.inner {
+  width: min(1240px, calc(100vw - 64px));
+  margin: 0 auto;
+  padding: 62px 0 46px;
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 74px;
+}
+
+.brandBlock {
+  min-width: 0;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: #20232a;
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: 0;
+}
+
+.brand img {
+  width: 34px;
+  height: 34px;
+}
+
+.tagline {
+  margin: 16px 0 0;
+  color: #6f7580;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.boostBadge {
+  display: inline-flex;
+  align-items: center;
+  line-height: 0;
+}
+
+.listingBadges {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.saashubBadge {
+  display: inline-flex;
+  align-items: center;
+  line-height: 0;
+}
+
+.buildlistBadge {
+  display: inline-flex;
+  align-items: center;
+  line-height: 0;
+}
+
+.boostBadge img {
+  display: block;
+}
+
+.saashubBadge img {
+  display: block;
+}
+
+.taaftBadge {
+  display: inline-flex;
+  align-items: center;
+  line-height: 0;
+}
+
+.taaftBadge img {
+  display: block;
+  width: 150px;
+  max-width: 100%;
+  height: auto;
+}
+
+.dangBadge {
+  display: inline-block;
+  max-width: 100%;
+  line-height: 0;
+  text-decoration: none;
+}
+
+.dangBadge img {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: 40px;
+  border: 0;
+  outline: none;
+}
+
+.buildlistBadge img {
+  display: block;
+}
+
+.iaInsightsBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  border: 1.5px solid #e1e4e8;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #24292e;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+  font-family: system-ui, -apple-system, sans-serif;
+  font-size: 13px;
+  line-height: 1.2;
+  text-decoration: none;
+}
+
+.iaInsightsBadge:hover {
+  color: #24292e;
+}
+
+.iaInsightsMark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  background: #0066cc;
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.footerNav {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 32px;
+}
+
+.footerColumn h2 {
+  margin: 0 0 8px;
+  color: #20232a;
+  font-size: 14px;
+  line-height: 1.4;
+  font-weight: 650;
+  letter-spacing: 0;
+}
+
+.footerColumnLinks {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.footerColumnLinks a {
+  color: #747a86;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.footerColumnLinks a:hover {
+  color: #20232a;
+}
+
+.linkButton {
+  border: 0;
+  background: transparent;
+  padding: 0;
+  color: #5d6470;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.2;
+  cursor: pointer;
+}
+
+.linkButton:hover {
+  color: #16181d;
+}
+
+.footerColumnLinks .linkButton {
+  color: #747a86;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.footerColumnLinks .linkButton:hover {
+  color: #20232a;
+}
+
+.homeFooterBottom {
+  width: min(1240px, calc(100vw - 64px));
+  margin: 0 auto;
+  border-top: 1px solid rgba(18, 22, 35, 0.08);
+  color: #8b909a;
+  padding: 22px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.footerBadges {
+  display: inline-flex;
+  flex-wrap: wrap;
+  min-width: 0;
+  align-items: center;
+  gap: 12px;
+}
+
+.homeFooterBottom > span {
+  flex-shrink: 0;
+}
+
+.footerBadges a {
+  display: inline-flex;
+  align-items: center;
+  line-height: 0;
+}
+
+.footerBadges .listingTextLink {
+  line-height: 1.4;
+  white-space: nowrap;
+}
+
+.footerBadges img {
+  display: block;
+  width: auto;
+  max-width: 150px;
+  height: 40px;
+}
+
+.footerBadges .startupFameBadge img {
+  width: 224px;
+  max-width: 224px;
+  height: 36px;
+}
+
+.footerBadges .publishYourSaasBadge img {
+  width: 160px;
+  max-width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 80;
+  background: rgba(18, 22, 28, 0.34);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.modal {
+  width: min(480px, 92vw);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 24px;
+  background: #fff;
+  box-shadow: 0 22px 80px rgba(14, 20, 30, 0.16);
+  position: relative;
+}
+
+.closeButton {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 34px;
+  height: 34px;
+  border: 0;
+  border-radius: 999px;
+  background: #f3f4f6;
+  color: #5b616d;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modalBody {
+  padding: 48px 28px 32px;
+  text-align: center;
+}
+
+.modalLabel {
+  margin: 0 0 12px;
+  color: #7a808c;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.emailRow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.email {
+  color: #16181d;
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.copyButton {
+  min-height: 38px;
+  border: 1px solid #d6dae2;
+  border-radius: 999px;
+  background: #fff;
+  padding: 0 14px;
+  color: #3c4350;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+@media (max-width: 980px) {
+  .inner {
+    width: calc(100% - 48px);
+    grid-template-columns: 1fr;
+    gap: 34px;
+  }
+
+  .footerNav {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 36px 24px;
+    padding-top: 28px;
+    border-top: 1px solid #e5e0f2;
+  }
+
+  .homeFooterBottom {
+    width: calc(100% - 48px);
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 12px;
+    font-weight: 400;
+  }
+
+  .footerBadges {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 720px) {
+  .defaultInner {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .inner {
+    padding: 40px 0 44px;
+  }
+}
+
+@media (max-width: 420px) {
+  .footerNav {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 26px 22px;
+  }
+}
+
+.footerColumnLinks .contactLink {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 8px;
+  color: #6c3cf4;
+}
+
+.contactLink svg {
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.footerColumnLinks .contactLink:hover {
+  color: #5929df;
+}
+
+.footerColumnLinks a:focus-visible,
+.footerLanguageMenu summary:focus-visible {
+  outline: 2px solid #6c3cf4;
+  outline-offset: 4px;
+  border-radius: 3px;
+}
+
+.footerLanguageMenu {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.footerLanguageMenu summary {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  min-height: 36px;
+  color: #737a86;
+  cursor: pointer;
+  list-style: none;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.footerLanguageMenu summary::-webkit-details-marker {
+  display: none;
+}
+
+.footerLanguageMenu .languageLinks {
+  position: absolute;
+  right: 0;
+  bottom: calc(100% + 8px);
+  z-index: 10;
+  display: grid;
+  justify-content: stretch;
+  gap: 0;
+  width: 160px;
+  padding: 8px;
+  border: 1px solid #e5e0f2;
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: 0 8px 24px rgba(32, 24, 62, 0.08);
+}
+
+.footerLanguageMenu .languageLinks a {
+  padding: 8px;
+  text-align: left;
+  font-weight: 400;
+}
+
+.footerLanguageMenu .languageLinks a:hover {
+  border-radius: 6px;
+  background: #f7f4ff;
+  color: #6c3cf4;
+}

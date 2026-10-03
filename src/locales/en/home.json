@@ -1,0 +1,153 @@
+{
+  "seo": {
+    "title": "AI Image & Video Generator — Create by Chatting",
+    "description": "Create and edit images and videos by chatting with Vismuse. Make flyers, album covers, promo videos, ads, and more with an AI creative agent.",
+    "keywords": [
+      "ai flyer maker",
+      "ai flyer generator",
+      "ai album cover maker",
+      "ai album cover generator",
+      "ai promo video maker",
+      "promo video generator",
+      "ai image and video generator"
+    ],
+    "socialImageAlt": "Flyers, album covers, and promo videos made with Vismuse"
+  },
+  "nav": {
+    "aiVideo": "AI Video",
+    "aiImage": "AI Image",
+    "tools": "Tools",
+    "templates": "Templates",
+    "resources": "Resources",
+    "pricing": "Pricing",
+    "signIn": "Sign in",
+    "create": "Create"
+  },
+  "hero": {
+    "taglineLead": "Create like a pro.",
+    "taglineEmphasis": "Just ask Vismuse.",
+    "title": "Create Images and Videos with AI, Just by Chatting",
+    "description": "Vismuse is a conversational AI creative agent for generating and editing images and videos. Create flyers, album covers, promo videos, ads, and more from a prompt or reference image."
+  },
+  "composer": {
+    "image": "Image",
+    "video": "Video",
+    "agent": "Agent",
+    "chooseAgent": "Choose an agent",
+    "placeholder": "Describe the image or video you want to create.",
+    "submit": "Start for free"
+  },
+  "proofTitle": "Made for creators, marketers, musicians, and teams",
+  "audiences": [
+    "Creators",
+    "Event teams",
+    "Musicians",
+    "Local businesses",
+    "Studios"
+  ],
+  "proofItems": [
+    {
+      "value": "AI Image",
+      "label": "Album cover, flyer and more"
+    },
+    {
+      "value": "AI Video",
+      "label": "Promo video, Spotify Canvas and more"
+    }
+  ],
+  "howTitle": "How It Works",
+  "howItems": [
+    {
+      "title": "Create from an idea or image",
+      "description": "Tell Vismuse what you need or add a reference. Its AI agent turns the conversation into images and videos, from flyers and album covers to promo videos and ads.",
+      "action": "Start for free",
+      "mediaLabel": "Create from an idea with Vismuse"
+    },
+    {
+      "title": "Turn ideas into visuals.",
+      "description": "Vismuse understands your brief, chooses the right workflow, and creates a polished image or video without making you operate a traditional editor.",
+      "action": "Start for free",
+      "mediaLabel": "Turn an idea into an extreme sports promo video with Vismuse"
+    },
+    {
+      "title": "Refine every detail with words.",
+      "description": "Describe what should change—composition, copy, color, motion, or mood. Vismuse edits the result through conversation on desktop or mobile.",
+      "action": "Explore the AI Album Cover Generator",
+      "mediaLabel": "Album cover created with Vismuse"
+    }
+  ],
+  "editPrompt": "Make the title quieter and the lighting warmer",
+  "creatorTitle": "Made for every creative goal",
+  "creatorDescription": "Create campaign-ready visuals for videos, events, promotions, and music releases.",
+  "creatorItems": [
+    {
+      "title": "Album Cover Maker",
+      "description": "Create release-ready artwork for singles, albums, EPs, and playlists."
+    },
+    {
+      "title": "Flyer Maker",
+      "description": "Design polished flyers for events, promotions, businesses, and announcements."
+    },
+    {
+      "title": "Promo Video Maker",
+      "description": "Turn products, offers, and launches into short, social-ready promotional videos."
+    },
+    {
+      "title": "AI Video Generator",
+      "description": "Create original videos from a prompt or reference image with AI."
+    }
+  ],
+  "tryNow": "Try it now",
+  "templatesTitle": "Templates for Visuals",
+  "templatesDescription": "Explore styles, formats, and creative ideas for any image or video project.",
+  "browseTemplates": "Browse templates",
+  "faqTitle": "Frequently Asked Questions",
+  "faqs": [
+    {
+      "question": "Is Vismuse free to try?",
+      "answer": "Yes. Vismuse offers a limited free trial. If you create something you want to keep, you can unlock that eligible result with a one-time purchase, or choose a monthly or annual plan for ongoing use."
+    },
+    {
+      "question": "Will my image downloads include a watermark?",
+      "answer": "Free image downloads include a Vismuse watermark. An active subscription unlocks watermark-free HD downloads for all your images, while a one-time purchase unlocks the current image in HD without a watermark."
+    },
+    {
+      "question": "Can I use my creations commercially?",
+      "answer": "Commercial use is included with eligible paid plans and purchases, subject to our Terms. You are responsible for having the rights to your inputs and reviewing generated content before publishing or distributing it."
+    },
+    {
+      "question": "What image and video formats can I export?",
+      "answer": "Generated images can be exported as PNG or JPEG, while generated videos are downloaded as MP4. Available resolution options depend on the selected workflow and plan."
+    },
+    {
+      "question": "How do credits and one-time unlocks work?",
+      "answer": "Vismuse shows the credit cost before you create. Monthly and annual plans include recurring credits, while eligible one-time purchases let you unlock an individual result without subscribing."
+    },
+    {
+      "question": "Can I cancel my subscription anytime?",
+      "answer": "Yes. You can cancel anytime. Your paid access will remain active until the end of the current billing period, and you will not be charged for the next one."
+    }
+  ],
+  "footer": {
+    "tagline": "A conversational AI agent for creating and editing images and videos.",
+    "imageTools": "Image tools",
+    "videoTools": "Video tools",
+    "resources": "Resources",
+    "company": "Company",
+    "aiImageMaker": "AI Image Maker",
+    "aiFlyerMaker": "AI Flyer Maker",
+    "albumCoverMaker": "Album Cover Maker",
+    "promoVideoMaker": "Promo Video Maker",
+    "aiVideoGenerator": "AI Video Generator",
+    "templates": "Templates",
+    "pricing": "Pricing",
+    "docs": "Docs",
+    "about": "About Vismuse",
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "rights": "All rights reserved.",
+    "helpCenter": "Help Center",
+    "contactSupport": "Contact support",
+    "refundPolicy": "Refund Policy"
+  }
+}

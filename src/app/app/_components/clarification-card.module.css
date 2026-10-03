@@ -1,0 +1,16 @@
+.card { width: min(100%, 560px); padding: 20px; border: 1px solid #dfe1e7; border-radius: 16px; background: #fff; color: #24262c; }
+.card fieldset { border: 0; padding: 0; margin: 0; min-width: 0; }
+.card legend { padding: 0; margin-bottom: 16px; font-size: 13px; font-weight: 600; line-height: 1.2; overflow-wrap: anywhere; }
+.option { display: flex; align-items: flex-start; gap: 10px; padding: 10px; margin-bottom: 8px; border: 1px solid #dfe1e7; border-radius: 10px; font-size: 12px; line-height: 1.5; cursor: pointer; overflow-wrap: anywhere; }
+.option input { margin-top: 4px; flex-shrink: 0; accent-color: #0a0a08; }
+.customLabel { display: block; font-size: 12px; margin: 16px 0 8px; }
+.card textarea { display: block; width: 100%; box-sizing: border-box; padding: 10px 12px; border: 1px solid #bfc3cd; border-radius: 10px; resize: vertical; font: inherit; font-size: 13px; }
+.card button { margin: 0; padding: 10px 18px; border: 0; border-radius: 10px; background: #24262c; color: white; font: inherit; font-size: 13px; cursor: pointer; }
+.card button:disabled { opacity: .45; cursor: default; }
+.card textarea:focus { border-color: #0a0a08; outline: none; }
+.card button:focus-visible { outline: 2px solid #0a0a08; outline-offset: 3px; }
+.option:has(input:checked), .option:focus-within { border-color: #0a0a08; }
+.question { margin: 0; font-size: 15px; font-weight: 600; line-height: 1.6; overflow-wrap: anywhere; }
+.actions { display: flex; justify-content: flex-end; align-items: center; gap: 12px; margin-top: 12px; }
+.card .skip { padding: 10px 4px; background: transparent; color: #626671; }
+.card .skip:hover:not(:disabled) { color: #24262c; text-decoration: underline; }

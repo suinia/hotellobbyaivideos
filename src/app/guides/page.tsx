@@ -1,0 +1,8 @@
+import { publicPageMetadata } from "@/lib/page-metadata";
+import Link from "next/link";
+import { hotelGuides } from "@/components/hotel-lobby-content";
+import { hotelExamples } from "@/lib/hotel-library";
+import HotelSiteFooter from "@/components/hotel-site-footer";
+import styles from "@/components/hotel-site.module.css";
+export const metadata = publicPageMetadata("/guides", "Hotel Lobby AI Guides & Tutorials", "Learn how to make a Hotel Lobby AI video, photograph your pets for a duet, and write prompts that keep the cast and camera direction clear.");
+export default function Guides(){return <><main className={styles.page}><div className={styles.hero}><p className={styles.eyebrow}>NOTES FROM THE STUDIO</p><h1>Better photos.<br/>Better directions. Better takes.</h1><p>Practical guides for your first performance and the one after it. Start with the complete walkthrough, or go deeper on pets and prompts.</p></div><div className={styles.guideGrid}>{hotelGuides.map((guide,index)=><Link className={styles.guideCard} href={`/guides/${guide.slug}`} key={guide.slug}><img src={`/assets/hotel-lobby-ai/demos/rap-v1/${hotelExamples[index].slug}_poster.webp`} alt="" loading="lazy"/><div><span className={styles.meta}>{["GETTING STARTED","PET PERFORMANCES","CREATIVE DIRECTION"][index]} · {index===0?"5":"4"} MIN READ</span><h2>{guide.title}</h2><p>{guide.description}</p><span className={styles.textLink}>Read the guide →</span></div></Link>)}</div><section className={styles.banner}><div><h2>Prefer to learn by watching?</h2><p>Explore original studio examples and see the direction behind each one.</p></div><Link className={styles.button} href="/examples">Watch the examples →</Link></section></main><HotelSiteFooter/></>}

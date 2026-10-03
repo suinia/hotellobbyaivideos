@@ -1,0 +1,27 @@
+{
+  "defaultLocale": "en",
+  "languages": {
+    "en": { "label": "English", "htmlLang": "en-US", "openGraphLocale": "en_US" },
+    "de": { "label": "Deutsch", "htmlLang": "de-DE", "openGraphLocale": "de_DE" },
+    "fr": { "label": "Français", "htmlLang": "fr-FR", "openGraphLocale": "fr_FR" },
+    "es": { "label": "Español", "htmlLang": "es-ES", "openGraphLocale": "es_ES" },
+    "pt-br": { "label": "Português (Brasil)", "htmlLang": "pt-BR", "openGraphLocale": "pt_BR" },
+    "ja": { "label": "日本語", "htmlLang": "ja-JP", "openGraphLocale": "ja_JP" },
+    "zh-tw": { "label": "繁體中文", "htmlLang": "zh-Hant-TW", "openGraphLocale": "zh_TW" }
+  },
+  "geo": {
+    "countries": {
+      "de": ["AT", "DE", "LI"],
+      "fr": ["BF", "BJ", "BI", "CD", "CF", "CG", "CI", "DJ", "FR", "GA", "GF", "GN", "GP", "HT", "KM", "LU", "MC", "MG", "ML", "MQ", "NC", "NE", "PF", "RE", "RW", "SC", "SN", "TD", "TG", "VU", "YT"],
+      "es": ["ES"],
+      "pt-br": ["BR"],
+      "ja": ["JP"],
+      "zh-tw": ["TW"]
+    },
+    "regions": {
+      "CH": { "defaultLocale": "de", "locales": { "fr": ["FR", "GE", "JU", "NE", "VD", "VS"] } },
+      "BE": { "defaultLocale": "en", "locales": { "fr": ["BRU", "WAL", "WBR", "WHT", "WLG", "WLX", "WNA"] } },
+      "CA": { "defaultLocale": "en", "locales": { "fr": ["QC"] } }
+    }
+  }
+}

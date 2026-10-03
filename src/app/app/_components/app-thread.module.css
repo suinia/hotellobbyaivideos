@@ -1,0 +1,2228 @@
+
+
+.threadHeader {
+  position: relative;
+  z-index: 8;
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  width: 100%;
+  min-height: 60px;
+  margin: 0;
+  padding: 12px clamp(24px, 4vw, 80px);
+  background: var(--app-bg);
+  box-sizing: border-box;
+}
+
+.threadBackButton,
+.threadNewButton,
+.threadState button,
+.threadActions button,
+.threadActions a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.threadBackButton {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #ffffff;
+  color: rgb(10, 10, 8);
+  display: inline-grid;
+  place-items: center;
+  text-decoration: none;
+  box-shadow: 0 10px 28px rgba(38, 34, 88, 0.08);
+}
+
+.threadNewButton {
+  justify-self: end;
+  min-height: 38px;
+  border-radius: 999px;
+  background: #ffffff;
+  color: rgb(10, 10, 8);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  padding: 0 13px;
+  text-decoration: none;
+  font-size: 10px;
+  font-weight: 500;
+  white-space: nowrap;
+  box-shadow: 0 10px 28px rgba(38, 34, 88, 0.08);
+}
+
+.threadHeaderBackButton {
+  justify-self: start;
+}
+
+.threadBody {
+  min-height: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-color: rgba(10, 10, 8, 0.14) transparent;
+  scrollbar-width: thin;
+  padding: 10px 0 190px;
+}
+
+.threadBody::-webkit-scrollbar {
+  width: 8px;
+}
+
+.threadBody::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.threadBody::-webkit-scrollbar-thumb {
+  border: 2px solid transparent;
+  border-radius: 999px;
+  background: rgba(10, 10, 8, 0.14);
+  background-clip: content-box;
+}
+
+.threadBody::-webkit-scrollbar-thumb:hover {
+  background: rgba(10, 10, 8, 0.22);
+  background-clip: content-box;
+}
+
+.threadMessages,
+.threadTurn {
+  display: grid;
+}
+
+.threadMessages {
+  width: min(740px, 100%);
+  margin: 0 auto;
+  box-sizing: border-box;
+  gap: 24px;
+}
+
+.threadTurn {
+  gap: 10px;
+}
+
+.userBubble,
+.assistantBubble,
+.assistantCard {
+  box-sizing: border-box;
+  min-width: 0;
+  max-width: 100%;
+}
+
+.userBubble,
+.assistantBubble {
+  --thread-message-font-size: 14px;
+  --thread-message-line-height: 1.42;
+  width: fit-content;
+  min-width: 0;
+  color: rgb(10, 10, 8);
+  padding: 10px 14px;
+}
+
+.userBubble {
+  justify-self: end;
+  max-width: 76%;
+  border-radius: 19px 19px 7px 19px;
+  background: rgb(229, 229, 231);
+}
+
+.assistantBubble {
+  justify-self: start;
+  max-width: 76%;
+  border-radius: 19px 19px 19px 7px;
+  background: rgb(242, 242, 244);
+}
+
+.assistantCard {
+  --thread-message-font-size: 14px;
+  --thread-message-line-height: 1.2;
+  display: grid;
+  align-items: start;
+  justify-self: start;
+  width: fit-content;
+  max-width: min(76%, 560px);
+  gap: 6px;
+  color: #0a0a08;
+  padding: 0;
+  font-family: var(--font-poppins), ui-sans-serif, system-ui, sans-serif;
+  font-size: var(--thread-message-font-size);
+  font-weight: 400;
+  line-height: var(--thread-message-line-height);
+  letter-spacing: 0;
+}
+
+.assistantCard.assistantBubble {
+  width: fit-content;
+  max-width: 76%;
+  padding: 10px 14px;
+}
+
+.assistantCard > .assistantBubble {
+  max-width: 100%;
+}
+
+.assistantCardError {
+  color: #9b5348;
+}
+
+.threadStreamingMarkdown {
+  min-width: 0;
+  width: 100%;
+}
+
+.assistantCard .threadVideoWaitHint {
+  max-width: 420px;
+  margin: 0 2px 2px;
+  color: rgb(113, 113, 122);
+  font-size: 11px;
+  line-height: 16px;
+}
+
+.threadVideoWaitHint a {
+  font-weight: 650;
+}
+
+.threadErrorMarkdown p {
+  margin: 0;
+}
+
+.threadErrorMarkdown p + p,
+.threadErrorMarkdown ul,
+.threadErrorMarkdown ol {
+  margin: 8px 0 0;
+}
+
+.threadErrorMarkdown ul,
+.threadErrorMarkdown ol {
+  padding-left: 20px;
+}
+
+.threadErrorMarkdown li + li {
+  margin-top: 3px;
+}
+
+.assistantErrorBubble {
+  width: fit-content;
+  max-width: 100%;
+  border-radius: 22px 22px 22px 6px;
+  background: rgb(255, 235, 235);
+  color: #cc0505;
+  padding: 12px 16px;
+}
+
+.userBubble p,
+.assistantCard p {
+  margin: 0;
+  font-weight: 400;
+  line-height: var(--thread-message-line-height);
+  letter-spacing: 0;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.userBubble p {
+  font-size: var(--thread-message-font-size);
+  white-space: pre-wrap;
+}
+
+.assistantCard p {
+  white-space: pre-line;
+}
+
+.userSourceAssets {
+  max-width: 85%;
+  justify-self: end;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: -6px;
+}
+
+.userSourceAssetPreviewButton {
+  width: 84px;
+  height: 84px;
+  flex: 0 0 84px;
+  display: block;
+  border: 0;
+  border-radius: 16px;
+  padding: 0;
+  background: rgb(216, 216, 220);
+  cursor: zoom-in;
+  box-shadow: 0 0 0 1px rgba(10, 10, 8, 0.08);
+  transition: transform 160ms ease, box-shadow 160ms ease;
+}
+
+.userSourceAssetPreviewButton:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 0 0 1px rgba(10, 10, 8, 0.14), 0 8px 20px rgba(10, 10, 8, 0.1);
+}
+
+.userSourceAssetPreviewButton:focus-visible {
+  outline: 2px solid rgb(31, 17, 237);
+  outline-offset: 3px;
+}
+
+.userSourceAssetPreviewButton:active {
+  transform: scale(0.98);
+}
+
+.userSourceAssetPreviewButton img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 16px;
+  object-fit: cover;
+}
+
+.assistantCard p {
+  font-size: var(--thread-message-font-size);
+}
+
+.assistantCard p,
+.assistantCard li,
+.assistantCard blockquote,
+.assistantCard pre,
+.assistantCard code {
+  font-family: inherit;
+  font-size: var(--thread-message-font-size);
+  font-weight: 400;
+  line-height: var(--thread-message-line-height);
+  letter-spacing: 0;
+}
+
+.assistantCard li {
+  font-size: var(--thread-message-font-size);
+}
+
+.assistantCard p + p {
+  margin-top: 10px;
+}
+
+.assistantCard ul,
+.assistantCard ol {
+  margin: 8px 0;
+  padding-left: 1.625em;
+}
+
+.assistantCard ul {
+  list-style: disc;
+}
+
+.assistantCard ol {
+  list-style: decimal;
+}
+
+.assistantCard ul > li,
+.assistantCard ol > li {
+  margin: 0;
+  padding-left: 0.375em;
+}
+
+.assistantCard ul > li + li,
+.assistantCard ol > li + li {
+  margin-top: 0.25rem;
+}
+
+.assistantCard ul > li::marker,
+.assistantCard ol > li::marker {
+  color: currentColor;
+  font-size: 1em;
+}
+
+.assistantCard strong {
+  color: rgb(10, 10, 8);
+  font-weight: 600;
+}
+
+.assistantCard a {
+  color: #6954d8;
+  font-weight: 650;
+  text-decoration: underline;
+  text-decoration-color: rgba(105, 84, 216, 0.44);
+  text-underline-offset: 3px;
+}
+
+.assistantCard a:hover {
+  color: #4f3cc4;
+}
+
+.threadConversationCta {
+  margin-top: 10px;
+}
+
+.threadConversationCta a,
+.threadConversationCta button {
+  min-height: 34px;
+  border: 0;
+  border-radius: 999px;
+  background: rgb(10, 10, 8);
+  color: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  padding: 0 13px;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.threadConversationCta a:hover,
+.threadConversationCta button:hover {
+  color: #ffffff;
+  background: rgb(43, 43, 39);
+}
+
+.threadMockThinking {
+  min-height: 28px;
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  color: rgb(97, 97, 103);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.threadMockThinking svg {
+  color: rgb(91, 91, 98);
+  flex: 0 0 auto;
+  opacity: 1;
+}
+
+.threadThinkingBot {
+  animation: threadThinkingBotFloat 1.7s ease-in-out infinite;
+  transform-origin: center bottom;
+}
+
+.threadMockThinkingText {
+  color: transparent;
+  background:
+    linear-gradient(
+      90deg,
+      rgb(90, 90, 96) 0%,
+      rgb(116, 116, 123) 36%,
+      rgb(72, 72, 78) 50%,
+      rgb(116, 116, 123) 64%,
+      rgb(90, 90, 96) 100%
+    );
+  background-size: 240% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: threadThinkingShimmer 2.1s ease-in-out infinite;
+}
+
+.threadMockThinkingDots {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  margin-left: -4px;
+}
+
+.threadMockThinkingDots i {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: rgb(104, 104, 111);
+  display: block;
+  animation: threadThinkingDot 1.05s ease-in-out infinite;
+}
+
+.threadMockThinkingDots i:nth-child(2) {
+  animation-delay: 0.14s;
+}
+
+.threadMockThinkingDots i:nth-child(3) {
+  animation-delay: 0.28s;
+}
+
+.threadExecutingPreview {
+  display: grid;
+  gap: 14px;
+  width: 320px;
+  min-width: 320px;
+  max-width: 320px;
+}
+
+.threadExecutingHeader {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  gap: 10px;
+}
+
+.threadExecutingHeader strong {
+  color: rgb(39, 39, 42);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0;
+}
+
+.threadExecutingHeaderDivider {
+  width: 4px;
+  height: 4px;
+  flex: 0 0 auto;
+  border-radius: 999px;
+  background: rgb(113, 113, 122);
+}
+
+.threadExecutingHeader span {
+  color: rgb(161, 161, 170);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  white-space: nowrap;
+}
+
+.threadExecutingProgress {
+  position: absolute;
+  z-index: 2;
+  right: 20px;
+  bottom: 20px;
+  left: 20px;
+  display: grid;
+  gap: 10px;
+}
+
+.threadExecutingProgressMeta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  color: rgb(113, 113, 122);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.threadExecutingProgressMeta span {
+  display: inline-flex;
+  align-items: center;
+  min-width: 0;
+  gap: 10px;
+}
+
+.threadExecutingProgressMeta span:last-child {
+  color: rgb(39, 39, 42);
+  font-variant-numeric: tabular-nums;
+}
+
+.threadExecutingProgressMeta i,
+.threadExecutingStatusPill i,
+.threadExecutingHeaderSpinner {
+  width: 14px;
+  height: 14px;
+  flex: 0 0 auto;
+  border-radius: 999px;
+  border: 2px dotted rgb(82, 82, 91);
+  animation: threadExecutingSpinner 1.2s linear infinite;
+}
+
+.threadExecutingProgressTrack {
+  position: relative;
+  height: 4px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: rgba(212, 212, 216, 0.74);
+}
+
+.threadExecutingProgressTrack span {
+  position: absolute;
+  inset: 0 auto 0 0;
+  min-width: 20px;
+  border-radius: inherit;
+  background: rgb(24, 24, 27);
+  transition: width 420ms ease;
+}
+
+.threadExecutingProgressTrack span::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.22), rgba(255, 255, 255, 0));
+  animation: threadExecutingProgressSheen 1.6s ease-in-out infinite;
+}
+
+.threadExecutingSkeleton {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  height: auto;
+  min-height: 0;
+  max-height: 320px;
+  max-width: 100%;
+  border: 1px solid rgba(161, 161, 170, 0.58);
+  border-radius: 18px;
+  overflow: visible;
+  background: rgba(250, 250, 250, 0.9);
+  box-shadow: 0 18px 44px rgba(39, 39, 42, 0.04);
+  isolation: isolate;
+}
+
+.threadExecutingCanvas {
+  position: absolute;
+  inset: 1px;
+  border-radius: 17px;
+  overflow: hidden;
+  background:
+    radial-gradient(ellipse at 19% 22%, rgba(255, 255, 255, 0.95) 0 12%, rgba(255, 255, 255, 0) 33%),
+    radial-gradient(ellipse at 74% 24%, rgba(255, 255, 255, 0.72) 0 9%, rgba(255, 255, 255, 0) 30%),
+    linear-gradient(135deg, rgb(247, 247, 248), rgb(235, 235, 238) 58%, rgb(242, 242, 244));
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 255, 255, 0.54),
+    inset 0 -38px 80px rgba(255, 255, 255, 0.38);
+  isolation: isolate;
+}
+
+.threadExecutingCanvas::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at 70% 34%, rgba(63, 63, 70, 0.24) 0 11%, rgba(63, 63, 70, 0.06) 24%, rgba(63, 63, 70, 0) 42%),
+    radial-gradient(ellipse at 41% 55%, rgba(82, 82, 91, 0.21) 0 12%, rgba(82, 82, 91, 0.07) 25%, rgba(82, 82, 91, 0) 42%),
+    radial-gradient(ellipse at 28% 78%, rgba(113, 113, 122, 0.16) 0 10%, rgba(113, 113, 122, 0.05) 24%, rgba(113, 113, 122, 0) 40%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.34), rgba(255, 255, 255, 0) 42%);
+  filter: blur(9px);
+  opacity: 0.88;
+  transform: scale(1.03);
+  animation: threadExecutingAtmosphereDrift 7.5s ease-in-out infinite alternate;
+}
+
+.threadExecutingCanvas::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.32), rgba(255, 255, 255, 0) 34%, rgba(255, 255, 255, 0.34) 100%),
+    radial-gradient(ellipse at 50% 50%, rgba(255, 255, 255, 0) 48%, rgba(255, 255, 255, 0.42) 100%);
+  box-shadow:
+    inset 0 0 72px rgba(255, 255, 255, 0.48);
+  pointer-events: none;
+}
+
+.threadExecutingAtmosphere,
+.threadExecutingStructure {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.threadExecutingAtmosphere {
+  z-index: 0;
+  background:
+    radial-gradient(ellipse at 59% 45%, rgba(24, 24, 27, 0.1) 0 9%, rgba(24, 24, 27, 0) 27%),
+    radial-gradient(ellipse at 82% 18%, rgba(113, 113, 122, 0.18) 0 16%, rgba(113, 113, 122, 0) 38%),
+    radial-gradient(ellipse at 18% 86%, rgba(82, 82, 91, 0.12) 0 15%, rgba(82, 82, 91, 0) 38%);
+  filter: blur(14px);
+  opacity: 0.72;
+  animation: threadExecutingExposure 4.8s ease-in-out infinite alternate;
+}
+
+.threadExecutingStructure {
+  z-index: 0;
+  background:
+    linear-gradient(90deg, rgba(82, 82, 91, 0.045) 0 18%, rgba(255, 255, 255, 0) 18% 34%, rgba(82, 82, 91, 0.035) 34% 43%, rgba(255, 255, 255, 0) 43% 100%),
+    linear-gradient(0deg, rgba(82, 82, 91, 0.04) 0 13%, rgba(255, 255, 255, 0) 13% 29%, rgba(82, 82, 91, 0.035) 29% 38%, rgba(255, 255, 255, 0) 38% 100%);
+  background-size: 260px 240px, 280px 260px;
+  background-position: 18% 48%, 54% 30%;
+  opacity: 0.54;
+  mix-blend-mode: multiply;
+  animation: threadExecutingStructureReveal 6.2s ease-in-out infinite alternate;
+}
+
+.threadExecutingStatusPill {
+  position: absolute;
+  z-index: 2;
+  left: 10px;
+  top: 10px;
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  min-height: 34px;
+  padding: 0 14px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.78);
+  color: rgb(63, 63, 70);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  box-shadow: 0 6px 12px rgba(39, 39, 42, 0.08);
+  backdrop-filter: blur(10px);
+}
+
+.threadExecutingCountdown {
+  color: rgb(39, 39, 42);
+  font-size: 12px;
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.01em;
+  white-space: nowrap;
+}
+
+.threadExecutingCountdownAlmostThere {
+  color: rgb(82, 82, 91);
+  font-size: 11px;
+  letter-spacing: 0;
+}
+
+.threadExecutingScreenReaderStatus {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.threadExecutingEta {
+  position: absolute;
+  z-index: 2;
+  top: 10px;
+  left: 10px;
+  min-height: 34px;
+  display: inline-flex;
+  align-items: center;
+  padding: 0 12px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.7);
+  color: rgb(113, 113, 122);
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 16px;
+  box-shadow: 0 6px 12px rgba(39, 39, 42, 0.06);
+  backdrop-filter: blur(10px);
+}
+
+.threadExecutingScan {
+  position: absolute;
+  z-index: 1;
+  top: -18%;
+  left: -6%;
+  width: 18px;
+  height: 136%;
+  border-radius: 999px;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.5) 30%,
+      rgba(255, 255, 255, 0.94) 50%,
+      rgba(255, 255, 255, 0.5) 70%,
+      rgba(255, 255, 255, 0) 100%
+    );
+  filter: blur(2.5px);
+  opacity: 0;
+  transform: rotate(15deg);
+  transform-origin: 50% 50%;
+  animation: threadExecutingScan 3.6s cubic-bezier(0.45, 0, 0.2, 1) infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .threadExecutingCanvas::before,
+  .threadExecutingAtmosphere,
+  .threadExecutingStructure,
+  .threadExecutingScan,
+  .threadExecutingProgressTrack span::after,
+  .threadExecutingProgressMeta i,
+  .threadExecutingStatusPill i,
+  .threadExecutingHeaderSpinner {
+    animation: none;
+  }
+}
+
+.threadMediaGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(168px, min(100%, 560px)));
+  gap: 10px;
+  margin-top: 2px;
+  align-items: start;
+  justify-items: start;
+  max-width: 100%;
+}
+
+.threadMediaCard {
+  min-width: 0;
+  width: fit-content;
+  max-width: 560px;
+  margin: 0;
+  background: transparent;
+  overflow: hidden;
+}
+
+.threadMediaImageButton {
+  width: fit-content;
+  max-width: 100%;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  display: block;
+  background: transparent;
+  color: inherit;
+  text-align: left;
+  cursor: zoom-in;
+}
+
+.threadMediaImageFrame {
+  display: grid;
+  place-items: start;
+  width: fit-content;
+  max-width: 100%;
+  min-height: 275px;
+}
+
+.threadMediaImageFrame img,
+.threadMediaImageSkeleton {
+  grid-area: 1 / 1;
+}
+
+.threadMediaImageFrame img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 300px;
+  object-fit: contain;
+  opacity: 0;
+  transition: opacity 0.18s ease;
+}
+
+.threadMediaImageFrameOptimized {
+  /* Keep an intrinsic loading width inside the fit-content card. A percentage-
+     based width here creates a circular size dependency and can collapse the
+     skeleton to 0px before the image has natural dimensions. */
+  width: 460px;
+  min-height: 0;
+}
+
+.threadMediaImageFrameOptimized img {
+  width: 100%;
+  height: auto;
+  max-height: none;
+}
+
+.threadMediaImageFrameOptimized .threadMediaImageSkeleton {
+  width: 100%;
+  height: auto;
+  aspect-ratio: var(--thread-media-preview-aspect-ratio, 1 / 1);
+}
+
+.threadMediaImageFrameLoaded {
+  min-height: 0;
+}
+
+.threadMediaImageFrameLoaded img {
+  opacity: 1;
+}
+
+.threadMediaImageSkeleton {
+  position: relative;
+  width: 220px;
+  height: 275px;
+  max-width: 100%;
+  max-height: 300px;
+  border-radius: 5px;
+  overflow: hidden;
+  background: rgb(232, 232, 232);
+}
+
+.threadMediaImageSkeleton::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      100deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.18) 34%,
+      rgba(255, 255, 255, 0.58) 50%,
+      rgba(255, 255, 255, 0.18) 66%,
+      rgba(255, 255, 255, 0) 100%
+    );
+  transform: translateX(-110%);
+  animation: threadExecutingShimmer 1.75s ease-in-out infinite;
+}
+
+.threadMediaCard img,
+.threadMediaCard video {
+  display: block;
+  width: auto;
+  max-width: 560px;
+  max-height: 320px;
+  object-fit: contain;
+  background: transparent;
+}
+
+.threadMediaCard figcaption {
+  padding: 9px 10px 10px;
+  color: rgb(82, 82, 91);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.appImagePreviewOverlay {
+  position: fixed;
+  inset: 0;
+  z-index: 180;
+  display: flex;
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0.88);
+  color: #ffffff;
+}
+
+.appImagePreviewOverlaySubscription {
+  z-index: 300;
+}
+
+.appImagePreviewToolbar {
+  position: absolute;
+  top: 16px;
+  right: 18px;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  color: rgba(255, 255, 255, 0.76);
+  font-size: 14px;
+}
+
+.appImagePreviewToolbar button {
+  width: 36px;
+  height: 36px;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: inherit;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  transition: background-color 0.16s ease, color 0.16s ease, opacity 0.16s ease;
+}
+
+.appImagePreviewToolbar button:hover:not(:disabled) {
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+}
+
+.appImagePreviewToolbar button:disabled {
+  cursor: wait;
+  opacity: 0.6;
+}
+
+.appImagePreviewToolbar span {
+  min-width: 48px;
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+}
+
+.appImagePreviewZoomReset {
+  min-width: 48px;
+  width: auto !important;
+  padding: 0 4px;
+  border-radius: 8px !important;
+  font: inherit;
+  font-variant-numeric: tabular-nums;
+}
+
+.appImagePreviewStage {
+  min-height: 0;
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 0;
+}
+
+.appImagePreviewZoomWrapper {
+  width: 100%;
+  height: 100%;
+  cursor: grab;
+  touch-action: none;
+}
+
+.appImagePreviewZoomWrapper:active {
+  cursor: grabbing;
+}
+
+.appImagePreviewZoomContent {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.appImagePreviewSizedFrame {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100dvh;
+  user-select: none;
+}
+
+.appImagePreviewPlaceholder {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  max-width: 100vw;
+  max-height: 100dvh;
+  object-fit: contain;
+  filter: blur(3px);
+  opacity: 0.86;
+  pointer-events: none;
+}
+
+.appImagePreviewMainImage,
+.appImagePreviewMainImageLoading {
+  transition: opacity 140ms ease;
+}
+
+.appImagePreviewMainImageLoading {
+  opacity: 0;
+}
+
+.appImagePreviewImageLoadingIndicator {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.54);
+  color: #ffffff;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+}
+
+.appImagePreviewImageError {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  max-width: min(320px, calc(100vw - 40px));
+  padding: 10px 14px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.64);
+  color: #ffffff;
+  font-size: 14px;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
+.appImagePreviewVisuallyHidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.appImagePreviewStage img,
+.appImagePreviewSizedFrame img {
+  max-width: 100vw;
+  max-height: 100dvh;
+  object-fit: contain;
+  transform-origin: center;
+  user-select: none;
+}
+
+.appImagePreviewFillFrame {
+  position: relative;
+  display: block;
+  width: 100vw;
+  height: 100dvh;
+  max-width: 100vw;
+  max-height: 100dvh;
+  transform-origin: center;
+  user-select: none;
+}
+
+.appImagePreviewFillFrame img {
+  object-fit: contain;
+}
+
+.appImagePreviewOverlayWithUpgrade .appImagePreviewStage {
+  padding-bottom: 0;
+}
+
+.appImagePreviewOverlayWithUpgrade .appImagePreviewStage img {
+  max-height: 100dvh;
+}
+
+.appImagePreviewOverlayWithUpgrade .appImagePreviewFillFrame {
+  height: 100dvh;
+  max-height: 100dvh;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .appImagePreviewMainImage,
+  .appImagePreviewMainImageLoading {
+    transition: none;
+  }
+
+  .appImagePreviewActionSpinner {
+    animation: none;
+  }
+}
+
+.appImagePreviewUpgradeCta {
+  position: absolute;
+  left: 50%;
+  bottom: 22px;
+  width: min(680px, calc(100vw - 32px));
+  transform: translateX(-50%);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 18px;
+  background: rgba(10, 10, 12, 0.88);
+  color: #ffffff;
+  box-shadow: 0 18px 54px rgba(0, 0, 0, 0.38);
+  backdrop-filter: blur(14px);
+  padding: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.appImagePreviewUpgradeCopy {
+  min-width: 0;
+  display: grid;
+  gap: 4px;
+}
+
+.appImagePreviewUpgradeCopy strong {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 1.25;
+  font-weight: 760;
+}
+
+.appImagePreviewUpgradeCopy strong svg {
+  color: #b982ff;
+}
+
+.appImagePreviewUpgradeCopy span {
+  color: rgba(255, 255, 255, 0.62);
+  font-size: 12px;
+  line-height: 1.35;
+}
+
+.appImagePreviewUpgradeCta button {
+  flex: 0 0 auto;
+  min-height: 38px;
+  border: 0;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #7c3cff 0%, #a34fff 48%, #d142c8 100%);
+  color: #ffffff;
+  padding: 0 18px;
+  font-size: 13px;
+  font-weight: 760;
+  cursor: pointer;
+  box-shadow:
+    0 12px 28px rgba(124, 60, 255, 0.28),
+    inset 0 1px 0 rgba(255, 255, 255, 0.24);
+}
+
+.appImagePreviewActionBar {
+  position: absolute;
+  left: 50%;
+  bottom: 22px;
+  width: min(520px, calc(100vw - 32px));
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 16px;
+  background: rgba(10, 10, 12, 0.88);
+  box-shadow: 0 18px 54px rgba(0, 0, 0, 0.38);
+  backdrop-filter: blur(14px);
+}
+
+.appImagePreviewActionBar button {
+  min-height: 40px;
+  border: 0;
+  border-radius: 999px;
+  padding: 0 17px;
+  color: #ffffff;
+  font: inherit;
+  font-size: 13px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.appImagePreviewActionBar button:disabled {
+  cursor: not-allowed;
+  opacity: 0.48;
+}
+
+.appImagePreviewPrimaryAction {
+  background: linear-gradient(135deg, #7c3cff 0%, #a34fff 48%, #d142c8 100%);
+  box-shadow:
+    0 12px 28px rgba(124, 60, 255, 0.28),
+    inset 0 1px 0 rgba(255, 255, 255, 0.24);
+}
+
+.appImagePreviewSecondaryAction {
+  background: rgba(255, 255, 255, 0.13);
+}
+
+.threadWarnings {
+  display: grid;
+  gap: 6px;
+  margin-top: 12px;
+}
+
+.threadWarnings span {
+  border-radius: 12px;
+  background: rgba(245, 158, 11, 0.1);
+  color: rgb(146, 64, 14);
+  padding: 8px 10px;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.threadResultCta {
+  order: 30;
+  justify-self: start;
+  margin-top: 4px;
+  width: min(100%, 520px);
+  border: 1px solid rgba(10, 10, 8, 0.08);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.78);
+  display: grid;
+  gap: 8px;
+  padding: 12px;
+  box-shadow: 0 18px 42px rgba(34, 34, 44, 0.07);
+  backdrop-filter: blur(12px);
+}
+
+.threadConversationResultCta {
+  width: 520px;
+  max-width: 100%;
+}
+
+.threadCreditError {
+  display: grid;
+  gap: 14px;
+  width: min(100%, 560px);
+}
+
+.threadCreditError > p {
+  color: rgb(39, 39, 42);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+.threadCreditErrorCta {
+  order: initial;
+  width: 100%;
+  margin-top: 0;
+}
+
+.threadCreditErrorCta .threadResultCtaCopy strong {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.threadCreditErrorCta .threadResultCtaCopy p {
+  color: rgb(82, 82, 91);
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.threadCreditErrorCta .threadResultCtaActions button {
+  min-width: min(100%, 220px);
+}
+
+.threadResultCtaCopy {
+  display: grid;
+  gap: 5px;
+}
+
+.threadResultCtaCopy span {
+  width: max-content;
+  border-radius: 999px;
+  background: rgb(244, 244, 247);
+  color: rgb(31, 17, 237);
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 4px 8px;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 14px;
+}
+
+.threadResultCtaCopy strong {
+  color: rgb(10, 10, 8);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+}
+
+.threadResultCtaCopy p {
+  color: rgb(82, 82, 78);
+  font-size: 12px;
+  line-height: 17px;
+}
+
+.threadResultCtaActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.threadResultCtaActions button,
+.threadResultCtaActions a {
+  min-height: 34px;
+  border: 0;
+  border-radius: 999px;
+  background: rgb(10, 10, 8);
+  color: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 13px;
+  text-decoration: none;
+  font: inherit;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.threadResultCtaActions button:disabled {
+  cursor: progress;
+  opacity: 0.68;
+}
+
+.threadActions {
+  order: 40;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.threadDownloadActions {
+  order: 20;
+  margin-top: 0;
+}
+
+.threadExportMenuWrap {
+  position: relative;
+}
+
+.threadExportChevronOpen {
+  transform: rotate(180deg);
+}
+
+.threadExportMenu {
+  position: absolute;
+  z-index: 50;
+  top: calc(100% + 6px);
+  right: 0;
+  width: 224px;
+  border: 1px solid rgba(25, 25, 31, 0.1);
+  border-radius: 13px;
+  background: #ffffff;
+  box-shadow: 0 14px 35px rgba(25, 25, 31, 0.16);
+  display: grid;
+  gap: 2px;
+  padding: 6px;
+}
+
+.threadActions .threadExportMenu button,
+.threadExportMenu.threadAnimateMenu button {
+  width: 100%;
+  min-height: 42px;
+  border-radius: 9px;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px 8px;
+  text-align: left;
+}
+
+.threadActions .threadExportMenu button:hover,
+.threadActions .threadExportMenu button:focus-visible,
+.threadExportMenu.threadAnimateMenu button:hover,
+.threadExportMenu.threadAnimateMenu button:focus-visible {
+  background: rgb(244, 244, 247);
+}
+
+.threadExportMenuLabel {
+  color: rgb(61, 61, 72);
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 18px;
+}
+
+.threadExportProBadge {
+  display: inline-flex;
+  flex-shrink: 0;
+  align-items: center;
+  padding: 2px 6px;
+  border-radius: 5px;
+  background: #dbeafe;
+  color: #1d4ed8;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 14px;
+}
+
+.threadExportMenu .threadExportProBadge {
+  margin-left: auto;
+}
+
+.threadExportMenuIcon {
+  width: 34px;
+  height: 32px;
+  flex: 0 0 34px;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.threadExportMenuIconJpg {
+  background: rgb(235, 238, 255);
+  color: rgb(79, 70, 229);
+}
+
+.threadExportMenuIconPdf {
+  background: rgb(255, 236, 236);
+  color: rgb(220, 38, 38);
+}
+
+.threadAnimateMenu {
+  position: fixed;
+  inset: auto;
+  width: 300px;
+  max-width: calc(100vw - 24px);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+
+.threadAnimateImagePicker {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 10px;
+  padding: 7px 8px 8px;
+  border-bottom: 1px solid rgb(235, 235, 239);
+  color: rgb(91, 91, 102);
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 15px;
+}
+
+.threadAnimateImagePicker select {
+  min-width: 92px;
+  min-height: 30px;
+  border: 1px solid rgb(218, 218, 224);
+  border-radius: 8px;
+  background: rgb(250, 250, 251);
+  color: rgb(35, 35, 43);
+  padding: 0 8px;
+  font: inherit;
+  font-size: 11px;
+  cursor: pointer;
+  outline: none;
+}
+
+.threadAnimateImagePicker select:focus-visible {
+  border-color: rgb(124, 92, 246);
+  box-shadow: 0 0 0 3px rgba(124, 92, 246, 0.12);
+}
+
+.threadAnimateMenuCopy {
+  min-width: 0;
+  display: grid;
+  gap: 1px;
+}
+
+.threadAnimateMenuCopy strong {
+  color: rgb(35, 35, 43);
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+.threadAnimateMenuCopy small {
+  color: rgb(105, 105, 116);
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 15px;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
+.threadAnimateMenuIconSpotify {
+  background: rgb(232, 250, 239);
+  color: rgb(22, 163, 74);
+}
+
+.threadAnimateMenuIconVideo {
+  background: rgb(241, 236, 255);
+  color: rgb(124, 58, 237);
+}
+
+.albumCoverAnimateDialogOverlay {
+  position: fixed;
+  inset: 0;
+  z-index: 180;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background: rgba(18, 18, 24, 0.56);
+  backdrop-filter: blur(8px);
+}
+
+.albumCoverAnimateDialog {
+  position: relative;
+  width: min(460px, 100%);
+  max-height: min(760px, calc(100vh - 48px));
+  max-height: min(760px, calc(100dvh - 48px));
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scroll-padding-block: 18px;
+  border: 1px solid rgba(25, 25, 31, 0.08);
+  border-radius: 22px;
+  background: #ffffff;
+  box-shadow: 0 28px 90px rgba(20, 20, 28, 0.28);
+  display: grid;
+  gap: 14px;
+  padding: 22px;
+}
+
+.albumCoverAnimateDialogClose {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 34px;
+  height: 34px;
+  border: 0;
+  border-radius: 999px;
+  background: rgb(244, 244, 247);
+  color: rgb(62, 62, 72);
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+
+.albumCoverAnimateDialogClose:disabled {
+  cursor: default;
+  opacity: 0.6;
+}
+
+.albumCoverAnimateDialogHeader {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding-right: 38px;
+}
+
+.albumCoverAnimateDialogHeader h2,
+.albumCoverAnimateDialogHeader p {
+  margin: 0;
+}
+
+.albumCoverAnimateDialogHeader h2 {
+  color: rgb(20, 20, 25);
+  font-size: 19px;
+  font-weight: 750;
+  line-height: 25px;
+}
+
+.albumCoverAnimateDialogHeader p {
+  color: rgb(101, 101, 112);
+  font-size: 12px;
+  line-height: 17px;
+}
+
+.albumCoverAnimateDialogIcon {
+  width: 38px;
+  height: 38px;
+  flex: 0 0 38px;
+  border-radius: 11px;
+  background: linear-gradient(145deg, rgb(237, 232, 255), rgb(228, 244, 255));
+  color: rgb(109, 40, 217);
+  display: grid;
+  place-items: center;
+}
+
+.albumCoverAnimatePreview {
+  width: min(280px, 100%);
+  aspect-ratio: 1;
+  justify-self: center;
+  overflow: hidden;
+  border-radius: 16px;
+  background: rgb(238, 238, 241);
+  box-shadow: 0 14px 38px rgba(30, 30, 40, 0.13);
+}
+
+.albumCoverAnimatePreview img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
+}
+
+.albumCoverAnimatePromptLabel {
+  color: rgb(53, 53, 62);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 17px;
+}
+
+.albumCoverAnimateDialog textarea {
+  width: 100%;
+  min-height: 108px;
+  resize: vertical;
+  border: 1px solid rgb(218, 218, 224);
+  border-radius: 13px;
+  background: rgb(250, 250, 251);
+  color: rgb(25, 25, 31);
+  padding: 12px 13px;
+  font: inherit;
+  font-size: 13px;
+  line-height: 19px;
+  outline: none;
+}
+
+.albumCoverAnimateDialog textarea:focus {
+  border-color: rgb(124, 92, 246);
+  box-shadow: 0 0 0 3px rgba(124, 92, 246, 0.12);
+}
+
+.albumCoverAnimateDialog textarea::placeholder {
+  color: rgb(145, 145, 154);
+}
+
+.albumCoverAnimateDurationSelectWrap {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.albumCoverAnimateDurationSelect {
+  width: 100%;
+  min-height: 44px;
+  appearance: none;
+  border: 1px solid rgb(218, 218, 224);
+  border-radius: 13px;
+  background: rgb(250, 250, 251);
+  color: rgb(25, 25, 31);
+  padding: 0 42px 0 13px;
+  font: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  outline: none;
+  cursor: pointer;
+}
+
+.albumCoverAnimateDurationSelect:focus {
+  border-color: rgb(124, 92, 246);
+  box-shadow: 0 0 0 3px rgba(124, 92, 246, 0.12);
+}
+
+.albumCoverAnimateDurationSelect:disabled {
+  cursor: default;
+  opacity: 0.62;
+}
+
+.albumCoverAnimateDurationSelectWrap > svg {
+  position: absolute;
+  top: 50%;
+  right: 14px;
+  color: rgb(91, 91, 102);
+  pointer-events: none;
+  transform: translateY(-50%);
+}
+
+.albumCoverAnimateDialogError {
+  margin: -4px 0 0;
+  color: rgb(185, 28, 28);
+  font-size: 12px;
+  line-height: 17px;
+}
+
+.albumCoverAnimateDialogActions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.albumCoverAnimateDialogActions button {
+  min-height: 38px;
+  border: 0;
+  border-radius: 999px;
+  background: rgb(242, 242, 245);
+  color: rgb(40, 40, 48);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  padding: 0 16px;
+  font: inherit;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.albumCoverAnimateDialogActions button[type="submit"] {
+  background: rgb(25, 25, 31);
+  color: #ffffff;
+}
+
+.albumCoverAnimateDialogActions button:disabled {
+  cursor: default;
+  opacity: 0.55;
+}
+
+.threadActions button,
+.threadActions a,
+.threadAnimateMenu button {
+  min-height: 34px;
+  border: 0;
+  border-radius: 999px;
+  background: rgb(244, 244, 247);
+  color: rgb(25, 25, 31);
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 0 12px;
+  text-decoration: none;
+  font: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.threadActions button:disabled {
+  cursor: progress;
+  opacity: 0.66;
+}
+
+.threadActionError {
+  order: 21;
+  margin: 0;
+  color: rgb(185, 28, 28);
+  font-size: 12px;
+  line-height: 17px;
+}
+
+.threadActionSpinner,
+.appImagePreviewActionSpinner {
+  animation: appActionSpin 0.85s linear infinite;
+}
+
+.threadState {
+  width: min(740px, 100%);
+  margin: 0 auto;
+  box-sizing: border-box;
+  min-height: 360px;
+  display: grid;
+  place-items: center;
+  align-content: center;
+  gap: 12px;
+  color: rgb(113, 113, 122);
+}
+
+.threadState p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 22px;
+}
+
+.threadState button {
+  min-height: 36px;
+  border: 0;
+  border-radius: 999px;
+  background: #ffffff;
+  color: rgb(10, 10, 8);
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 0 14px;
+  font: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 10px 28px rgba(38, 34, 88, 0.08);
+}
+
+.threadStateSpinner {
+  width: 22px;
+  height: 22px;
+  border: 2px solid rgba(31, 17, 237, 0.16);
+  border-top-color: rgb(31, 17, 237);
+  border-radius: 50%;
+  animation: appSpin 0.8s linear infinite;
+}
+
+@media (max-width: 760px) {
+
+  .threadHeader {
+    display: none;
+  }
+
+  .threadHeaderBackButton {
+    display: none !important;
+  }
+
+  .threadNewButton {
+    justify-self: end;
+    min-height: 28px;
+    padding: 0 8px;
+    font-size: 10px;
+  }
+
+  .threadExecutingPreview {
+    width: 260px;
+    min-width: 260px;
+    max-width: 260px;
+    justify-self: start;
+  }
+
+  .threadExecutingSkeleton {
+    aspect-ratio: auto;
+    height: 260px;
+    min-height: 0;
+    max-height: 260px;
+  }
+
+  .threadExecutingProgress {
+    right: 16px;
+    bottom: 16px;
+    left: 16px;
+  }
+
+  .threadBody {
+    min-height: 0;
+    touch-action: manipulation;
+    overflow-y: auto;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    padding: 10px 16px calc(152px + env(safe-area-inset-bottom));
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
+  }
+  .videoThreadView .threadBody {
+    padding-bottom: calc(200px + env(safe-area-inset-bottom));
+  }
+
+  .assistantCard {
+    width: fit-content;
+    max-width: 92%;
+  }
+
+  .threadDownloadActions {
+    position: relative;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+
+  .threadDownloadActions > button,
+  .threadDownloadActions > .threadExportMenuWrap {
+    flex: 0 0 auto;
+    min-width: 0;
+  }
+
+  .threadDownloadActions > .threadExportMenuWrap {
+    position: static;
+  }
+
+  .threadExportMenu:not(.threadAnimateMenu) {
+    left: 0;
+    right: auto;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .threadDownloadActions > button,
+  .threadDownloadActions > .threadExportMenuWrap > button {
+    min-height: 30px;
+    gap: 4px;
+    padding: 0 6px;
+    white-space: nowrap;
+    font-size: 12px;
+  }
+
+  .threadDownloadActions > button > .threadExportProBadge,
+  .threadExportMenuWrap > button > .threadExportProBadge {
+    padding: 1px 4px;
+    font-size: 10px;
+  }
+
+  .threadDownloadActions > .threadExportMenuWrap > button > svg:last-child {
+    display: none;
+  }
+
+  .threadAnimateMenu {
+    width: min(252px, calc(100vw - 32px));
+    max-width: calc(100vw - 32px);
+  }
+
+  .threadAnimateMenuCopy small {
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
+
+  .userBubble {
+    width: fit-content;
+    max-width: 88%;
+    border-radius: 19px 19px 7px 19px;
+  }
+
+  .assistantBubble,
+  .assistantCard.assistantBubble {
+    max-width: 88%;
+    border-radius: 19px 19px 19px 7px;
+  }
+
+  .threadResultCta {
+    width: 100%;
+  }
+
+  .threadMediaGrid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 8px;
+  }
+
+  .threadMediaCard {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .threadMediaImageButton,
+  .threadMediaImageFrame {
+    width: fit-content;
+    max-width: 100%;
+  }
+  .threadMediaImageFrameOptimized:not(.threadMediaImageFrameLoaded) {
+    width: min(260px, 100%);
+  }
+
+  .threadMediaImageFrameOptimized:not(.threadMediaImageFrameLoaded) .threadMediaImageSkeleton {
+    aspect-ratio: 1 / 1;
+  }
+
+  .threadMediaCard img,
+  .threadMediaCard video {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 260px;
+    object-fit: contain;
+  }
+
+  .appImagePreviewToolbar {
+    top: 12px;
+    right: 12px;
+    gap: 8px;
+  }
+
+  .appImagePreviewStage {
+    padding: 0;
+  }
+
+  .appImagePreviewStage img {
+    max-width: 100vw;
+    max-height: 100dvh;
+  }
+
+  .appImagePreviewFillFrame {
+    width: 100vw;
+    height: 100dvh;
+    max-width: 100vw;
+    max-height: 100dvh;
+  }
+
+  .appImagePreviewOverlayWithUpgrade .appImagePreviewStage {
+    padding-bottom: 0;
+  }
+
+  .appImagePreviewOverlayWithUpgrade .appImagePreviewStage img {
+    max-height: 100dvh;
+  }
+
+  .appImagePreviewOverlayWithUpgrade .appImagePreviewFillFrame {
+    height: 100dvh;
+    max-height: 100dvh;
+  }
+
+  .appImagePreviewUpgradeCta {
+    bottom: 14px;
+    width: calc(100vw - 24px);
+    align-items: stretch;
+    flex-direction: column;
+    gap: 12px;
+    border-radius: 16px;
+    padding: 13px;
+  }
+
+  .appImagePreviewUpgradeCta button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 330px) {
+  .threadExecutingStatusPill {
+    top: 8px;
+    left: 8px;
+    min-height: 30px;
+    gap: 6px;
+    padding: 0 9px;
+    font-size: 11px;
+  }
+
+  .threadExecutingEta {
+    top: 8px;
+    left: 8px;
+    min-height: 30px;
+    padding: 0 9px;
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 320px) {
+  .userBubble,
+  .assistantBubble,
+  .assistantCard {
+    --thread-message-font-size: 12px;
+  }
+  .assistantCard.assistantBubble {
+    padding: 8px 10px;
+  }
+  .userBubble {
+    padding: 8px 10px;
+  }
+  .threadMediaCard img,
+  .threadMediaCard video {
+    max-height: 200px;
+  }
+  .threadActions button,
+  .threadActions a {
+    min-height: 28px;
+    gap: 7px;
+    padding: 0 8px;
+    font-size: 12px;
+  }
+  .threadExportMenu:not(.threadAnimateMenu) {
+    right: auto;
+    left: 0;
+  }
+  .threadAnimateMenu {
+    width: min(252px, calc(100vw - 32px));
+  }
+  .albumCoverAnimateDialogOverlay {
+    align-items: end;
+    padding: 12px;
+    padding-top: max(12px, env(safe-area-inset-top));
+    padding-right: max(12px, env(safe-area-inset-right));
+    padding-bottom: max(12px, env(safe-area-inset-bottom));
+    padding-left: max(12px, env(safe-area-inset-left));
+  }
+  .albumCoverAnimateDialog {
+    width: 100%;
+    max-height: calc(100vh - 24px);
+    max-height: calc(100dvh - 24px - env(safe-area-inset-top) - env(safe-area-inset-bottom));
+    border-radius: 20px;
+    padding: 18px;
+    scroll-padding-bottom: calc(18px + env(safe-area-inset-bottom));
+  }
+  .albumCoverAnimatePreview {
+    width: min(230px, 68vw);
+  }
+  .threadResultCta {
+    padding: 8px;
+    border-radius: 12px;
+  }
+  .threadResultCtaCopy strong {
+    font-size: 13px;
+  }
+  .threadResultCtaActions button,
+  .threadResultCtaActions a {
+    min-height: 28px;
+    gap: 7px;
+    padding: 0 8px;
+    font-size: 11px;
+    font-weight: 600;
+  }
+}
+
+@keyframes threadThinkingShimmer {
+  0% {
+    background-position: 160% 50%;
+    opacity: 0.88;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    background-position: -60% 50%;
+    opacity: 0.88;
+  }
+}
+
+@keyframes threadThinkingDot {
+  0%,
+  100% {
+    transform: translateY(0);
+    opacity: 0.32;
+  }
+  42% {
+    transform: translateY(-4px);
+    opacity: 0.86;
+  }
+}
+
+@keyframes threadThinkingBotFloat {
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  35% {
+    transform: translateY(-2px) rotate(-3deg);
+  }
+  70% {
+    transform: translateY(1px) rotate(3deg);
+  }
+}
+
+@keyframes threadExecutingShimmer {
+  0% {
+    transform: translateX(-110%);
+  }
+  100% {
+    transform: translateX(110%);
+  }
+}
+
+@keyframes threadExecutingProgressSheen {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes threadExecutingSpinner {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes threadExecutingAtmosphereDrift {
+  0% {
+    opacity: 0.62;
+    transform: translate3d(-1.5%, -1%, 0) scale(1.03);
+  }
+  100% {
+    opacity: 0.92;
+    transform: translate3d(1.5%, 1%, 0) scale(1.05);
+  }
+}
+
+@keyframes threadExecutingExposure {
+  0% {
+    opacity: 0.48;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0.78;
+    transform: scale(1.04);
+  }
+}
+
+@keyframes threadExecutingStructureReveal {
+  0% {
+    opacity: 0.3;
+    background-position: 14% 52%, 58% 34%;
+  }
+  100% {
+    opacity: 0.58;
+    background-position: 18% 48%, 54% 30%;
+  }
+}
+
+@keyframes threadExecutingScan {
+  0% {
+    left: -6%;
+    opacity: 0.24;
+    transform: rotate(15deg);
+  }
+  4% {
+    opacity: 0.48;
+  }
+  84% {
+    left: 108%;
+    opacity: 0.82;
+    transform: rotate(15deg);
+  }
+  94% {
+    left: 112%;
+    opacity: 0;
+    transform: rotate(15deg);
+  }
+  94.01% {
+    left: -6%;
+    opacity: 0;
+    transform: rotate(15deg);
+  }
+  100% {
+    left: -6%;
+    opacity: 0.24;
+    transform: rotate(15deg);
+  }
+}
+
+@keyframes appActionSpin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes appSpin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}

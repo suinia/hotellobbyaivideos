@@ -1,0 +1,159 @@
+[
+  {
+    "path": "/",
+    "status": 200,
+    "final": "/",
+    "canonical": [
+      "https://hotellobbyaivideos.com"
+    ],
+    "h1": 1,
+    "title": [
+      "Hotel Lobby AI Video Generator \u2014 Photos to Rap Videos"
+    ],
+    "schemaTypes": [
+      "WebSite",
+      "WebApplication",
+      "FAQPage",
+      "VideoObject",
+      "VideoObject",
+      "VideoObject"
+    ]
+  },
+  {
+    "path": "/guides/how-to-make-hotel-lobby-ai-video",
+    "status": 200,
+    "final": "/guides/how-to-make-hotel-lobby-ai-video",
+    "canonical": [
+      "https://hotellobbyaivideos.com/guides/how-to-make-hotel-lobby-ai-video"
+    ],
+    "h1": 1,
+    "title": [
+      "How to make a Hotel Lobby AI video | Hotel Lobby AI"
+    ]
+  },
+  {
+    "path": "/guides/hotel-lobby-ai-pets",
+    "status": 200,
+    "final": "/guides/hotel-lobby-ai-pets",
+    "canonical": [
+      "https://hotellobbyaivideos.com/guides/hotel-lobby-ai-pets"
+    ],
+    "h1": 1,
+    "title": [
+      "Make a Hotel Lobby cat or dog duet | Hotel Lobby AI"
+    ]
+  },
+  {
+    "path": "/guides/hotel-lobby-ai-prompts",
+    "status": 200,
+    "final": "/guides/hotel-lobby-ai-prompts",
+    "canonical": [
+      "https://hotellobbyaivideos.com/guides/hotel-lobby-ai-prompts"
+    ],
+    "h1": 1,
+    "title": [
+      "Hotel Lobby AI prompts and ideas | Hotel Lobby AI"
+    ]
+  },
+  {
+    "path": "/pricing",
+    "status": 200,
+    "final": "/pricing",
+    "canonical": [
+      "https://hotellobbyaivideos.com/pricing"
+    ],
+    "h1": 1,
+    "title": [
+      "Plans and credits | Hotel Lobby AI"
+    ]
+  },
+  {
+    "path": "/privacy",
+    "status": 200,
+    "final": "/privacy",
+    "canonical": [
+      "https://hotellobbyaivideos.com/privacy"
+    ],
+    "h1": 1,
+    "title": [
+      "Privacy Policy | Hotel Lobby AI"
+    ]
+  },
+  {
+    "path": "/terms",
+    "status": 200,
+    "final": "/terms",
+    "canonical": [
+      "https://hotellobbyaivideos.com/terms"
+    ],
+    "h1": 1,
+    "title": [
+      "Terms of Service | Hotel Lobby AI"
+    ]
+  },
+  {
+    "path": "/refund-policy",
+    "status": 200,
+    "final": "/refund-policy",
+    "canonical": [
+      "https://hotellobbyaivideos.com/refund-policy"
+    ],
+    "h1": 1,
+    "title": [
+      "Refund Policy | Hotel Lobby AI"
+    ]
+  },
+  {
+    "path": "/robots.txt",
+    "status": 200,
+    "final": "/robots.txt"
+  },
+  {
+    "path": "/sitemap.xml",
+    "status": 200,
+    "final": "/sitemap.xml",
+    "urls": [
+      "https://hotellobbyaivideos.com/",
+      "https://hotellobbyaivideos.com/pricing",
+      "https://hotellobbyaivideos.com/guides/how-to-make-hotel-lobby-ai-video",
+      "https://hotellobbyaivideos.com/guides/hotel-lobby-ai-pets",
+      "https://hotellobbyaivideos.com/guides/hotel-lobby-ai-prompts",
+      "https://hotellobbyaivideos.com/privacy",
+      "https://hotellobbyaivideos.com/terms",
+      "https://hotellobbyaivideos.com/refund-policy"
+    ]
+  },
+  {
+    "path": "/assets/hotel-lobby-ai/demos/rap-v1/cat-duet.mp4",
+    "status": 200,
+    "final": "/assets/hotel-lobby-ai/demos/rap-v1/cat-duet.mp4"
+  },
+  {
+    "path": "/hotel-lobby-ai?prompt=hello",
+    "status": 200,
+    "final": "/?prompt=hello",
+    "canonical": [
+      "https://hotellobbyaivideos.com"
+    ],
+    "h1": 1,
+    "title": [
+      "Hotel Lobby AI Video Generator \u2014 Photos to Rap Videos"
+    ]
+  },
+  {
+    "path": "/app/hotel-lobby-ai?prompt=hello",
+    "status": 200,
+    "final": "/?prompt=hello",
+    "canonical": [
+      "https://hotellobbyaivideos.com"
+    ],
+    "h1": 1,
+    "title": [
+      "Hotel Lobby AI Video Generator \u2014 Photos to Rap Videos"
+    ]
+  },
+  {
+    "path": "/app/ai-flyer-generator",
+    "status": 404
+  }
+]
