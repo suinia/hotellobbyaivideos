@@ -27,7 +27,7 @@ export default function VideoRouteLoading({ active }: VideoRouteLoadingProps) {
       ) : null}
       <aside className={socialStyles.sidebar} aria-label="Video navigation">
         <Link className={socialStyles.brand} href="/home" aria-label="Vismuse Home" prefetch>
-          <Image src="/assets/socialmedia/logo.png" alt="" width={34} height={34} priority />
+          <Image src="/brand/icon-192.png" alt="" width={34} height={34} priority />
           <span>VISMUSE</span>
         </Link>
         <nav className={socialStyles.navList}>

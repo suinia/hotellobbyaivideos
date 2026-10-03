@@ -505,6 +505,7 @@ export function AppAuthModal() {
           <X size={18} />
         </button>
 
+        <div style={{display:"flex",justifyContent:"center",marginBottom:16}}><Image src="/brand/icon-192.png" alt="Hotel Lobby AI" width={48} height={48}/></div>
         <div className={styles.authModalCopy}>
           <h2>{modalTitle}</h2>
           <p>{modalCopy}</p>

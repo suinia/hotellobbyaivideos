@@ -462,9 +462,9 @@ export default async function MarketingFooter({
     <footer className={`${styles.footer} ${styles.homeFooter}`}>
       <div className={styles.inner}>
         <div className={styles.brandBlock}>
-          <Link href={localizeSitePath("/", locale)} prefetch={false} className={styles.brand} aria-label="Vismuse Home">
-            <Image src="/logo.png" alt="" width={34} height={34} />
-            <span>Vismuse</span>
+          <Link href={localizeSitePath("/", locale)} prefetch={false} className={styles.brand} aria-label="Hotel Lobby AI home">
+            <Image src="/brand/icon-192.png" alt="" width={34} height={34} />
+            <span>Hotel Lobby AI</span>
           </Link>
           <p className={styles.tagline}>
             {copy.tagline}

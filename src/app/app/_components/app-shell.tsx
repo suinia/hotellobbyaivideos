@@ -58,7 +58,7 @@ const SubscriptionGateModal = dynamic(
 const VideoSubscriptionModal = dynamic(() => import("@/app/ai-video-generator/_components/video-subscription-modal"));
 
 const desktopRailSections = [
-  { label: "Studio", items: [{ label: "Hotel Lobby AI", href: "/", icon: RailVideoIcon }] },
+  { label: "Studio", items: [{ label: "Hotel Lobby AI", href: "/hotel-lobby-ai", icon: RailVideoIcon }] },
   { label: "Discover", items: [
     { label: "Video examples", href: "/examples", icon: Video },
     { label: "Prompt library", href: "/prompts", icon: Sparkles },
@@ -138,7 +138,7 @@ const mobileBottomItems: Array<{
   icon: ComponentType<{ size?: number; "aria-hidden"?: boolean }>;
   size: number;
 }> = [
-  { id: "create", label: "Create", href: "/", icon: BottomCreateIcon, size: 22 },
+  { id: "create", label: "Create", href: "/hotel-lobby-ai", icon: BottomCreateIcon, size: 22 },
   { id: "recents", label: "Recents", href: "/app/recents", icon: BottomHistoryIcon, size: 22 },
   { id: "assets", label: "Assets", href: "/app/assets", icon: RailAssetsIcon, size: 20 },
   { id: "explore", label: "Explore", href: "/app/explore", icon: RailExploreIcon, size: 22 }
@@ -418,7 +418,7 @@ export function AppShell({
   account = appAccountSummary,
   accountReady = true,
   announcement = appAnnouncement,
-  createHref = "/",
+  createHref = "/hotel-lobby-ai",
   isChatRoute = false,
   isGeneralWorkspace = false,
   onRefreshAccount,
@@ -1784,7 +1784,7 @@ export function AppShell({
       {showAnnouncement ? (
         <div className={styles.promoBar}>
           {isPaidAccount ? (
-            <Link className={styles.promoBarOffer} href="/" prefetch={false} onClick={() => trackBannerAction("video")}>
+            <Link className={styles.promoBarOffer} href="/hotel-lobby-ai" prefetch={false} onClick={() => trackBannerAction("video")}>
               <Video size={17} aria-hidden />
               <span className={styles.promoBarCopy}><strong className={styles.videoAnnouncementText}>{t(uiLocale, "workbench.videoAnnouncement.message")}</strong></span>
               <span className={styles.promoBarCta}>{t(uiLocale, "workbench.videoAnnouncement.cta")}</span>
@@ -1819,7 +1819,7 @@ export function AppShell({
 
       <aside className={styles.desktopRail} aria-label="App navigation">
         <Link prefetch={false} className={styles.railLogo} href="/" aria-label="Hotel Lobby AI home">
-          <Image src="/icon.svg" width={30} height={30} alt="" />
+          <Image src="/brand/icon-192.png" width={30} height={30} alt="" />
           <span>Hotel Lobby AI</span>
         </Link>
         <nav className={styles.railNav}>
@@ -2145,7 +2145,7 @@ export function AppShell({
             </button>
           ) : (
             <Link prefetch={false} href="/" aria-label="Hotel Lobby AI home">
-              <Image src="/icon.svg" width={27} height={27} alt="" />
+              <Image src="/brand/icon-192.png" width={27} height={27} alt="" />
             </Link>
           )}
           <div className={styles.appTopActions}>

@@ -12,5 +12,5 @@ export const hotelPrompts = [
   { id: "calmer-duet", title: "A calmer second take", category: "Duet", cast: "duet", description: "A gentle alternative when you want fewer moving parts.", text: "Create a calm orange-studio duet using my two portraits. Keep the first performer on the left and the second on the right. Use a locked medium-wide camera and soft frontal lighting. Let them alternate subtle head nods with their hands kept below the face. Preserve both faces and outfits, and avoid sudden camera moves." },
 ] as const;
 export function hotelPromptHref(prompt: string, cast: string) {
-  return `/?${new URLSearchParams({ prompt, cast }).toString()}`;
+  return `/hotel-lobby-ai?${new URLSearchParams({ prompt, cast }).toString()}`;
 }

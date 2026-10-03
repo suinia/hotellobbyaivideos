@@ -1,7 +1,5 @@
-import { Suspense } from "react";
-import { AppTool } from "@/app/app/_components/app-workbench";
-import { AppAuthModal } from "@/app/app/_components/app-auth-modal";
-import { AppShellLayout } from "@/app/app/_components/app-shell-layout";
+import Link from "next/link";
+import styles from "@/components/hotel-home.module.css";
 import { HotelLobbyContent, hotelFaqs } from "@/components/hotel-lobby-content";
 import { SITE_URL, SITE_DESCRIPTION } from "@/lib/site";
 
@@ -40,13 +38,19 @@ export default function Home() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(data).replace(/</g, "\\u003c") }} />
-      <AppAuthModal />
-      <Suspense fallback={<p role="status">Loading your Hotel Lobby workspace…</p>}>
-        <AppShellLayout>
-          <AppTool slug="hotel-lobby-ai" />
-          <HotelLobbyContent />
-        </AppShellLayout>
-      </Suspense>
+      <main>
+        <section className={styles.hero}>
+          <div className={styles.copy}>
+            <p className={styles.eyebrow}>YOUR PHOTOS. YOUR CAST. YOUR STAGE.</p>
+            <h1>Hotel Lobby AI<br/><span>Put your photos<br/>in the spotlight.</span></h1>
+            <p className={styles.description}>Turn portraits of friends, characters, or pets into an AI rap video. An orange studio, a hanging mic, and a performance that’s yours.</p>
+            <div className={styles.actions}><Link className={styles.primary} href="/hotel-lobby-ai">Create your video ↗</Link><Link className={styles.secondary} href="/examples">Watch examples →</Link></div>
+            <p className={styles.note}>Solo, duet, or pets · No editing skills needed</p>
+          </div>
+          <div className={styles.stage}><video controls playsInline preload="metadata" poster="/assets/hotel-lobby-ai/demos/rap-v1/cat-duet_poster.webp" aria-label="Hotel Lobby AI cat duet example"><source src="/assets/hotel-lobby-ai/demos/rap-v1/cat-duet.mp4" type="video/mp4"/></video><div className={styles.caption}><span>FROM PHOTO TO PERFORMANCE</span><strong>Two cats. One mic.</strong><p>Original AI example · Your cast is next.</p></div></div>
+        </section>
+        <HotelLobbyContent />
+      </main>
     </>
   );
 }

@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     description: SITE_DESCRIPTION, alternates: { canonical: "/" },
     openGraph: { type: "website", siteName: SITE_NAME, title: "Hotel Lobby AI Video Generator", description: SITE_DESCRIPTION, url: SITE_URL, images: [{ url: "/assets/hotel-lobby-ai/pets.webp", alt: "Two cats in an orange music studio" }] },
     twitter: { card: "summary_large_image", title: "Hotel Lobby AI Video Generator", description: SITE_DESCRIPTION, images: ["/assets/hotel-lobby-ai/pets.webp"] },
-    icons: { icon: "/icon.svg" }
+    icons: { icon: [{ url: "/brand/icon-32.png", sizes: "32x32", type: "image/png" }, { url: "/brand/icon-192.png", sizes: "192x192", type: "image/png" }], apple: [{ url: "/brand/icon-180.png", sizes: "180x180", type: "image/png" }] }
 };
 export default function RootLayout({ children }: Readonly<{
     children: React.ReactNode;

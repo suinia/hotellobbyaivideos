@@ -275,7 +275,7 @@ export function SignupGateModal({
 
         <div className={styles.content}>
           <div className={styles.brand}>
-            <Image src="/icon.svg" alt="" width={32} height={32} />
+            <Image src="/brand/icon-192.png" alt="" width={32} height={32} />
             <span>Hotel Lobby AI</span>
           </div>
           <div className={styles.copy}>

@@ -1127,7 +1127,7 @@ export default function VideoSubscriptionModal({
               aria-label="Close subscription dialog"
             >
               <ChevronLeft size={22} aria-hidden="true" />
-              <Image src="/icon.svg" alt="Hotel Lobby AI" width={30} height={30} priority />
+              <Image src="/brand/icon-192.png" alt="Hotel Lobby AI" width={30} height={30} priority />
             </button>
             <button
               type="button"
@@ -1386,7 +1386,7 @@ export default function VideoSubscriptionModal({
           <nav className={modalStyles.pricingModalNav} aria-label="Credit pack dialog navigation">
             <button type="button" className={modalStyles.pricingModalBack} onClick={onClose} aria-label="Close credit pack dialog">
               <ChevronLeft size={22} aria-hidden="true" />
-              <Image src="/icon.svg" alt="Hotel Lobby AI" width={30} height={30} priority />
+              <Image src="/brand/icon-192.png" alt="Hotel Lobby AI" width={30} height={30} priority />
             </button>
             <button type="button" className={modalStyles.pricingModalClose} onClick={onClose} aria-label="Close credit pack dialog">
               <X size={22} aria-hidden="true" />
@@ -1446,7 +1446,7 @@ export default function VideoSubscriptionModal({
             aria-label="Close pricing dialog"
           >
             <ChevronLeft size={22} aria-hidden="true" />
-            <Image src="/icon.svg" alt="Hotel Lobby AI" width={30} height={30} priority />
+            <Image src="/brand/icon-192.png" alt="Hotel Lobby AI" width={30} height={30} priority />
           </button>
           <button
             type="button"

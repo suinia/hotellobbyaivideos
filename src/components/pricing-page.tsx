@@ -79,7 +79,7 @@ type FaqItem = {
   answer: string;
 };
 
-const BILLING_RETURN_PATH = "/";
+const BILLING_RETURN_PATH = "/hotel-lobby-ai";
 const WINBACK_DISCOUNT_CODES = new Set(["WINBACK50", "RETURN50"]);
 
 function createClientIdempotencyKey(): string {
@@ -899,7 +899,7 @@ export default function PricingPage({ initialBillingContext }: { initialBillingC
             </button>
 
             <div className="vf-auth-modal-brand">
-              <Image src="/icon.svg" alt="Hotel Lobby AI" width={42} height={42} className="vf-auth-modal-logo" />
+              <Image src="/brand/icon-192.png" alt="Hotel Lobby AI" width={42} height={42} className="vf-auth-modal-logo" />
               <span>Hotel Lobby AI</span>
             </div>
 

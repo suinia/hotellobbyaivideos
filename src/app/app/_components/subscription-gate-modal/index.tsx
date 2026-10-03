@@ -752,7 +752,7 @@ function AppUpgradePricingModal({
             aria-label="Close pricing dialog"
           >
             <ChevronLeft size={22} aria-hidden="true" />
-            <Image src="/assets/socialmedia/logo.png" alt="Vismuse" width={30} height={30} />
+            <Image src="/brand/icon-192.png" alt="Hotel Lobby AI" width={30} height={30} />
           </button>
           <button
             type="button"
@@ -1338,7 +1338,7 @@ function ImageSubscriptionGateModal({
         <nav className={styles.subscriptionModalNav} aria-label="Subscription dialog navigation">
           <button type="button" className={styles.subscriptionModalBack} onClick={onClose} aria-label="Close subscription dialog">
             <ChevronLeft size={22} aria-hidden="true" />
-            <Image src="/assets/socialmedia/logo.png" alt="Vismuse" width={30} height={30} />
+            <Image src="/brand/icon-192.png" alt="Hotel Lobby AI" width={30} height={30} />
           </button>
           <button type="button" className={styles.subscriptionModalClose} onClick={onClose} aria-label="Close subscription dialog">
             <X size={22} aria-hidden="true" />

@@ -782,7 +782,7 @@ export function resolveAppToolPublicHref(slug: string) {
 }
 
 export function findAppToolByPathname(pathname: string) {
-  if (pathname === "/") return findAppTool("hotel-lobby-ai");
+  if (pathname === "/hotel-lobby-ai") return findAppTool("hotel-lobby-ai");
   const normalizedPathname = pathname.split(/[?#]/, 1)[0]?.replace(/\/+$/, "") || "/";
   return routableAppTools.find((tool) => {
     const configuredPathname = getAppToolConfiguredPathname(tool);

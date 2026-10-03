@@ -1,0 +1,173 @@
+[
+  {
+    "route": "/",
+    "title": "Hotel Lobby AI Video Generator \u2014 Photos to Rap Videos",
+    "canonical": "https://hotellobbyaivideos.com",
+    "h1": 1,
+    "robots": "index allowed",
+    "schema": [
+      "WebSite",
+      "WebApplication",
+      "FAQPage",
+      "VideoObject",
+      "VideoObject",
+      "VideoObject"
+    ]
+  },
+  {
+    "route": "/examples",
+    "title": "Hotel Lobby AI Video Examples",
+    "canonical": "https://hotellobbyaivideos.com/examples",
+    "h1": 1,
+    "robots": "index allowed",
+    "schema": [
+      "WebSite"
+    ]
+  },
+  {
+    "route": "/prompts",
+    "title": "Hotel Lobby AI Prompts \u2014 Solo, Duet & Pets",
+    "canonical": "https://hotellobbyaivideos.com/prompts",
+    "h1": 1,
+    "robots": "index allowed",
+    "schema": [
+      "WebSite"
+    ]
+  },
+  {
+    "route": "/guides",
+    "title": "Hotel Lobby AI Guides & Tutorials",
+    "canonical": "https://hotellobbyaivideos.com/guides",
+    "h1": 1,
+    "robots": "index allowed",
+    "schema": [
+      "WebSite"
+    ]
+  },
+  {
+    "route": "/privacy",
+    "title": "Privacy Policy | Hotel Lobby AI",
+    "canonical": "https://hotellobbyaivideos.com/privacy",
+    "h1": 1,
+    "robots": "index allowed",
+    "schema": [
+      "WebSite"
+    ]
+  },
+  {
+    "route": "/terms",
+    "title": "Terms of Service | Hotel Lobby AI",
+    "canonical": "https://hotellobbyaivideos.com/terms",
+    "h1": 1,
+    "robots": "index allowed",
+    "schema": [
+      "WebSite"
+    ]
+  },
+  {
+    "route": "/refund-policy",
+    "title": "Refund Policy | Hotel Lobby AI",
+    "canonical": "https://hotellobbyaivideos.com/refund-policy",
+    "h1": 1,
+    "robots": "index allowed",
+    "schema": [
+      "WebSite"
+    ]
+  },
+  {
+    "route": "/cookies",
+    "title": "Cookie Policy | Hotel Lobby AI",
+    "canonical": "https://hotellobbyaivideos.com/cookies",
+    "h1": 1,
+    "robots": "index allowed",
+    "schema": [
+      "WebSite"
+    ]
+  },
+  {
+    "route": "/acceptable-use",
+    "title": "Acceptable Use | Hotel Lobby AI",
+    "canonical": "https://hotellobbyaivideos.com/acceptable-use",
+    "h1": 1,
+    "robots": "index allowed",
+    "schema": [
+      "WebSite"
+    ]
+  },
+  {
+    "route": "/examples/cat-duet",
+    "title": "Orange Studio Cat Duet | Hotel Lobby AI",
+    "canonical": "https://hotellobbyaivideos.com/examples/cat-duet",
+    "h1": 1,
+    "robots": "index allowed",
+    "schema": [
+      "WebSite",
+      "VideoObject"
+    ]
+  },
+  {
+    "route": "/examples/cat-dog-duet",
+    "title": "Cat & Corgi Mic Check | Hotel Lobby AI",
+    "canonical": "https://hotellobbyaivideos.com/examples/cat-dog-duet",
+    "h1": 1,
+    "robots": "index allowed",
+    "schema": [
+      "WebSite",
+      "VideoObject"
+    ]
+  },
+  {
+    "route": "/examples/grandparents-duet",
+    "title": "Golden Years, Fresh Flow | Hotel Lobby AI",
+    "canonical": "https://hotellobbyaivideos.com/examples/grandparents-duet",
+    "h1": 1,
+    "robots": "index allowed",
+    "schema": [
+      "WebSite",
+      "VideoObject"
+    ]
+  },
+  {
+    "route": "/guides/how-to-make-hotel-lobby-ai-video",
+    "title": "How to make a Hotel Lobby AI video",
+    "canonical": "https://hotellobbyaivideos.com/guides/how-to-make-hotel-lobby-ai-video",
+    "h1": 1,
+    "robots": "index allowed",
+    "schema": [
+      "WebSite",
+      "Article"
+    ]
+  },
+  {
+    "route": "/guides/hotel-lobby-ai-pets",
+    "title": "Make a Hotel Lobby cat or dog duet | Hotel Lobby AI",
+    "canonical": "https://hotellobbyaivideos.com/guides/hotel-lobby-ai-pets",
+    "h1": 1,
+    "robots": "index allowed",
+    "schema": [
+      "WebSite",
+      "Article"
+    ]
+  },
+  {
+    "route": "/guides/hotel-lobby-ai-prompts",
+    "title": "Hotel Lobby AI prompts and ideas",
+    "canonical": "https://hotellobbyaivideos.com/guides/hotel-lobby-ai-prompts",
+    "h1": 1,
+    "robots": "index allowed",
+    "schema": [
+      "WebSite",
+      "Article"
+    ]
+  },
+  {
+    "route": "/hotel-lobby-ai",
+    "title": "Hotel Lobby AI Studio",
+    "canonical": "https://hotellobbyaivideos.com/hotel-lobby-ai",
+    "h1": 0,
+    "robots": "noindex, follow",
+    "schema": [
+      "WebSite"
+    ]
+  }
+]

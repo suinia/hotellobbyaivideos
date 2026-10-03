@@ -21,8 +21,8 @@ The current local checkout uses a gitignored symlink to the existing clawvisualW
 
 ## Routes
 
-- `/`: Hotel Lobby workbench, original video examples, guide links, FAQ
-- `/hotel-lobby-ai`: permanent alias to the homepage, preserving query parameters
+- `/`: SEO landing page with hero, examples, guides, and FAQ
+- `/hotel-lobby-ai`: standalone creation workspace; marketing CTAs and prompts open this route
 - `/app/chat/:id`, `/app/recents`, `/app/assets`: existing conversation/project UI
 - `/app/explore`: Hotel Lobby video examples
 - `/examples` and `/examples/:slug`: filtered video gallery and individual prompt/photo-tip pages

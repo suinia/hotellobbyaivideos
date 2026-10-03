@@ -39,7 +39,7 @@ import { resetAppRecentsStore } from "./app-recents-store";
 const LAST_CREATE_HREF_STORAGE_KEY = "vismuse.app.lastCreateHref";
 const LAST_CREATE_HREF_UPDATE_EVENT = "vismuse:app-last-create-href";
 const LAST_CREATE_TOOL_COOKIE = "vismuse_last_create_tool";
-const DEFAULT_APP_CREATE_HREF = "/";
+const DEFAULT_APP_CREATE_HREF = "/hotel-lobby-ai";
 const APP_PENDING_GUEST_CLAIM_KEY = "vismuse.app.pendingGuestClaim";
 const APP_PENDING_AUTH_ANALYTICS_KEY = "vismuse.app.pendingAuthAnalytics";
 const THREAD_PENDING_SIGNUP_IMAGE_UNLOCK_KEY = "vismuse:socialmedia-pending-signup-image-unlock";
@@ -1299,7 +1299,7 @@ export function AppShellLayout({ children }: { children: ReactNode }) {
       active={getActiveAppNav(pathname)}
       account={account}
       accountReady={accountReady}
-      createHref="/"
+      createHref="/hotel-lobby-ai"
       isChatRoute={isChatRoute}
       isGeneralWorkspace={false}
       onRefreshAccount={() => refreshAccount({ force: true })}

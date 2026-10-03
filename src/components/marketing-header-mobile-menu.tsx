@@ -87,9 +87,9 @@ export default function MarketingHeaderMobileMenu({
       />
       <aside className={styles.mobileMenuPanel} role="dialog" aria-modal="true" aria-label="Navigation">
         <div className={styles.mobileMenuHeader}>
-          <Link href={homeHref} prefetch={false} className={styles.mobileMenuBrand} aria-label="Vismuse home" onClick={() => setOpen(false)}>
-            <Image src="/logo.png" alt="" width={34} height={34} priority />
-            <span>Vismuse</span>
+          <Link href={homeHref} prefetch={false} className={styles.mobileMenuBrand} aria-label="Hotel Lobby AI home" onClick={() => setOpen(false)}>
+            <Image src="/brand/icon-192.png" alt="" width={34} height={34} priority />
+            <span>Hotel Lobby AI</span>
           </Link>
           <button
             type="button"

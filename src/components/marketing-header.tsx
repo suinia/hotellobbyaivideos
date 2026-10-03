@@ -67,10 +67,10 @@ export default function MarketingHeader({
           href={localizeSitePath(homeHref, locale)}
           prefetch={isHomeHeader ? false : undefined}
           className={styles.brand}
-          aria-label="Vismuse home"
+          aria-label="Hotel Lobby AI home"
         >
-          <Image src="/logo.png" alt="" width={34} height={34} priority />
-          <span>Vismuse</span>
+          <Image src="/brand/icon-192.png" alt="" width={34} height={34} priority />
+          <span>Hotel Lobby AI</span>
         </Link>
 
         {isHomeHeader ? (

@@ -101,7 +101,8 @@ const nextConfig: NextConfig = {
   },
   async redirects() {
     return [
-      ...["/home", "/hotel-lobby-ai", "/app", "/app/create", "/app/hotel-lobby-ai"].map(source => ({source, destination: "/", permanent: true})),
+      { source: "/home", destination: "/", permanent: true },
+      ...["/app", "/app/create", "/app/hotel-lobby-ai"].map(source => ({source, destination: "/hotel-lobby-ai", permanent: true})),
       { source: "/hotel-lobby-ai/:sessionId", destination: "/app/chat/:sessionId", permanent: true },
       { source: "/:path*", has: [{ type: "host" as const, value: "www.hotellobbyaivideos.com" }], destination: "https://hotellobbyaivideos.com/:path*", permanent: true }
     ];
@@ -112,6 +113,7 @@ const nextConfig: NextConfig = {
         source: "/:path*",
         headers: securityHeaders.map((item) => ({ ...item }))
       },
+      ...["/app/:path*", "/auth/:path*", "/billing/:path*", "/share/:path*"].map(source => ({source, headers: [{ ...noindexRobotsHeader }]})),
       {
         source: "/api/:path*",
         headers: [

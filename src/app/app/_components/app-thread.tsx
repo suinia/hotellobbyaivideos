@@ -751,7 +751,7 @@ function prefersPublicToolRoutes(): boolean {
 
 function buildAppThreadNewTaskHref(toolSlug: string, preferPublicToolRoutes = prefersPublicToolRoutes()): string {
   // Every new task in this standalone site starts in its Hotel Lobby studio.
-  return "/";
+  return "/hotel-lobby-ai";
 }
 
 function normalizeAppThreadWorkbenchHref(href: string, preferPublicToolRoutes = prefersPublicToolRoutes()): string | null {
